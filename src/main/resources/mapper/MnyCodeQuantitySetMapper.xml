@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.goldnet.duty.mapper.MnyCodeQuantitySetMapper">
+
+    <resultMap id="BaseResultMap" type="com.goldnet.duty.entity.MnyCodeQuantitySet">
+            <id property="code_quantity_id" column="code_quantity_id" jdbcType="OTHER"/>
+            <result property="pay_platform_fees_draw" column="pay_platform_fees_draw" jdbcType="NUMERIC"/>
+            <result property="repeat_time_num_draw" column="repeat_time_num_draw" jdbcType="OTHER"/>
+            <result property="free_times_draw" column="free_times_draw" jdbcType="OTHER"/>
+            <result property="money_draw" column="money_draw" jdbcType="NUMERIC"/>
+            <result property="cue_draw_check" column="cue_draw_check" jdbcType="OTHER"/>
+            <result property="money_draw_check" column="money_draw_check" jdbcType="NUMERIC"/>
+            <result property="time_num_draw_check" column="time_num_draw_check" jdbcType="OTHER"/>
+            <result property="relation_currency_id" column="relation_currency_id" jdbcType="OTHER"/>
+            <result property="relation_customize_id" column="relation_customize_id" jdbcType="OTHER"/>
+            <result property="create_user" column="create_user" jdbcType="VARCHAR"/>
+            <result property="create_time" column="create_time" jdbcType="TIMESTAMP"/>
+            <result property="update_user" column="update_user" jdbcType="VARCHAR"/>
+            <result property="update_time" column="update_time" jdbcType="TIMESTAMP"/>
+            <result property="pre_deposit_times_online" column="pre_deposit_times_online" jdbcType="OTHER"/>
+            <result property="pre_deposit_status_online" column="pre_deposit_status_online" jdbcType="OTHER"/>
+            <result property="pre_deposit_times_company" column="pre_deposit_times_company" jdbcType="OTHER"/>
+            <result property="pre_deposit_status_company" column="pre_deposit_status_company" jdbcType="OTHER"/>
+            <result property="pre_standard_online" column="pre_standard_online" jdbcType="NUMERIC"/>
+            <result property="pre_standard_company" column="pre_standard_company" jdbcType="NUMERIC"/>
+            <result property="pre_per_online" column="pre_per_online" jdbcType="NUMERIC"/>
+            <result property="pre_per_company" column="pre_per_company" jdbcType="NUMERIC"/>
+            <result property="pre_ratio_online" column="pre_ratio_online" jdbcType="OTHER"/>
+            <result property="pre_ratio_company" column="pre_ratio_company" jdbcType="OTHER"/>
+            <result property="high_deposit_online" column="high_deposit_online" jdbcType="NUMERIC"/>
+            <result property="high_deposit_company" column="high_deposit_company" jdbcType="NUMERIC"/>
+            <result property="min_deposit_online" column="min_deposit_online" jdbcType="NUMERIC"/>
+            <result property="min_deposit_company" column="min_deposit_company" jdbcType="NUMERIC"/>
+            <result property="pre_up_online" column="pre_up_online" jdbcType="NUMERIC"/>
+            <result property="pre_up_company" column="pre_up_company" jdbcType="NUMERIC"/>
+            <result property="opre_standard_company" column="opre_standard_company" jdbcType="NUMERIC"/>
+            <result property="opre_per_company" column="opre_per_company" jdbcType="NUMERIC"/>
+            <result property="opre_up_company" column="opre_up_company" jdbcType="NUMERIC"/>
+            <result property="draw_up_online" column="draw_up_online" jdbcType="NUMERIC"/>
+            <result property="draw_low_online" column="draw_low_online" jdbcType="NUMERIC"/>
+            <result property="status_comp_online" column="status_comp_online" jdbcType="OTHER"/>
+            <result property="num_comp_online" column="num_comp_online" jdbcType="OTHER"/>
+            <result property="status_comp_company" column="status_comp_company" jdbcType="OTHER"/>
+            <result property="num_comp_company" column="num_comp_company" jdbcType="OTHER"/>
+            <result property="status_normal_online" column="status_normal_online" jdbcType="OTHER"/>
+            <result property="num_normal_online" column="num_normal_online" jdbcType="OTHER"/>
+            <result property="status_normal_company" column="status_normal_company" jdbcType="OTHER"/>
+            <result property="num_normal_company" column="num_normal_company" jdbcType="OTHER"/>
+            <result property="pre_rem_per_online" column="pre_rem_per_online" jdbcType="OTHER"/>
+            <result property="pre_rem_per_company" column="pre_rem_per_company" jdbcType="OTHER"/>
+            <result property="normal_relax_online" column="normal_relax_online" jdbcType="NUMERIC"/>
+            <result property="normal_relax_company" column="normal_relax_company" jdbcType="NUMERIC"/>
+            <result property="normal_adm_per_online" column="normal_adm_per_online" jdbcType="OTHER"/>
+            <result property="normal_adm_per_company" column="normal_adm_per_company" jdbcType="OTHER"/>
+            <result property="stockholder_id" column="stockholder_id" jdbcType="OTHER"/>
+            <result property="discounts_type" column="discounts_type" jdbcType="OTHER"/>
+            <result property="pre_deposit_times_yuebao" column="pre_deposit_times_yuebao" jdbcType="OTHER"/>
+            <result property="pre_ratio_yuebao" column="pre_ratio_yuebao" jdbcType="OTHER"/>
+            <result property="pre_deposit_status_yuebao" column="pre_deposit_status_yuebao" jdbcType="OTHER"/>
+            <result property="pre_standard_yuebao" column="pre_standard_yuebao" jdbcType="NUMERIC"/>
+            <result property="pre_up_yuebao" column="pre_up_yuebao" jdbcType="NUMERIC"/>
+            <result property="pre_per_yuebao" column="pre_per_yuebao" jdbcType="NUMERIC"/>
+            <result property="status_comp_yuebao" column="status_comp_yuebao" jdbcType="OTHER"/>
+            <result property="num_comp_yuebao" column="num_comp_yuebao" jdbcType="OTHER"/>
+            <result property="status_normal_yuebao" column="status_normal_yuebao" jdbcType="OTHER"/>
+            <result property="num_normal_yuebao" column="num_normal_yuebao" jdbcType="OTHER"/>
+            <result property="normal_relax_yuebao" column="normal_relax_yuebao" jdbcType="NUMERIC"/>
+            <result property="normal_adm_per_yuebao" column="normal_adm_per_yuebao" jdbcType="OTHER"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        code_quantity_id,pay_platform_fees_draw,repeat_time_num_draw,
+        free_times_draw,money_draw,cue_draw_check,
+        money_draw_check,time_num_draw_check,relation_currency_id,
+        relation_customize_id,create_user,create_time,
+        update_user,update_time,pre_deposit_times_online,
+        pre_deposit_status_online,pre_deposit_times_company,pre_deposit_status_company,
+        pre_standard_online,pre_standard_company,pre_per_online,
+        pre_per_company,pre_ratio_online,pre_ratio_company,
+        high_deposit_online,high_deposit_company,min_deposit_online,
+        min_deposit_company,pre_up_online,pre_up_company,
+        opre_standard_company,opre_per_company,opre_up_company,
+        draw_up_online,draw_low_online,status_comp_online,
+        num_comp_online,status_comp_company,num_comp_company,
+        status_normal_online,num_normal_online,status_normal_company,
+        num_normal_company,pre_rem_per_online,pre_rem_per_company,
+        normal_relax_online,normal_relax_company,normal_adm_per_online,
+        normal_adm_per_company,stockholder_id,discounts_type,
+        pre_deposit_times_yuebao,pre_ratio_yuebao,pre_deposit_status_yuebao,
+        pre_standard_yuebao,pre_up_yuebao,pre_per_yuebao,
+        status_comp_yuebao,num_comp_yuebao,status_normal_yuebao,
+        num_normal_yuebao,normal_relax_yuebao,normal_adm_per_yuebao
+    </sql>
+</mapper>

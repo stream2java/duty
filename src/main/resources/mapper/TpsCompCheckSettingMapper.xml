@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.goldnet.duty.mapper.TpsCompCheckSettingMapper">
+
+    <resultMap id="BaseResultMap" type="com.goldnet.duty.entity.TpsCompCheckSetting">
+            <id property="id" column="id" jdbcType="OTHER"/>
+            <result property="comp_setting_id" column="comp_setting_id" jdbcType="OTHER"/>
+            <result property="platform_code" column="platform_code" jdbcType="VARCHAR"/>
+            <result property="platform_game_type" column="platform_game_type" jdbcType="VARCHAR"/>
+            <result property="bet_status" column="bet_status" jdbcType="OTHER"/>
+            <result property="check_status" column="check_status" jdbcType="OTHER"/>
+            <result property="check_num" column="check_num" jdbcType="OTHER"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,comp_setting_id,platform_code,
+        platform_game_type,bet_status,check_status,
+        check_num
+    </sql>
+</mapper>

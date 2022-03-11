@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.goldnet.duty.mapper.GeGameTypeMapper">
+
+    <resultMap id="BaseResultMap" type="com.goldnet.duty.entity.GeGameType">
+            <id property="type_id" column="type_id" jdbcType="OTHER"/>
+            <result property="type_code" column="type_code" jdbcType="VARCHAR"/>
+            <result property="type_name" column="type_name" jdbcType="VARCHAR"/>
+            <result property="status" column="status" jdbcType="OTHER"/>
+            <result property="remark" column="remark" jdbcType="VARCHAR"/>
+            <result property="rating" column="rating" jdbcType="OTHER"/>
+            <result property="parent" column="parent" jdbcType="OTHER"/>
+            <result property="game" column="game" jdbcType="VARCHAR"/>
+            <result property="game_type" column="game_type" jdbcType="VARCHAR"/>
+            <result property="create_date_time" column="create_date_time" jdbcType="TIMESTAMP"/>
+            <result property="update_date_time" column="update_date_time" jdbcType="TIMESTAMP"/>
+            <result property="create_user" column="create_user" jdbcType="VARCHAR"/>
+            <result property="update_user" column="update_user" jdbcType="VARCHAR"/>
+            <result property="lottery_type" column="lottery_type" jdbcType="VARCHAR"/>
+            <result property="betting" column="betting" jdbcType="OTHER"/>
+            <result property="betting_code" column="betting_code" jdbcType="VARCHAR"/>
+            <result property="detail" column="detail" jdbcType="OTHER"/>
+            <result property="detail_name" column="detail_name" jdbcType="VARCHAR"/>
+            <result property="front_id" column="front_id" jdbcType="OTHER"/>
+            <result property="order_detail" column="order_detail" jdbcType="VARCHAR"/>
+            <result property="type_path" column="type_path" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        type_id,type_code,type_name,
+        status,remark,rating,
+        parent,game,game_type,
+        create_date_time,update_date_time,create_user,
+        update_user,lottery_type,betting,
+        betting_code,detail,detail_name,
+        front_id,order_detail,type_path
+    </sql>
+</mapper>

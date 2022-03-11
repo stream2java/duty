@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.goldnet.duty.mapper.GeVgePotMapper">
+
+    <resultMap id="BaseResultMap" type="com.goldnet.duty.entity.GeVgePot">
+            <result property="pid" column="pid" jdbcType="OTHER"/>
+            <result property="pot_type" column="pot_type" jdbcType="VARCHAR"/>
+            <result property="pot_game_type" column="pot_game_type" jdbcType="OTHER"/>
+            <result property="pot_agent" column="pot_agent" jdbcType="OTHER"/>
+            <result property="pot_account" column="pot_account" jdbcType="OTHER"/>
+            <result property="pot_money" column="pot_money" jdbcType="NUMERIC"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        pid,pot_type,pot_game_type,
+        pot_agent,pot_account,pot_money
+    </sql>
+</mapper>

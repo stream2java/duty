@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.goldnet.duty.mapper.WiJunctionMapper">
+
+    <resultMap id="BaseResultMap" type="com.goldnet.duty.entity.WiJunction">
+            <id property="junction_id" column="junction_id" jdbcType="OTHER"/>
+            <result property="name" column="name" jdbcType="VARCHAR"/>
+            <result property="type" column="type" jdbcType="OTHER"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        junction_id,name,type
+    </sql>
+</mapper>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.goldnet.duty.mapper.AtMoneyMaxLimitMapper">
+
+    <resultMap id="BaseResultMap" type="com.goldnet.duty.entity.AtMoneyMaxLimit">
+            <id property="id" column="id" jdbcType="OTHER"/>
+            <result property="account" column="account" jdbcType="VARCHAR"/>
+            <result property="draw_money_max_limit" column="draw_money_max_limit" jdbcType="NUMERIC"/>
+            <result property="batch_money_max_limit" column="batch_money_max_limit" jdbcType="NUMERIC"/>
+            <result property="rapid_money_max_limit" column="rapid_money_max_limit" jdbcType="NUMERIC"/>
+            <result property="deposit_pre_max_limit" column="deposit_pre_max_limit" jdbcType="NUMERIC"/>
+            <result property="other_pre_max_limit" column="other_pre_max_limit" jdbcType="NUMERIC"/>
+            <result property="create_user" column="create_user" jdbcType="VARCHAR"/>
+            <result property="create_time" column="create_time" jdbcType="TIMESTAMP"/>
+            <result property="update_user" column="update_user" jdbcType="VARCHAR"/>
+            <result property="update_time" column="update_time" jdbcType="TIMESTAMP"/>
+            <result property="payment_money_min_limit" column="payment_money_min_limit" jdbcType="NUMERIC"/>
+            <result property="payment_money_max_limit" column="payment_money_max_limit" jdbcType="NUMERIC"/>
+            <result property="deposit_money_min_limit" column="deposit_money_min_limit" jdbcType="NUMERIC"/>
+            <result property="deposit_money_max_limit" column="deposit_money_max_limit" jdbcType="NUMERIC"/>
+            <result property="transfer_money_max_limit" column="transfer_money_max_limit" jdbcType="NUMERIC"/>
+            <result property="yuebao_batch_money_max_limit" column="yuebao_batch_money_max_limit" jdbcType="NUMERIC"/>
+            <result property="yuebao_cunti_max_limit" column="yuebao_cunti_max_limit" jdbcType="NUMERIC"/>
+            <result property="manual_deposit_max_limit" column="manual_deposit_max_limit" jdbcType="NUMERIC"/>
+            <result property="yuebao_manual_deposit_max_limit" column="yuebao_manual_deposit_max_limit" jdbcType="NUMERIC"/>
+            <result property="batch_draw_money_max_limit" column="batch_draw_money_max_limit" jdbcType="NUMERIC"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,account,draw_money_max_limit,
+        batch_money_max_limit,rapid_money_max_limit,deposit_pre_max_limit,
+        other_pre_max_limit,create_user,create_time,
+        update_user,update_time,payment_money_min_limit,
+        payment_money_max_limit,deposit_money_min_limit,deposit_money_max_limit,
+        transfer_money_max_limit,yuebao_batch_money_max_limit,yuebao_cunti_max_limit,
+        manual_deposit_max_limit,yuebao_manual_deposit_max_limit,batch_draw_money_max_limit
+    </sql>
+</mapper>

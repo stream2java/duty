@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.goldnet.duty.mapper.GeDetailMapper">
+
+    <resultMap id="BaseResultMap" type="com.goldnet.duty.entity.GeDetail">
+            <id property="detai_id" column="detai_id" jdbcType="OTHER"/>
+            <result property="single_max_money" column="single_max_money" jdbcType="OTHER"/>
+            <result property="project_max_money" column="project_max_money" jdbcType="OTHER"/>
+            <result property="max_money" column="max_money" jdbcType="OTHER"/>
+            <result property="min_money" column="min_money" jdbcType="OTHER"/>
+            <result property="create_date_time" column="create_date_time" jdbcType="DATE"/>
+            <result property="create_user" column="create_user" jdbcType="VARCHAR"/>
+            <result property="update_date_time" column="update_date_time" jdbcType="DATE"/>
+            <result property="update_user" column="update_user" jdbcType="VARCHAR"/>
+            <result property="lottery_id" column="lottery_id" jdbcType="OTHER"/>
+            <result property="type_id" column="type_id" jdbcType="OTHER"/>
+            <result property="account_id" column="account_id" jdbcType="OTHER"/>
+            <result property="game_name" column="game_name" jdbcType="VARCHAR"/>
+            <result property="matches_id" column="matches_id" jdbcType="OTHER"/>
+            <result property="desktop_id" column="desktop_id" jdbcType="OTHER"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        detai_id,single_max_money,project_max_money,
+        max_money,min_money,create_date_time,
+        create_user,update_date_time,update_user,
+        lottery_id,type_id,account_id,
+        game_name,matches_id,desktop_id
+    </sql>
+</mapper>

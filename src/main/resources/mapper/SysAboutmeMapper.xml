@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.goldnet.duty.mapper.SysAboutmeMapper">
+
+    <resultMap id="BaseResultMap" type="com.goldnet.duty.entity.SysAboutme">
+            <id property="id" column="id" jdbcType="OTHER"/>
+            <result property="email" column="email" jdbcType="VARCHAR"/>
+            <result property="qq_skype" column="qq_skype" jdbcType="VARCHAR"/>
+            <result property="tele_phone" column="tele_phone" jdbcType="VARCHAR"/>
+            <result property="name" column="name" jdbcType="VARCHAR"/>
+            <result property="business" column="business" jdbcType="VARCHAR"/>
+            <result property="status" column="status" jdbcType="VARCHAR"/>
+            <result property="remark" column="remark" jdbcType="VARCHAR"/>
+            <result property="create_time" column="create_time" jdbcType="TIMESTAMP"/>
+            <result property="ip_address" column="ip_address" jdbcType="VARCHAR"/>
+            <result property="ddgd_id" column="ddgd_id" jdbcType="OTHER"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,email,qq_skype,
+        tele_phone,name,business,
+        status,remark,create_time,
+        ip_address,ddgd_id
+    </sql>
+</mapper>

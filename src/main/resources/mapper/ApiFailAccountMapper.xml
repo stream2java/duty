@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.goldnet.duty.mapper.ApiFailAccountMapper">
+
+    <resultMap id="BaseResultMap" type="com.goldnet.duty.entity.ApiFailAccount">
+            <id property="api_fail_acount_record_id" column="api_fail_acount_record_id" jdbcType="OTHER"/>
+            <result property="account_id" column="account_id" jdbcType="OTHER"/>
+            <result property="account" column="account" jdbcType="VARCHAR"/>
+            <result property="task_id" column="task_id" jdbcType="OTHER"/>
+            <result property="repeat_run_date" column="repeat_run_date" jdbcType="TIMESTAMP"/>
+            <result property="api_param_start_date" column="api_param_start_date" jdbcType="TIMESTAMP"/>
+            <result property="api_param_enddate" column="api_param_enddate" jdbcType="TIMESTAMP"/>
+            <result property="is_delete" column="is_delete" jdbcType="VARCHAR"/>
+            <result property="create_date" column="create_date" jdbcType="TIMESTAMP"/>
+            <result property="api_name" column="api_name" jdbcType="VARCHAR"/>
+            <result property="bet_count" column="bet_count" jdbcType="OTHER"/>
+            <result property="remark" column="remark" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        api_fail_acount_record_id,account_id,account,
+        task_id,repeat_run_date,api_param_start_date,
+        api_param_enddate,is_delete,create_date,
+        api_name,bet_count,remark
+    </sql>
+</mapper>

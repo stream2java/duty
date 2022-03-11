@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.goldnet.duty.mapper.PromotionSelfRebatePercentMapper">
+
+    <resultMap id="BaseResultMap" type="com.goldnet.duty.entity.PromotionSelfRebatePercent">
+            <id property="id" column="id" jdbcType="OTHER"/>
+            <result property="account1" column="account1" jdbcType="OTHER"/>
+            <result property="rebate_type" column="rebate_type" jdbcType="OTHER"/>
+            <result property="rebate_value_type" column="rebate_value_type" jdbcType="OTHER"/>
+            <result property="game_type_code" column="game_type_code" jdbcType="VARCHAR"/>
+            <result property="self_rebate_percent" column="self_rebate_percent" jdbcType="NUMERIC"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,account1,rebate_type,
+        rebate_value_type,game_type_code,self_rebate_percent
+    </sql>
+</mapper>

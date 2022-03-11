@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.goldnet.duty.mapper.AtCurrentRecord202110Mapper">
+
+    <resultMap id="BaseResultMap" type="com.goldnet.duty.entity.AtCurrentRecord202110">
+            <id property="current_record_id" column="current_record_id" jdbcType="BIGINT"/>
+            <result property="money_type" column="money_type" jdbcType="OTHER"/>
+            <result property="account_id" column="account_id" jdbcType="OTHER"/>
+            <result property="create_user" column="create_user" jdbcType="VARCHAR"/>
+            <result property="create_date_time" column="create_date_time" jdbcType="TIMESTAMP"/>
+            <result property="trade_limit" column="trade_limit" jdbcType="NUMERIC"/>
+            <result property="existing_limit" column="existing_limit" jdbcType="NUMERIC"/>
+            <result property="remark" column="remark" jdbcType="VARCHAR"/>
+            <result property="priject" column="priject" jdbcType="VARCHAR"/>
+            <result property="trade_type" column="trade_type" jdbcType="VARCHAR"/>
+            <result property="money" column="money" jdbcType="NUMERIC"/>
+            <result property="lottery_id" column="lottery_id" jdbcType="OTHER"/>
+            <result property="betting_code" column="betting_code" jdbcType="VARCHAR"/>
+            <result property="status" column="status" jdbcType="OTHER"/>
+            <result property="flag" column="flag" jdbcType="OTHER"/>
+            <result property="currency_id" column="currency_id" jdbcType="OTHER"/>
+            <result property="update_time" column="update_time" jdbcType="TIMESTAMP"/>
+            <result property="account1" column="account1" jdbcType="OTHER"/>
+            <result property="rate" column="rate" jdbcType="OTHER"/>
+            <result property="member_account" column="member_account" jdbcType="VARCHAR"/>
+            <result property="account5" column="account5" jdbcType="OTHER"/>
+            <result property="agent_account" column="agent_account" jdbcType="VARCHAR"/>
+            <result property="account2" column="account2" jdbcType="OTHER"/>
+            <result property="account3" column="account3" jdbcType="OTHER"/>
+            <result property="account4" column="account4" jdbcType="OTHER"/>
+            <result property="weixin_temp" column="weixin_temp" jdbcType="VARCHAR"/>
+            <result property="weixin_nickname" column="weixin_nickname" jdbcType="VARCHAR"/>
+            <result property="type" column="type" jdbcType="VARCHAR"/>
+            <result property="trade_type_sub" column="trade_type_sub" jdbcType="VARCHAR"/>
+            <result property="member_remark" column="member_remark" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        current_record_id,money_type,account_id,
+        create_user,create_date_time,trade_limit,
+        existing_limit,remark,priject,
+        trade_type,money,lottery_id,
+        betting_code,status,flag,
+        currency_id,update_time,account1,
+        rate,member_account,account5,
+        agent_account,account2,account3,
+        account4,weixin_temp,weixin_nickname,
+        type,trade_type_sub,member_remark
+    </sql>
+</mapper>

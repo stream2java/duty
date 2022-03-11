@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.goldnet.duty.mapper.MnyPreStatisticsEventMapper">
+
+    <resultMap id="BaseResultMap" type="com.goldnet.duty.entity.MnyPreStatisticsEvent">
+            <id property="event_id" column="event_id" jdbcType="OTHER"/>
+            <result property="event_no" column="event_no" jdbcType="VARCHAR"/>
+            <result property="event_details" column="event_details" jdbcType="VARCHAR"/>
+            <result property="currency_id" column="currency_id" jdbcType="OTHER"/>
+            <result property="return_time_from" column="return_time_from" jdbcType="TIMESTAMP"/>
+            <result property="return_time_end" column="return_time_end" jdbcType="TIMESTAMP"/>
+            <result property="create_user" column="create_user" jdbcType="VARCHAR"/>
+            <result property="create_time" column="create_time" jdbcType="TIMESTAMP"/>
+            <result property="update_user" column="update_user" jdbcType="VARCHAR"/>
+            <result property="update_time" column="update_time" jdbcType="TIMESTAMP"/>
+            <result property="stockholder_id" column="stockholder_id" jdbcType="OTHER"/>
+            <result property="eventuuid" column="eventuuid" jdbcType="VARCHAR"/>
+            <result property="set_type_name" column="set_type_name" jdbcType="VARCHAR"/>
+            <result property="count_member" column="count_member" jdbcType="OTHER"/>
+            <result property="count_money" column="count_money" jdbcType="NUMERIC"/>
+            <result property="undealed_count_member" column="undealed_count_member" jdbcType="OTHER"/>
+            <result property="undealed_count_money" column="undealed_count_money" jdbcType="NUMERIC"/>
+            <result property="check_num" column="check_num" jdbcType="OTHER"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        event_id,event_no,event_details,
+        currency_id,return_time_from,return_time_end,
+        create_user,create_time,update_user,
+        update_time,stockholder_id,eventuuid,
+        set_type_name,count_member,count_money,
+        undealed_count_member,undealed_count_money,check_num
+    </sql>
+</mapper>

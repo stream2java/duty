@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.goldnet.duty.mapper.MnyCostdetailed202112Mapper">
+
+    <resultMap id="BaseResultMap" type="com.goldnet.duty.entity.MnyCostdetailed202112">
+            <id property="costdetailed_id" column="costdetailed_id" jdbcType="OTHER"/>
+            <result property="member_id" column="member_id" jdbcType="OTHER"/>
+            <result property="agent_id" column="agent_id" jdbcType="OTHER"/>
+            <result property="ddgd_id" column="ddgd_id" jdbcType="OTHER"/>
+            <result property="currency_id" column="currency_id" jdbcType="OTHER"/>
+            <result property="periods_id" column="periods_id" jdbcType="OTHER"/>
+            <result property="administration_cost" column="administration_cost" jdbcType="NUMERIC"/>
+            <result property="rebate_discount" column="rebate_discount" jdbcType="NUMERIC"/>
+            <result property="waterbreak_discount" column="waterbreak_discount" jdbcType="NUMERIC"/>
+            <result property="deposit_discount" column="deposit_discount" jdbcType="NUMERIC"/>
+            <result property="subtotal" column="subtotal" jdbcType="NUMERIC"/>
+            <result property="founder" column="founder" jdbcType="VARCHAR"/>
+            <result property="foundtime" column="foundtime" jdbcType="TIMESTAMP"/>
+            <result property="memberaccount" column="memberaccount" jdbcType="VARCHAR"/>
+            <result property="activity_discount" column="activity_discount" jdbcType="NUMERIC"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        costdetailed_id,member_id,agent_id,
+        ddgd_id,currency_id,periods_id,
+        administration_cost,rebate_discount,waterbreak_discount,
+        deposit_discount,subtotal,founder,
+        foundtime,memberaccount,activity_discount
+    </sql>
+</mapper>

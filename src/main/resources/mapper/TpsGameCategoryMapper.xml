@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.goldnet.duty.mapper.TpsGameCategoryMapper">
+
+    <resultMap id="BaseResultMap" type="com.goldnet.duty.entity.TpsGameCategory">
+            <id property="id" column="id" jdbcType="OTHER"/>
+            <result property="category_name" column="category_name" jdbcType="VARCHAR"/>
+            <result property="category_code" column="category_code" jdbcType="VARCHAR"/>
+            <result property="platform_code" column="platform_code" jdbcType="VARCHAR"/>
+            <result property="sort" column="sort" jdbcType="OTHER"/>
+            <result property="terminal" column="terminal" jdbcType="OTHER"/>
+            <result property="create_time" column="create_time" jdbcType="TIMESTAMP"/>
+            <result property="update_time" column="update_time" jdbcType="TIMESTAMP"/>
+            <result property="create_user" column="create_user" jdbcType="VARCHAR"/>
+            <result property="update_user" column="update_user" jdbcType="VARCHAR"/>
+            <result property="game_name" column="game_name" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,category_name,category_code,
+        platform_code,sort,terminal,
+        create_time,update_time,create_user,
+        update_user,game_name
+    </sql>
+</mapper>

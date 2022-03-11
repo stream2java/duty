@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.goldnet.duty.mapper.GeQuickMoneyMapper">
+
+    <resultMap id="BaseResultMap" type="com.goldnet.duty.entity.GeQuickMoney">
+            <id property="account_id" column="account_id" jdbcType="OTHER"/>
+            <result property="moneys" column="moneys" jdbcType="VARCHAR"/>
+            <result property="status" column="status" jdbcType="OTHER"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        account_id,moneys,status
+    </sql>
+</mapper>

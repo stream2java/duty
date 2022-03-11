@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.goldnet.duty.mapper.TpsAccountInfoMapper">
+
+    <resultMap id="BaseResultMap" type="com.goldnet.duty.entity.TpsAccountInfo">
+            <id property="id" column="id" jdbcType="OTHER"/>
+            <result property="station_id" column="station_id" jdbcType="OTHER"/>
+            <result property="account_id1" column="account_id1" jdbcType="OTHER"/>
+            <result property="platform" column="platform" jdbcType="VARCHAR"/>
+            <result property="partner" column="partner" jdbcType="VARCHAR"/>
+            <result property="sign" column="sign" jdbcType="VARCHAR"/>
+            <result property="web_site" column="web_site" jdbcType="VARCHAR"/>
+            <result property="create_time" column="create_time" jdbcType="TIMESTAMP"/>
+            <result property="update_time" column="update_time" jdbcType="TIMESTAMP"/>
+            <result property="domain_id" column="domain_id" jdbcType="OTHER"/>
+            <result property="member_open" column="member_open" jdbcType="OTHER"/>
+            <result property="agent_open" column="agent_open" jdbcType="OTHER"/>
+            <result property="order_in_member" column="order_in_member" jdbcType="OTHER"/>
+            <result property="name_in_member" column="name_in_member" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,station_id,account_id1,
+        platform,partner,sign,
+        web_site,create_time,update_time,
+        domain_id,member_open,agent_open,
+        order_in_member,name_in_member
+    </sql>
+</mapper>

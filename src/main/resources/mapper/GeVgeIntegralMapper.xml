@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.goldnet.duty.mapper.GeVgeIntegralMapper">
+
+    <resultMap id="BaseResultMap" type="com.goldnet.duty.entity.GeVgeIntegral">
+            <id property="int_id" column="int_id" jdbcType="OTHER"/>
+            <result property="ratio_money" column="ratio_money" jdbcType="OTHER"/>
+            <result property="ratio_integral" column="ratio_integral" jdbcType="OTHER"/>
+            <result property="account" column="account" jdbcType="OTHER"/>
+            <result property="balance" column="balance" jdbcType="NUMERIC"/>
+            <result property="slot_type" column="slot_type" jdbcType="OTHER"/>
+            <result property="creation_time" column="creation_time" jdbcType="TIMESTAMP"/>
+            <result property="balance_time" column="balance_time" jdbcType="TIMESTAMP"/>
+            <result property="validity" column="validity" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        int_id,ratio_money,ratio_integral,
+        account,balance,slot_type,
+        creation_time,balance_time,validity
+    </sql>
+</mapper>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.goldnet.duty.mapper.GePlateMapper">
+
+    <resultMap id="BaseResultMap" type="com.goldnet.duty.entity.GePlate">
+            <id property="plate_id" column="plate_id" jdbcType="OTHER"/>
+            <result property="plate_name" column="plate_name" jdbcType="VARCHAR"/>
+            <result property="status" column="status" jdbcType="OTHER"/>
+            <result property="remark" column="remark" jdbcType="VARCHAR"/>
+            <result property="create_user" column="create_user" jdbcType="VARCHAR"/>
+            <result property="create_date_time" column="create_date_time" jdbcType="TIMESTAMP"/>
+            <result property="update_date_time" column="update_date_time" jdbcType="TIMESTAMP"/>
+            <result property="update_user" column="update_user" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        plate_id,plate_name,status,
+        remark,create_user,create_date_time,
+        update_date_time,update_user
+    </sql>
+</mapper>

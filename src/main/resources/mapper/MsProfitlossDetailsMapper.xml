@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.goldnet.duty.mapper.MsProfitlossDetailsMapper">
+
+    <resultMap id="BaseResultMap" type="com.goldnet.duty.entity.MsProfitlossDetails">
+            <id property="profitloss_details_id" column="profitloss_details_id" jdbcType="OTHER"/>
+            <result property="archive_details_id" column="archive_details_id" jdbcType="OTHER"/>
+            <result property="game_name" column="game_name" jdbcType="VARCHAR"/>
+            <result property="profit_loss" column="profit_loss" jdbcType="NUMERIC"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        profitloss_details_id,archive_details_id,game_name,
+        profit_loss
+    </sql>
+</mapper>

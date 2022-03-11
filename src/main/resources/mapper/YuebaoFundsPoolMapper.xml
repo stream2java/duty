@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.goldnet.duty.mapper.YuebaoFundsPoolMapper">
+
+    <resultMap id="BaseResultMap" type="com.goldnet.duty.entity.YuebaoFundsPool">
+            <id property="id" column="id" jdbcType="OTHER"/>
+            <result property="account1" column="account1" jdbcType="OTHER"/>
+            <result property="member_id" column="member_id" jdbcType="OTHER"/>
+            <result property="member_account" column="member_account" jdbcType="VARCHAR"/>
+            <result property="amount" column="amount" jdbcType="NUMERIC"/>
+            <result property="level_id" column="level_id" jdbcType="OTHER"/>
+            <result property="level_name" column="level_name" jdbcType="VARCHAR"/>
+            <result property="deposit_time" column="deposit_time" jdbcType="TIMESTAMP"/>
+            <result property="end_time" column="end_time" jdbcType="TIMESTAMP"/>
+            <result property="withdraw_time" column="withdraw_time" jdbcType="TIMESTAMP"/>
+            <result property="interest_rate" column="interest_rate" jdbcType="NUMERIC"/>
+            <result property="addition_interest_rate" column="addition_interest_rate" jdbcType="NUMERIC"/>
+            <result property="interest_cycle" column="interest_cycle" jdbcType="OTHER"/>
+            <result property="interest" column="interest" jdbcType="NUMERIC"/>
+            <result property="withdraw_account" column="withdraw_account" jdbcType="VARCHAR"/>
+            <result property="end_account" column="end_account" jdbcType="VARCHAR"/>
+            <result property="status" column="status" jdbcType="SMALLINT"/>
+            <result property="remark" column="remark" jdbcType="VARCHAR"/>
+            <result property="type" column="type" jdbcType="VARCHAR"/>
+            <result property="deposit_bill_no" column="deposit_bill_no" jdbcType="VARCHAR"/>
+            <result property="withdraw_bill_no" column="withdraw_bill_no" jdbcType="VARCHAR"/>
+            <result property="trade_type" column="trade_type" jdbcType="OTHER"/>
+            <result property="member_remark" column="member_remark" jdbcType="VARCHAR"/>
+            <result property="deposit_device" column="deposit_device" jdbcType="OTHER"/>
+            <result property="draw_device" column="draw_device" jdbcType="OTHER"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,account1,member_id,
+        member_account,amount,level_id,
+        level_name,deposit_time,end_time,
+        withdraw_time,interest_rate,addition_interest_rate,
+        interest_cycle,interest,withdraw_account,
+        end_account,status,remark,
+        type,deposit_bill_no,withdraw_bill_no,
+        trade_type,member_remark,deposit_device,
+        draw_device
+    </sql>
+</mapper>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.goldnet.duty.mapper.TpsBackPreSetMapper">
+
+    <resultMap id="BaseResultMap" type="com.goldnet.duty.entity.TpsBackPreSet">
+            <id property="id" column="id" jdbcType="OTHER"/>
+            <result property="mny_backpre_id" column="mny_backpre_id" jdbcType="OTHER"/>
+            <result property="platform_id" column="platform_id" jdbcType="OTHER"/>
+            <result property="game_type" column="game_type" jdbcType="OTHER"/>
+            <result property="pre_per" column="pre_per" jdbcType="NUMERIC"/>
+            <result property="plat_game_code" column="plat_game_code" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,mny_backpre_id,platform_id,
+        game_type,pre_per,plat_game_code
+    </sql>
+</mapper>

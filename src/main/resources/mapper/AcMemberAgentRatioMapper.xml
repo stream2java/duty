@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.goldnet.duty.mapper.AcMemberAgentRatioMapper">
+
+    <resultMap id="BaseResultMap" type="com.goldnet.duty.entity.AcMemberAgentRatio">
+            <id property="agent_ration_id" column="agent_ration_id" jdbcType="OTHER"/>
+            <result property="lotery_id" column="lotery_id" jdbcType="OTHER"/>
+            <result property="member_id" column="member_id" jdbcType="OTHER"/>
+            <result property="ratio0" column="ratio0" jdbcType="NUMERIC"/>
+            <result property="ratio1" column="ratio1" jdbcType="NUMERIC"/>
+            <result property="ratio2" column="ratio2" jdbcType="NUMERIC"/>
+            <result property="ratio3" column="ratio3" jdbcType="NUMERIC"/>
+            <result property="ratio4" column="ratio4" jdbcType="NUMERIC"/>
+            <result property="ratio5" column="ratio5" jdbcType="NUMERIC"/>
+            <result property="ratio6" column="ratio6" jdbcType="NUMERIC"/>
+            <result property="agent_id0" column="agent_id0" jdbcType="OTHER"/>
+            <result property="agent_id1" column="agent_id1" jdbcType="OTHER"/>
+            <result property="agent_id2" column="agent_id2" jdbcType="OTHER"/>
+            <result property="agent_id3" column="agent_id3" jdbcType="OTHER"/>
+            <result property="agent_id4" column="agent_id4" jdbcType="OTHER"/>
+            <result property="agent_id5" column="agent_id5" jdbcType="OTHER"/>
+            <result property="agent_id6" column="agent_id6" jdbcType="OTHER"/>
+            <result property="category_code" column="category_code" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        agent_ration_id,lotery_id,member_id,
+        ratio0,ratio1,ratio2,
+        ratio3,ratio4,ratio5,
+        ratio6,agent_id0,agent_id1,
+        agent_id2,agent_id3,agent_id4,
+        agent_id5,agent_id6,category_code
+    </sql>
+</mapper>

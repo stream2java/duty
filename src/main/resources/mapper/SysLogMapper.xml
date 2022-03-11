@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.goldnet.duty.mapper.SysLogMapper">
+
+    <resultMap id="BaseResultMap" type="com.goldnet.duty.entity.SysLog">
+            <id property="id" column="id" jdbcType="OTHER"/>
+            <result property="task_name" column="task_name" jdbcType="VARCHAR"/>
+            <result property="exe_time" column="exe_time" jdbcType="VARCHAR"/>
+            <result property="log_type" column="log_type" jdbcType="VARCHAR"/>
+            <result property="remark" column="remark" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,task_name,exe_time,
+        log_type,remark
+    </sql>
+</mapper>

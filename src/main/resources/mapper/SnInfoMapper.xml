@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.goldnet.duty.mapper.SnInfoMapper">
+
+    <resultMap id="BaseResultMap" type="com.goldnet.duty.entity.SnInfo">
+            <id property="sn" column="sn" jdbcType="OTHER"/>
+            <result property="sn_info" column="sn_info" jdbcType="VARCHAR"/>
+            <result property="type" column="type" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        sn,sn_info,type
+    </sql>
+</mapper>

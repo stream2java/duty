@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.goldnet.duty.mapper.GeAwardMmcMapper">
+
+    <resultMap id="BaseResultMap" type="com.goldnet.duty.entity.GeAwardMmc">
+            <id property="award_id" column="award_id" jdbcType="OTHER"/>
+            <result property="period" column="period" jdbcType="VARCHAR"/>
+            <result property="award_date" column="award_date" jdbcType="TIMESTAMP"/>
+            <result property="number1" column="number1" jdbcType="VARCHAR"/>
+            <result property="number2" column="number2" jdbcType="VARCHAR"/>
+            <result property="number3" column="number3" jdbcType="VARCHAR"/>
+            <result property="number4" column="number4" jdbcType="VARCHAR"/>
+            <result property="number5" column="number5" jdbcType="VARCHAR"/>
+            <result property="number6" column="number6" jdbcType="VARCHAR"/>
+            <result property="number7" column="number7" jdbcType="VARCHAR"/>
+            <result property="number8" column="number8" jdbcType="VARCHAR"/>
+            <result property="number9" column="number9" jdbcType="VARCHAR"/>
+            <result property="number10" column="number10" jdbcType="VARCHAR"/>
+            <result property="create_user" column="create_user" jdbcType="VARCHAR"/>
+            <result property="create_date_time" column="create_date_time" jdbcType="TIMESTAMP"/>
+            <result property="update_user" column="update_user" jdbcType="VARCHAR"/>
+            <result property="update_date_time" column="update_date_time" jdbcType="TIMESTAMP"/>
+            <result property="lottery_id" column="lottery_id" jdbcType="OTHER"/>
+            <result property="status" column="status" jdbcType="VARCHAR"/>
+            <result property="agent_visual" column="agent_visual" jdbcType="VARCHAR"/>
+            <result property="zodiac" column="zodiac" jdbcType="VARCHAR"/>
+            <result property="number11" column="number11" jdbcType="VARCHAR"/>
+            <result property="number12" column="number12" jdbcType="VARCHAR"/>
+            <result property="number13" column="number13" jdbcType="VARCHAR"/>
+            <result property="number14" column="number14" jdbcType="VARCHAR"/>
+            <result property="number15" column="number15" jdbcType="VARCHAR"/>
+            <result property="number16" column="number16" jdbcType="VARCHAR"/>
+            <result property="number17" column="number17" jdbcType="VARCHAR"/>
+            <result property="number18" column="number18" jdbcType="VARCHAR"/>
+            <result property="number19" column="number19" jdbcType="VARCHAR"/>
+            <result property="number20" column="number20" jdbcType="VARCHAR"/>
+            <result property="zodiac_year" column="zodiac_year" jdbcType="VARCHAR"/>
+            <result property="member_id" column="member_id" jdbcType="OTHER"/>
+            <result property="member_account" column="member_account" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        award_id,period,award_date,
+        number1,number2,number3,
+        number4,number5,number6,
+        number7,number8,number9,
+        number10,create_user,create_date_time,
+        update_user,update_date_time,lottery_id,
+        status,agent_visual,zodiac,
+        number11,number12,number13,
+        number14,number15,number16,
+        number17,number18,number19,
+        number20,zodiac_year,member_id,
+        member_account
+    </sql>
+</mapper>

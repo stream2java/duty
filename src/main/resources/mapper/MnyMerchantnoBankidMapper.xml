@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.goldnet.duty.mapper.MnyMerchantnoBankidMapper">
+
+    <resultMap id="BaseResultMap" type="com.goldnet.duty.entity.MnyMerchantnoBankid">
+            <id property="id" column="id" jdbcType="OTHER"/>
+            <result property="pay_system_id" column="pay_system_id" jdbcType="OTHER"/>
+            <result property="bank_id" column="bank_id" jdbcType="OTHER"/>
+            <result property="bank_key" column="bank_key" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,pay_system_id,bank_id,
+        bank_key
+    </sql>
+</mapper>

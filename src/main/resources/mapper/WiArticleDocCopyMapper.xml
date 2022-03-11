@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.goldnet.duty.mapper.WiArticleDocCopyMapper">
+
+    <resultMap id="BaseResultMap" type="com.goldnet.duty.entity.WiArticleDocCopy">
+            <result property="id" column="id" jdbcType="OTHER"/>
+            <result property="ddgd_id" column="ddgd_id" jdbcType="OTHER"/>
+            <result property="type" column="type" jdbcType="VARCHAR"/>
+            <result property="create_user" column="create_user" jdbcType="VARCHAR"/>
+            <result property="create_time" column="create_time" jdbcType="TIMESTAMP"/>
+            <result property="update_user" column="update_user" jdbcType="VARCHAR"/>
+            <result property="update_time" column="update_time" jdbcType="TIMESTAMP"/>
+            <result property="title_big" column="title_big" jdbcType="VARCHAR"/>
+            <result property="title_sim" column="title_sim" jdbcType="VARCHAR"/>
+            <result property="title_eng" column="title_eng" jdbcType="VARCHAR"/>
+            <result property="doc_id" column="doc_id" jdbcType="OTHER"/>
+            <result property="status" column="status" jdbcType="OTHER"/>
+            <result property="doc_name" column="doc_name" jdbcType="VARCHAR"/>
+            <result property="context_big" column="context_big" jdbcType="VARCHAR"/>
+            <result property="context_sim" column="context_sim" jdbcType="VARCHAR"/>
+            <result property="context_eng" column="context_eng" jdbcType="VARCHAR"/>
+            <result property="junction_big" column="junction_big" jdbcType="VARCHAR"/>
+            <result property="junction_sim" column="junction_sim" jdbcType="VARCHAR"/>
+            <result property="junction_eng" column="junction_eng" jdbcType="VARCHAR"/>
+            <result property="is_local" column="is_local" jdbcType="OTHER"/>
+            <result property="is_window" column="is_window" jdbcType="OTHER"/>
+            <result property="window_height" column="window_height" jdbcType="OTHER"/>
+            <result property="window_width" column="window_width" jdbcType="OTHER"/>
+            <result property="contact" column="contact" jdbcType="OTHER"/>
+            <result property="agent_login" column="agent_login" jdbcType="OTHER"/>
+            <result property="page_mark" column="page_mark" jdbcType="OTHER"/>
+            <result property="agent_registered" column="agent_registered" jdbcType="OTHER"/>
+            <result property="action" column="action" jdbcType="VARCHAR"/>
+            <result property="ctime" column="ctime" jdbcType="TIMESTAMP"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,ddgd_id,type,
+        create_user,create_time,update_user,
+        update_time,title_big,title_sim,
+        title_eng,doc_id,status,
+        doc_name,context_big,context_sim,
+        context_eng,junction_big,junction_sim,
+        junction_eng,is_local,is_window,
+        window_height,window_width,contact,
+        agent_login,page_mark,agent_registered,
+        action,ctime
+    </sql>
+</mapper>

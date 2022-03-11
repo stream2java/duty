@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.goldnet.duty.mapper.GeVgeSlotMapper">
+
+    <resultMap id="BaseResultMap" type="com.goldnet.duty.entity.GeVgeSlot">
+            <id property="slot_id" column="slot_id" jdbcType="OTHER"/>
+            <result property="machine_code" column="machine_code" jdbcType="OTHER"/>
+            <result property="status" column="status" jdbcType="VARCHAR"/>
+            <result property="account" column="account" jdbcType="OTHER"/>
+            <result property="sit_time" column="sit_time" jdbcType="TIMESTAMP"/>
+            <result property="act_time" column="act_time" jdbcType="TIMESTAMP"/>
+            <result property="slot_type" column="slot_type" jdbcType="OTHER"/>
+            <result property="pot" column="pot" jdbcType="NUMERIC"/>
+            <result property="profit" column="profit" jdbcType="OTHER"/>
+            <result property="agent" column="agent" jdbcType="OTHER"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        slot_id,machine_code,status,
+        account,sit_time,act_time,
+        slot_type,pot,profit,
+        agent
+    </sql>
+</mapper>

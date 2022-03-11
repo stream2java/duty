@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.goldnet.duty.mapper.GeActivityRedPacketSplitMapper">
+
+    <resultMap id="BaseResultMap" type="com.goldnet.duty.entity.GeActivityRedPacketSplit">
+            <id property="id" column="id" jdbcType="BIGINT"/>
+            <result property="activity_red_packet_id" column="activity_red_packet_id" jdbcType="BIGINT"/>
+            <result property="amount" column="amount" jdbcType="NUMERIC"/>
+            <result property="account_id" column="account_id" jdbcType="OTHER"/>
+            <result property="create_time" column="create_time" jdbcType="TIMESTAMP"/>
+            <result property="create_user" column="create_user" jdbcType="VARCHAR"/>
+            <result property="update_time" column="update_time" jdbcType="TIMESTAMP"/>
+            <result property="update_user" column="update_user" jdbcType="VARCHAR"/>
+            <result property="activity_id" column="activity_id" jdbcType="BIGINT"/>
+            <result property="activity_date" column="activity_date" jdbcType="DATE"/>
+            <result property="start_time" column="start_time" jdbcType="TIME"/>
+            <result property="end_time" column="end_time" jdbcType="TIME"/>
+            <result property="level_ids" column="level_ids" jdbcType="OTHER"/>
+            <result property="account1" column="account1" jdbcType="OTHER"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,activity_red_packet_id,amount,
+        account_id,create_time,create_user,
+        update_time,update_user,activity_id,
+        activity_date,start_time,end_time,
+        level_ids,account1
+    </sql>
+</mapper>

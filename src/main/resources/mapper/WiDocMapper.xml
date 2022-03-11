@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.goldnet.duty.mapper.WiDocMapper">
+
+    <resultMap id="BaseResultMap" type="com.goldnet.duty.entity.WiDoc">
+            <id property="doc_id" column="doc_id" jdbcType="OTHER"/>
+            <result property="ddgd_id" column="ddgd_id" jdbcType="OTHER"/>
+            <result property="title" column="title" jdbcType="VARCHAR"/>
+            <result property="create_user" column="create_user" jdbcType="VARCHAR"/>
+            <result property="create_time" column="create_time" jdbcType="TIMESTAMP"/>
+            <result property="update_user" column="update_user" jdbcType="VARCHAR"/>
+            <result property="update_time" column="update_time" jdbcType="TIMESTAMP"/>
+            <result property="kind_id" column="kind_id" jdbcType="OTHER"/>
+            <result property="give_auditing_time" column="give_auditing_time" jdbcType="TIMESTAMP"/>
+            <result property="effect_time" column="effect_time" jdbcType="TIMESTAMP"/>
+            <result property="pass_cancel_time" column="pass_cancel_time" jdbcType="TIMESTAMP"/>
+            <result property="status" column="status" jdbcType="OTHER"/>
+            <result property="relation_doc_id" column="relation_doc_id" jdbcType="OTHER"/>
+            <result property="cancel_reason" column="cancel_reason" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        doc_id,ddgd_id,title,
+        create_user,create_time,update_user,
+        update_time,kind_id,give_auditing_time,
+        effect_time,pass_cancel_time,status,
+        relation_doc_id,cancel_reason
+    </sql>
+</mapper>

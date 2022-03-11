@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.goldnet.duty.mapper.GePromotMapper">
+
+    <resultMap id="BaseResultMap" type="com.goldnet.duty.entity.GePromot">
+            <id property="promot_id" column="promot_id" jdbcType="OTHER"/>
+            <result property="account_id" column="account_id" jdbcType="OTHER"/>
+            <result property="stationdomain_id" column="stationdomain_id" jdbcType="OTHER"/>
+            <result property="account" column="account" jdbcType="VARCHAR"/>
+            <result property="agent_no" column="agent_no" jdbcType="VARCHAR"/>
+            <result property="stationdomain_url" column="stationdomain_url" jdbcType="VARCHAR"/>
+            <result property="create_time" column="create_time" jdbcType="TIMESTAMP"/>
+            <result property="update_user" column="update_user" jdbcType="VARCHAR"/>
+            <result property="update_time" column="update_time" jdbcType="TIMESTAMP"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        promot_id,account_id,stationdomain_id,
+        account,agent_no,stationdomain_url,
+        create_time,update_user,update_time
+    </sql>
+</mapper>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.goldnet.duty.mapper.SysMemberAnnouncementMapper">
+
+    <resultMap id="BaseResultMap" type="com.goldnet.duty.entity.SysMemberAnnouncement">
+            <result property="id" column="id" jdbcType="OTHER"/>
+            <result property="create_date_time" column="create_date_time" jdbcType="TIMESTAMP"/>
+            <result property="big5_content" column="big5_content" jdbcType="VARCHAR"/>
+            <result property="gbk_content" column="gbk_content" jdbcType="VARCHAR"/>
+            <result property="en_content" column="en_content" jdbcType="VARCHAR"/>
+            <result property="history" column="history" jdbcType="OTHER"/>
+            <result property="status" column="status" jdbcType="OTHER"/>
+            <result property="stockholder_id" column="stockholder_id" jdbcType="OTHER"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,create_date_time,big5_content,
+        gbk_content,en_content,history,
+        status,stockholder_id
+    </sql>
+</mapper>

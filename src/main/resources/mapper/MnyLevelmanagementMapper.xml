@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.goldnet.duty.mapper.MnyLevelmanagementMapper">
+
+    <resultMap id="BaseResultMap" type="com.goldnet.duty.entity.MnyLevelmanagement">
+            <id property="levelmanagement_id" column="levelmanagement_id" jdbcType="OTHER"/>
+            <result property="level_name" column="level_name" jdbcType="VARCHAR"/>
+            <result property="level_description" column="level_description" jdbcType="VARCHAR"/>
+            <result property="level_join_top" column="level_join_top" jdbcType="TIMESTAMP"/>
+            <result property="level_join_down" column="level_join_down" jdbcType="TIMESTAMP"/>
+            <result property="level_depositnum" column="level_depositnum" jdbcType="OTHER"/>
+            <result property="level_deposittotal" column="level_deposittotal" jdbcType="NUMERIC"/>
+            <result property="level_maxdeposit" column="level_maxdeposit" jdbcType="NUMERIC"/>
+            <result property="level_collectnum" column="level_collectnum" jdbcType="OTHER"/>
+            <result property="level_collecttotal" column="level_collecttotal" jdbcType="NUMERIC"/>
+            <result property="level_remark" column="level_remark" jdbcType="VARCHAR"/>
+            <result property="level_founder" column="level_founder" jdbcType="VARCHAR"/>
+            <result property="level_foundtime" column="level_foundtime" jdbcType="TIMESTAMP"/>
+            <result property="level_moder" column="level_moder" jdbcType="VARCHAR"/>
+            <result property="level_modtime" column="level_modtime" jdbcType="TIMESTAMP"/>
+            <result property="level_replacetime" column="level_replacetime" jdbcType="TIMESTAMP"/>
+            <result property="level_ddstockholder" column="level_ddstockholder" jdbcType="OTHER"/>
+            <result property="count_status" column="count_status" jdbcType="OTHER"/>
+            <result property="level_sort" column="level_sort" jdbcType="OTHER"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        levelmanagement_id,level_name,level_description,
+        level_join_top,level_join_down,level_depositnum,
+        level_deposittotal,level_maxdeposit,level_collectnum,
+        level_collecttotal,level_remark,level_founder,
+        level_foundtime,level_moder,level_modtime,
+        level_replacetime,level_ddstockholder,count_status,
+        level_sort
+    </sql>
+</mapper>

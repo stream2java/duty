@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.goldnet.duty.mapper.MnyCurrencyMapper">
+
+    <resultMap id="BaseResultMap" type="com.goldnet.duty.entity.MnyCurrency">
+            <id property="currency_id" column="currency_id" jdbcType="OTHER"/>
+            <result property="currency_name" column="currency_name" jdbcType="VARCHAR"/>
+            <result property="currency_code" column="currency_code" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        currency_id,currency_name,currency_code
+    </sql>
+</mapper>

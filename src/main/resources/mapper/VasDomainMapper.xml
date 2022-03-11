@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.goldnet.duty.mapper.VasDomainMapper">
+
+    <resultMap id="BaseResultMap" type="com.goldnet.duty.entity.VasDomain">
+            <id property="id" column="id" jdbcType="OTHER"/>
+            <result property="domain_url" column="domain_url" jdbcType="VARCHAR"/>
+            <result property="status" column="status" jdbcType="OTHER"/>
+            <result property="master" column="master" jdbcType="OTHER"/>
+            <result property="action_scope" column="action_scope" jdbcType="OTHER"/>
+            <result property="folder" column="folder" jdbcType="VARCHAR"/>
+            <result property="sync_status" column="sync_status" jdbcType="OTHER"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,domain_url,status,
+        master,action_scope,folder,
+        sync_status
+    </sql>
+</mapper>

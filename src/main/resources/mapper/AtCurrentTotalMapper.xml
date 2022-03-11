@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.goldnet.duty.mapper.AtCurrentTotalMapper">
+
+    <resultMap id="BaseResultMap" type="com.goldnet.duty.entity.AtCurrentTotal">
+            <id property="id" column="id" jdbcType="OTHER"/>
+            <result property="account1" column="account1" jdbcType="OTHER"/>
+            <result property="account5" column="account5" jdbcType="OTHER"/>
+            <result property="account6" column="account6" jdbcType="OTHER"/>
+            <result property="agent_account" column="agent_account" jdbcType="VARCHAR"/>
+            <result property="member_account" column="member_account" jdbcType="VARCHAR"/>
+            <result property="company_income" column="company_income" jdbcType="NUMERIC"/>
+            <result property="member_draw" column="member_draw" jdbcType="NUMERIC"/>
+            <result property="online_come" column="online_come" jdbcType="NUMERIC"/>
+            <result property="coupon" column="coupon" jdbcType="NUMERIC"/>
+            <result property="manual_income" column="manual_income" jdbcType="NUMERIC"/>
+            <result property="draw" column="draw" jdbcType="NUMERIC"/>
+            <result property="draw_fee" column="draw_fee" jdbcType="NUMERIC"/>
+            <result property="defect" column="defect" jdbcType="NUMERIC"/>
+            <result property="show_date" column="show_date" jdbcType="DATE"/>
+            <result property="currency_id" column="currency_id" jdbcType="OTHER"/>
+            <result property="company_income_person_num" column="company_income_person_num" jdbcType="OTHER"/>
+            <result property="member_draw_person_num" column="member_draw_person_num" jdbcType="OTHER"/>
+            <result property="online_income_person_num" column="online_income_person_num" jdbcType="OTHER"/>
+            <result property="coupon_person_num" column="coupon_person_num" jdbcType="OTHER"/>
+            <result property="manual_income_person_num" column="manual_income_person_num" jdbcType="OTHER"/>
+            <result property="draw_person_num" column="draw_person_num" jdbcType="OTHER"/>
+            <result property="draw_fee_person_num" column="draw_fee_person_num" jdbcType="OTHER"/>
+            <result property="defect_person_num" column="defect_person_num" jdbcType="OTHER"/>
+            <result property="type" column="type" jdbcType="VARCHAR"/>
+            <result property="promotion_rebate" column="promotion_rebate" jdbcType="NUMERIC"/>
+            <result property="promotion_rebate_person_num" column="promotion_rebate_person_num" jdbcType="OTHER"/>
+            <result property="yuebao_draw" column="yuebao_draw" jdbcType="NUMERIC"/>
+            <result property="yuebao_draw_person_num" column="yuebao_draw_person_num" jdbcType="OTHER"/>
+            <result property="yuebao_income" column="yuebao_income" jdbcType="NUMERIC"/>
+            <result property="yuebao_income_person_num" column="yuebao_income_person_num" jdbcType="OTHER"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,account1,account5,
+        account6,agent_account,member_account,
+        company_income,member_draw,online_come,
+        coupon,manual_income,draw,
+        draw_fee,defect,show_date,
+        currency_id,company_income_person_num,member_draw_person_num,
+        online_income_person_num,coupon_person_num,manual_income_person_num,
+        draw_person_num,draw_fee_person_num,defect_person_num,
+        type,promotion_rebate,promotion_rebate_person_num,
+        yuebao_draw,yuebao_draw_person_num,yuebao_income,
+        yuebao_income_person_num
+    </sql>
+</mapper>

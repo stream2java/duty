@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.goldnet.duty.mapper.MnyNobalanceBettingMapper">
+
+    <resultMap id="BaseResultMap" type="com.goldnet.duty.entity.MnyNobalanceBetting">
+            <id property="betting_id" column="betting_id" jdbcType="OTHER"/>
+            <result property="member_id" column="member_id" jdbcType="OTHER"/>
+            <result property="order_no" column="order_no" jdbcType="VARCHAR"/>
+            <result property="create_time" column="create_time" jdbcType="TIMESTAMP"/>
+            <result property="create_user" column="create_user" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        betting_id,member_id,order_no,
+        create_time,create_user
+    </sql>
+</mapper>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.goldnet.duty.mapper.MnyOnlineDepositMapper">
+
+    <resultMap id="BaseResultMap" type="com.goldnet.duty.entity.MnyOnlineDeposit">
+            <id property="online_deposit_id" column="online_deposit_id" jdbcType="OTHER"/>
+            <result property="code" column="code" jdbcType="VARCHAR"/>
+            <result property="title_tra" column="title_tra" jdbcType="VARCHAR"/>
+            <result property="title_sim" column="title_sim" jdbcType="VARCHAR"/>
+            <result property="title_eng" column="title_eng" jdbcType="VARCHAR"/>
+            <result property="content_tra" column="content_tra" jdbcType="VARCHAR"/>
+            <result property="content_sim" column="content_sim" jdbcType="VARCHAR"/>
+            <result property="content_eng" column="content_eng" jdbcType="VARCHAR"/>
+            <result property="status" column="status" jdbcType="VARCHAR"/>
+            <result property="update_user" column="update_user" jdbcType="VARCHAR"/>
+            <result property="update_time" column="update_time" jdbcType="TIMESTAMP"/>
+            <result property="create_user" column="create_user" jdbcType="VARCHAR"/>
+            <result property="create_time" column="create_time" jdbcType="TIMESTAMP"/>
+            <result property="name_tra" column="name_tra" jdbcType="VARCHAR"/>
+            <result property="name_sim" column="name_sim" jdbcType="VARCHAR"/>
+            <result property="name_eng" column="name_eng" jdbcType="VARCHAR"/>
+            <result property="stockholder_id" column="stockholder_id" jdbcType="OTHER"/>
+            <result property="document_type" column="document_type" jdbcType="OTHER"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        online_deposit_id,code,title_tra,
+        title_sim,title_eng,content_tra,
+        content_sim,content_eng,status,
+        update_user,update_time,create_user,
+        create_time,name_tra,name_sim,
+        name_eng,stockholder_id,document_type
+    </sql>
+</mapper>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.goldnet.duty.mapper.SysTaskScheduleMapper">
+
+    <resultMap id="BaseResultMap" type="com.goldnet.duty.entity.SysTaskSchedule">
+            <id property="schedule_id" column="schedule_id" jdbcType="OTHER"/>
+            <result property="schedule_name" column="schedule_name" jdbcType="VARCHAR"/>
+            <result property="task_id" column="task_id" jdbcType="OTHER"/>
+            <result property="schedule_prev_time" column="schedule_prev_time" jdbcType="TIMESTAMP"/>
+            <result property="schedule_next_time" column="schedule_next_time" jdbcType="TIMESTAMP"/>
+            <result property="schedule_desc" column="schedule_desc" jdbcType="VARCHAR"/>
+            <result property="schedule_cron" column="schedule_cron" jdbcType="VARCHAR"/>
+            <result property="schedule_cron_type" column="schedule_cron_type" jdbcType="VARCHAR"/>
+            <result property="schedule_cron_interval" column="schedule_cron_interval" jdbcType="OTHER"/>
+            <result property="schedule_status" column="schedule_status" jdbcType="VARCHAR"/>
+            <result property="schedule_start_time" column="schedule_start_time" jdbcType="TIMESTAMP"/>
+            <result property="update_time" column="update_time" jdbcType="TIMESTAMP"/>
+            <result property="update_user" column="update_user" jdbcType="OTHER"/>
+            <result property="create_time" column="create_time" jdbcType="TIMESTAMP"/>
+            <result property="create_user" column="create_user" jdbcType="OTHER"/>
+            <result property="delete_flag" column="delete_flag" jdbcType="VARCHAR"/>
+            <result property="json4_update" column="json4_update" jdbcType="VARCHAR"/>
+            <result property="business_id" column="business_id" jdbcType="OTHER"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        schedule_id,schedule_name,task_id,
+        schedule_prev_time,schedule_next_time,schedule_desc,
+        schedule_cron,schedule_cron_type,schedule_cron_interval,
+        schedule_status,schedule_start_time,update_time,
+        update_user,create_time,create_user,
+        delete_flag,json4_update,business_id
+    </sql>
+</mapper>

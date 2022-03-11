@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.goldnet.duty.mapper.MnyPeriodsMapper">
+
+    <resultMap id="BaseResultMap" type="com.goldnet.duty.entity.MnyPeriods">
+            <id property="periods_id" column="periods_id" jdbcType="OTHER"/>
+            <result property="currency_id" column="currency_id" jdbcType="OTHER"/>
+            <result property="ddgd_id" column="ddgd_id" jdbcType="OTHER"/>
+            <result property="periods_name" column="periods_name" jdbcType="VARCHAR"/>
+            <result property="periods_begintime" column="periods_begintime" jdbcType="TIMESTAMP"/>
+            <result property="periods_endtime" column="periods_endtime" jdbcType="TIMESTAMP"/>
+            <result property="founder" column="founder" jdbcType="VARCHAR"/>
+            <result property="foundtime" column="foundtime" jdbcType="TIMESTAMP"/>
+            <result property="moder" column="moder" jdbcType="VARCHAR"/>
+            <result property="modtime" column="modtime" jdbcType="TIMESTAMP"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        periods_id,currency_id,ddgd_id,
+        periods_name,periods_begintime,periods_endtime,
+        founder,foundtime,moder,
+        modtime
+    </sql>
+</mapper>

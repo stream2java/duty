@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.goldnet.duty.mapper.MnyDepositDrawProjectMapper">
+
+    <resultMap id="BaseResultMap" type="com.goldnet.duty.entity.MnyDepositDrawProject">
+            <id property="project_id" column="project_id" jdbcType="OTHER"/>
+            <result property="project_name" column="project_name" jdbcType="VARCHAR"/>
+            <result property="create_user" column="create_user" jdbcType="VARCHAR"/>
+            <result property="create_time" column="create_time" jdbcType="TIMESTAMP"/>
+            <result property="update_user" column="update_user" jdbcType="VARCHAR"/>
+            <result property="update_time" column="update_time" jdbcType="TIMESTAMP"/>
+            <result property="stockholder_id" column="stockholder_id" jdbcType="OTHER"/>
+            <result property="type" column="type" jdbcType="OTHER"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        project_id,project_name,create_user,
+        create_time,update_user,update_time,
+        stockholder_id,type
+    </sql>
+</mapper>

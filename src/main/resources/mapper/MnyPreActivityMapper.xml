@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.goldnet.duty.mapper.MnyPreActivityMapper">
+
+    <resultMap id="BaseResultMap" type="com.goldnet.duty.entity.MnyPreActivity">
+            <id property="pre_activity_id" column="pre_activity_id" jdbcType="OTHER"/>
+            <result property="doc_id" column="doc_id" jdbcType="OTHER"/>
+            <result property="activity_name_tra" column="activity_name_tra" jdbcType="VARCHAR"/>
+            <result property="activity_name_sim" column="activity_name_sim" jdbcType="VARCHAR"/>
+            <result property="activity_name_eng" column="activity_name_eng" jdbcType="VARCHAR"/>
+            <result property="old_sort" column="old_sort" jdbcType="OTHER"/>
+            <result property="now_sort" column="now_sort" jdbcType="OTHER"/>
+            <result property="mouse_status_tra" column="mouse_status_tra" jdbcType="OTHER"/>
+            <result property="picture_status_tra" column="picture_status_tra" jdbcType="OTHER"/>
+            <result property="title_pic_tra" column="title_pic_tra" jdbcType="VARCHAR"/>
+            <result property="mouse_in_pic_tra" column="mouse_in_pic_tra" jdbcType="VARCHAR"/>
+            <result property="mouse_out_pic_tra" column="mouse_out_pic_tra" jdbcType="VARCHAR"/>
+            <result property="content_tra" column="content_tra" jdbcType="VARCHAR"/>
+            <result property="content_sim" column="content_sim" jdbcType="VARCHAR"/>
+            <result property="content_eng" column="content_eng" jdbcType="VARCHAR"/>
+            <result property="content_pic_tra" column="content_pic_tra" jdbcType="VARCHAR"/>
+            <result property="create_user" column="create_user" jdbcType="VARCHAR"/>
+            <result property="create_time" column="create_time" jdbcType="TIMESTAMP"/>
+            <result property="update_user" column="update_user" jdbcType="VARCHAR"/>
+            <result property="update_time" column="update_time" jdbcType="TIMESTAMP"/>
+            <result property="stockholder_id" column="stockholder_id" jdbcType="OTHER"/>
+            <result property="mouse_status_sim" column="mouse_status_sim" jdbcType="OTHER"/>
+            <result property="mouse_status_eng" column="mouse_status_eng" jdbcType="OTHER"/>
+            <result property="picture_status_sim" column="picture_status_sim" jdbcType="OTHER"/>
+            <result property="picture_status_eng" column="picture_status_eng" jdbcType="OTHER"/>
+            <result property="title_pic_sim" column="title_pic_sim" jdbcType="VARCHAR"/>
+            <result property="title_pic_eng" column="title_pic_eng" jdbcType="VARCHAR"/>
+            <result property="mouse_in_pic_sim" column="mouse_in_pic_sim" jdbcType="VARCHAR"/>
+            <result property="mouse_in_pic_eng" column="mouse_in_pic_eng" jdbcType="VARCHAR"/>
+            <result property="mouse_out_pic_sim" column="mouse_out_pic_sim" jdbcType="VARCHAR"/>
+            <result property="mouse_out_pic_eng" column="mouse_out_pic_eng" jdbcType="VARCHAR"/>
+            <result property="content_pic_sim" column="content_pic_sim" jdbcType="VARCHAR"/>
+            <result property="content_pic_eng" column="content_pic_eng" jdbcType="VARCHAR"/>
+            <result property="startDateTime" column="startDateTime" jdbcType="TIMESTAMP"/>
+            <result property="endDateTime" column="endDateTime" jdbcType="TIMESTAMP"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        pre_activity_id,doc_id,activity_name_tra,
+        activity_name_sim,activity_name_eng,old_sort,
+        now_sort,mouse_status_tra,picture_status_tra,
+        title_pic_tra,mouse_in_pic_tra,mouse_out_pic_tra,
+        content_tra,content_sim,content_eng,
+        content_pic_tra,create_user,create_time,
+        update_user,update_time,stockholder_id,
+        mouse_status_sim,mouse_status_eng,picture_status_sim,
+        picture_status_eng,title_pic_sim,title_pic_eng,
+        mouse_in_pic_sim,mouse_in_pic_eng,mouse_out_pic_sim,
+        mouse_out_pic_eng,content_pic_sim,content_pic_eng,
+        startDateTime,endDateTime
+    </sql>
+</mapper>

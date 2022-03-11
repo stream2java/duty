@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.goldnet.duty.mapper.WiEditPreActivityMapper">
+
+    <resultMap id="BaseResultMap" type="com.goldnet.duty.entity.WiEditPreActivity">
+            <id property="activity_id" column="activity_id" jdbcType="OTHER"/>
+            <result property="ddgd_id" column="ddgd_id" jdbcType="OTHER"/>
+            <result property="create_user" column="create_user" jdbcType="VARCHAR"/>
+            <result property="create_time" column="create_time" jdbcType="TIMESTAMP"/>
+            <result property="update_user" column="update_user" jdbcType="VARCHAR"/>
+            <result property="update_time" column="update_time" jdbcType="TIMESTAMP"/>
+            <result property="old_sort" column="old_sort" jdbcType="OTHER"/>
+            <result property="now_sort" column="now_sort" jdbcType="OTHER"/>
+            <result property="name_tra" column="name_tra" jdbcType="VARCHAR"/>
+            <result property="name_sim" column="name_sim" jdbcType="VARCHAR"/>
+            <result property="name_eng" column="name_eng" jdbcType="VARCHAR"/>
+            <result property="mouse_status_tra" column="mouse_status_tra" jdbcType="OTHER"/>
+            <result property="mouse_status_sim" column="mouse_status_sim" jdbcType="OTHER"/>
+            <result property="mouse_status_eng" column="mouse_status_eng" jdbcType="OTHER"/>
+            <result property="mouse_off_pic_tra" column="mouse_off_pic_tra" jdbcType="VARCHAR"/>
+            <result property="mouse_off_pic_sim" column="mouse_off_pic_sim" jdbcType="VARCHAR"/>
+            <result property="mouse_off_pic_eng" column="mouse_off_pic_eng" jdbcType="VARCHAR"/>
+            <result property="mouse_in_pic_tra" column="mouse_in_pic_tra" jdbcType="VARCHAR"/>
+            <result property="mouse_in_pic_sim" column="mouse_in_pic_sim" jdbcType="VARCHAR"/>
+            <result property="mouse_in_pic_eng" column="mouse_in_pic_eng" jdbcType="VARCHAR"/>
+            <result property="mouse_out_pic_tra" column="mouse_out_pic_tra" jdbcType="VARCHAR"/>
+            <result property="mouse_out_pic_sim" column="mouse_out_pic_sim" jdbcType="VARCHAR"/>
+            <result property="mouse_out_pic_eng" column="mouse_out_pic_eng" jdbcType="VARCHAR"/>
+            <result property="pic_status_tra" column="pic_status_tra" jdbcType="OTHER"/>
+            <result property="pic_status_sim" column="pic_status_sim" jdbcType="OTHER"/>
+            <result property="pic_status_eng" column="pic_status_eng" jdbcType="OTHER"/>
+            <result property="content_pic_tra" column="content_pic_tra" jdbcType="VARCHAR"/>
+            <result property="content_pic_sim" column="content_pic_sim" jdbcType="VARCHAR"/>
+            <result property="content_pic_eng" column="content_pic_eng" jdbcType="VARCHAR"/>
+            <result property="content_tra" column="content_tra" jdbcType="VARCHAR"/>
+            <result property="content_sim" column="content_sim" jdbcType="VARCHAR"/>
+            <result property="content_eng" column="content_eng" jdbcType="VARCHAR"/>
+            <result property="doc_id" column="doc_id" jdbcType="OTHER"/>
+            <result property="alternation_status_tra" column="alternation_status_tra" jdbcType="OTHER"/>
+            <result property="alternation_status_sim" column="alternation_status_sim" jdbcType="OTHER"/>
+            <result property="alternation_status_eng" column="alternation_status_eng" jdbcType="OTHER"/>
+            <result property="alternation_pic_tra" column="alternation_pic_tra" jdbcType="VARCHAR"/>
+            <result property="alternation_pic_sim" column="alternation_pic_sim" jdbcType="VARCHAR"/>
+            <result property="alternation_pic_eng" column="alternation_pic_eng" jdbcType="VARCHAR"/>
+            <result property="alternation_position_tra" column="alternation_position_tra" jdbcType="OTHER"/>
+            <result property="alternation_position_sim" column="alternation_position_sim" jdbcType="OTHER"/>
+            <result property="alternation_position_eng" column="alternation_position_eng" jdbcType="OTHER"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        activity_id,ddgd_id,create_user,
+        create_time,update_user,update_time,
+        old_sort,now_sort,name_tra,
+        name_sim,name_eng,mouse_status_tra,
+        mouse_status_sim,mouse_status_eng,mouse_off_pic_tra,
+        mouse_off_pic_sim,mouse_off_pic_eng,mouse_in_pic_tra,
+        mouse_in_pic_sim,mouse_in_pic_eng,mouse_out_pic_tra,
+        mouse_out_pic_sim,mouse_out_pic_eng,pic_status_tra,
+        pic_status_sim,pic_status_eng,content_pic_tra,
+        content_pic_sim,content_pic_eng,content_tra,
+        content_sim,content_eng,doc_id,
+        alternation_status_tra,alternation_status_sim,alternation_status_eng,
+        alternation_pic_tra,alternation_pic_sim,alternation_pic_eng,
+        alternation_position_tra,alternation_position_sim,alternation_position_eng
+    </sql>
+</mapper>

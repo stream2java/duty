@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.goldnet.duty.mapper.ZGeMoneyTrgMapper">
+
+    <resultMap id="BaseResultMap" type="com.goldnet.duty.entity.ZGeMoneyTrg">
+            <result property="id" column="id" jdbcType="BIGINT"/>
+            <result property="befer_money" column="befer_money" jdbcType="NUMERIC"/>
+            <result property="after_money" column="after_money" jdbcType="NUMERIC"/>
+            <result property="init_money" column="init_money" jdbcType="NUMERIC"/>
+            <result property="account_id" column="account_id" jdbcType="OTHER"/>
+            <result property="insert_date" column="insert_date" jdbcType="TIMESTAMP"/>
+            <result property="action_type" column="action_type" jdbcType="VARCHAR"/>
+            <result property="other_remark" column="other_remark" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,befer_money,after_money,
+        init_money,account_id,insert_date,
+        action_type,other_remark
+    </sql>
+</mapper>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.goldnet.duty.mapper.SysPaySystemMapper">
+
+    <resultMap id="BaseResultMap" type="com.goldnet.duty.entity.SysPaySystem">
+            <id property="id" column="id" jdbcType="OTHER"/>
+            <result property="pay_name" column="pay_name" jdbcType="VARCHAR"/>
+            <result property="pay_send_url" column="pay_send_url" jdbcType="VARCHAR"/>
+            <result property="pay_send_method" column="pay_send_method" jdbcType="VARCHAR"/>
+            <result property="notice_received_url" column="notice_received_url" jdbcType="VARCHAR"/>
+            <result property="asynch_notice_received_url" column="asynch_notice_received_url" jdbcType="VARCHAR"/>
+            <result property="pay_type" column="pay_type" jdbcType="OTHER"/>
+            <result property="is_test" column="is_test" jdbcType="OTHER"/>
+            <result property="test_pay_send_url" column="test_pay_send_url" jdbcType="VARCHAR"/>
+            <result property="status" column="status" jdbcType="OTHER"/>
+            <result property="pay_path" column="pay_path" jdbcType="VARCHAR"/>
+            <result property="banktype" column="banktype" jdbcType="OTHER"/>
+            <result property="is_outreach" column="is_outreach" jdbcType="VARCHAR"/>
+            <result property="is_support_decimal" column="is_support_decimal" jdbcType="OTHER"/>
+            <result property="mer_console_alias" column="mer_console_alias" jdbcType="VARCHAR"/>
+            <result property="mer_no_alias" column="mer_no_alias" jdbcType="VARCHAR"/>
+            <result property="mer_key_alias" column="mer_key_alias" jdbcType="VARCHAR"/>
+            <result property="mer_console_prompt" column="mer_console_prompt" jdbcType="VARCHAR"/>
+            <result property="query_order_gateway" column="query_order_gateway" jdbcType="VARCHAR"/>
+            <result property="create_time" column="create_time" jdbcType="VARCHAR"/>
+            <result property="update_time" column="update_time" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,pay_name,pay_send_url,
+        pay_send_method,notice_received_url,asynch_notice_received_url,
+        pay_type,is_test,test_pay_send_url,
+        status,pay_path,banktype,
+        is_outreach,is_support_decimal,mer_console_alias,
+        mer_no_alias,mer_key_alias,mer_console_prompt,
+        query_order_gateway,create_time,update_time
+    </sql>
+</mapper>

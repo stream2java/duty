@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.goldnet.duty.mapper.EnMassMapper">
+
+    <resultMap id="BaseResultMap" type="com.goldnet.duty.entity.EnMass">
+            <result property="acc_id" column="acc_id" jdbcType="OTHER"/>
+            <result property="en_message" column="en_message" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        acc_id,en_message
+    </sql>
+</mapper>

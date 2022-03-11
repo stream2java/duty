@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.goldnet.duty.mapper.SysMessageExampleMapper">
+
+    <resultMap id="BaseResultMap" type="com.goldnet.duty.entity.SysMessageExample">
+            <id property="id" column="id" jdbcType="OTHER"/>
+            <result property="big5_subject" column="big5_subject" jdbcType="VARCHAR"/>
+            <result property="gbk_subject" column="gbk_subject" jdbcType="VARCHAR"/>
+            <result property="en_subject" column="en_subject" jdbcType="VARCHAR"/>
+            <result property="big5_content" column="big5_content" jdbcType="VARCHAR"/>
+            <result property="gbk_content" column="gbk_content" jdbcType="VARCHAR"/>
+            <result property="en_content" column="en_content" jdbcType="VARCHAR"/>
+            <result property="message_type" column="message_type" jdbcType="OTHER"/>
+            <result property="stockholder_id" column="stockholder_id" jdbcType="OTHER"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,big5_subject,gbk_subject,
+        en_subject,big5_content,gbk_content,
+        en_content,message_type,stockholder_id
+    </sql>
+</mapper>

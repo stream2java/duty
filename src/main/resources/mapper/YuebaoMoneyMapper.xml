@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.goldnet.duty.mapper.YuebaoMoneyMapper">
+
+    <resultMap id="BaseResultMap" type="com.goldnet.duty.entity.YuebaoMoney">
+            <id property="id" column="id" jdbcType="OTHER"/>
+            <result property="balance" column="balance" jdbcType="NUMERIC"/>
+            <result property="interest" column="interest" jdbcType="NUMERIC"/>
+            <result property="withdraw_interest" column="withdraw_interest" jdbcType="NUMERIC"/>
+            <result property="member_id" column="member_id" jdbcType="OTHER"/>
+            <result property="member_account" column="member_account" jdbcType="VARCHAR"/>
+            <result property="create_account" column="create_account" jdbcType="VARCHAR"/>
+            <result property="create_time" column="create_time" jdbcType="TIMESTAMP"/>
+            <result property="update_account" column="update_account" jdbcType="VARCHAR"/>
+            <result property="update_time" column="update_time" jdbcType="TIMESTAMP"/>
+            <result property="remark" column="remark" jdbcType="VARCHAR"/>
+            <result property="is_show" column="is_show" jdbcType="OTHER"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,balance,interest,
+        withdraw_interest,member_id,member_account,
+        create_account,create_time,update_account,
+        update_time,remark,is_show
+    </sql>
+</mapper>

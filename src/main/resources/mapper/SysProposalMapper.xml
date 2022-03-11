@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.goldnet.duty.mapper.SysProposalMapper">
+
+    <resultMap id="BaseResultMap" type="com.goldnet.duty.entity.SysProposal">
+            <result property="id" column="id" jdbcType="OTHER"/>
+            <result property="proposal_type" column="proposal_type" jdbcType="VARCHAR"/>
+            <result property="proposal_content" column="proposal_content" jdbcType="VARCHAR"/>
+            <result property="account" column="account" jdbcType="VARCHAR"/>
+            <result property="affiliation_platform" column="affiliation_platform" jdbcType="OTHER"/>
+            <result property="proposal_date_time" column="proposal_date_time" jdbcType="TIMESTAMP"/>
+            <result property="read_status" column="read_status" jdbcType="OTHER"/>
+            <result property="qq" column="qq" jdbcType="VARCHAR"/>
+            <result property="phone" column="phone" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,proposal_type,proposal_content,
+        account,affiliation_platform,proposal_date_time,
+        read_status,qq,phone
+    </sql>
+</mapper>

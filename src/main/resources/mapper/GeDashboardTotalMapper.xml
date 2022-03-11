@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.goldnet.duty.mapper.GeDashboardTotalMapper">
+
+    <resultMap id="BaseResultMap" type="com.goldnet.duty.entity.GeDashboardTotal">
+            <id property="id" column="id" jdbcType="OTHER"/>
+            <result property="account1" column="account1" jdbcType="OTHER"/>
+            <result property="collect_date" column="collect_date" jdbcType="DATE"/>
+            <result property="new_agent_num" column="new_agent_num" jdbcType="OTHER"/>
+            <result property="first_deposit_num" column="first_deposit_num" jdbcType="OTHER"/>
+            <result property="register_num" column="register_num" jdbcType="OTHER"/>
+            <result property="draw_amount" column="draw_amount" jdbcType="NUMERIC"/>
+            <result property="deposit_amount" column="deposit_amount" jdbcType="NUMERIC"/>
+            <result property="preferential_cost" column="preferential_cost" jdbcType="NUMERIC"/>
+            <result property="collect_betting_time" column="collect_betting_time" jdbcType="TIMESTAMP"/>
+            <result property="create_time" column="create_time" jdbcType="TIMESTAMP"/>
+            <result property="update_time" column="update_time" jdbcType="TIMESTAMP"/>
+            <result property="draw_num" column="draw_num" jdbcType="OTHER"/>
+            <result property="deposit_num" column="deposit_num" jdbcType="OTHER"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,account1,collect_date,
+        new_agent_num,first_deposit_num,register_num,
+        draw_amount,deposit_amount,preferential_cost,
+        collect_betting_time,create_time,update_time,
+        draw_num,deposit_num
+    </sql>
+</mapper>

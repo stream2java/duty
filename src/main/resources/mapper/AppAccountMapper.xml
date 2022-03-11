@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.goldnet.duty.mapper.AppAccountMapper">
+
+    <resultMap id="BaseResultMap" type="com.goldnet.duty.entity.AppAccount">
+            <id property="member_id" column="member_id" jdbcType="OTHER"/>
+            <result property="login_token" column="login_token" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        member_id,login_token
+    </sql>
+</mapper>

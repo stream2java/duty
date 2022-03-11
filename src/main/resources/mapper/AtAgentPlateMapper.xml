@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.goldnet.duty.mapper.AtAgentPlateMapper">
+
+    <resultMap id="BaseResultMap" type="com.goldnet.duty.entity.AtAgentPlate">
+            <id property="agent_plate_id" column="agent_plate_id" jdbcType="OTHER"/>
+            <result property="account_id" column="account_id" jdbcType="OTHER"/>
+            <result property="lottery_type" column="lottery_type" jdbcType="VARCHAR"/>
+            <result property="remark" column="remark" jdbcType="VARCHAR"/>
+            <result property="create_date_time" column="create_date_time" jdbcType="DATE"/>
+            <result property="create_user" column="create_user" jdbcType="VARCHAR"/>
+            <result property="update_date_time" column="update_date_time" jdbcType="DATE"/>
+            <result property="update_user" column="update_user" jdbcType="VARCHAR"/>
+            <result property="plate_id" column="plate_id" jdbcType="OTHER"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        agent_plate_id,account_id,lottery_type,
+        remark,create_date_time,create_user,
+        update_date_time,update_user,plate_id
+    </sql>
+</mapper>

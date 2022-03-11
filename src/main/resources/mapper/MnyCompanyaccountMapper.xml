@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.goldnet.duty.mapper.MnyCompanyaccountMapper">
+
+    <resultMap id="BaseResultMap" type="com.goldnet.duty.entity.MnyCompanyaccount">
+            <id property="companyaccount_id" column="companyaccount_id" jdbcType="OTHER"/>
+            <result property="currency_id" column="currency_id" jdbcType="OTHER"/>
+            <result property="ddgd_id" column="ddgd_id" jdbcType="OTHER"/>
+            <result property="bank_id" column="bank_id" jdbcType="OTHER"/>
+            <result property="bankaccount" column="bankaccount" jdbcType="VARCHAR"/>
+            <result property="prompt" column="prompt" jdbcType="VARCHAR"/>
+            <result property="chamberlain" column="chamberlain" jdbcType="VARCHAR"/>
+            <result property="bankstation" column="bankstation" jdbcType="VARCHAR"/>
+            <result property="mbankaccount" column="mbankaccount" jdbcType="VARCHAR"/>
+            <result property="shutdown" column="shutdown" jdbcType="OTHER"/>
+            <result property="isdetele" column="isdetele" jdbcType="OTHER"/>
+            <result property="founder" column="founder" jdbcType="VARCHAR"/>
+            <result property="foundtime" column="foundtime" jdbcType="TIMESTAMP"/>
+            <result property="moder" column="moder" jdbcType="VARCHAR"/>
+            <result property="modtime" column="modtime" jdbcType="TIMESTAMP"/>
+            <result property="qr_code" column="qr_code" jdbcType="VARCHAR"/>
+            <result property="max_deposit" column="max_deposit" jdbcType="DOUBLE"/>
+            <result property="curr_deposit" column="curr_deposit" jdbcType="DOUBLE"/>
+            <result property="accountorder" column="accountorder" jdbcType="OTHER"/>
+            <result property="online_bank_name" column="online_bank_name" jdbcType="VARCHAR"/>
+            <result property="online_bank_account" column="online_bank_account" jdbcType="VARCHAR"/>
+            <result property="isbank" column="isbank" jdbcType="OTHER"/>
+            <result property="merchant_comment" column="merchant_comment" jdbcType="VARCHAR"/>
+            <result property="ask_status" column="ask_status" jdbcType="OTHER"/>
+            <result property="min_deposit_amount" column="min_deposit_amount" jdbcType="NUMERIC"/>
+            <result property="max_deposit_amount" column="max_deposit_amount" jdbcType="NUMERIC"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        companyaccount_id,currency_id,ddgd_id,
+        bank_id,bankaccount,prompt,
+        chamberlain,bankstation,mbankaccount,
+        shutdown,isdetele,founder,
+        foundtime,moder,modtime,
+        qr_code,max_deposit,curr_deposit,
+        accountorder,online_bank_name,online_bank_account,
+        isbank,merchant_comment,ask_status,
+        min_deposit_amount,max_deposit_amount
+    </sql>
+</mapper>

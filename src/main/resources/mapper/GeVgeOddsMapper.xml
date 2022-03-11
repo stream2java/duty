@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.goldnet.duty.mapper.GeVgeOddsMapper">
+
+    <resultMap id="BaseResultMap" type="com.goldnet.duty.entity.GeVgeOdds">
+            <id property="oid" column="oid" jdbcType="OTHER"/>
+            <result property="ochoose_chance" column="ochoose_chance" jdbcType="OTHER"/>
+            <result property="owin_chance" column="owin_chance" jdbcType="NUMERIC"/>
+            <result property="olabar_type" column="olabar_type" jdbcType="OTHER"/>
+            <result property="oodds" column="oodds" jdbcType="OTHER"/>
+            <result property="ogroup" column="ogroup" jdbcType="VARCHAR"/>
+            <result property="opid" column="opid" jdbcType="OTHER"/>
+            <result property="oleve" column="oleve" jdbcType="OTHER"/>
+            <result property="oexodds" column="oexodds" jdbcType="OTHER"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        oid,ochoose_chance,owin_chance,
+        olabar_type,oodds,ogroup,
+        opid,oleve,oexodds
+    </sql>
+</mapper>

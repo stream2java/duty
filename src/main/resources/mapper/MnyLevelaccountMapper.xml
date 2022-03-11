@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.goldnet.duty.mapper.MnyLevelaccountMapper">
+
+    <resultMap id="BaseResultMap" type="com.goldnet.duty.entity.MnyLevelaccount">
+            <id property="levelaccount_id" column="levelaccount_id" jdbcType="OTHER"/>
+            <result property="level_id" column="level_id" jdbcType="OTHER"/>
+            <result property="companyaccount_id" column="companyaccount_id" jdbcType="OTHER"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        levelaccount_id,level_id,companyaccount_id
+    </sql>
+</mapper>

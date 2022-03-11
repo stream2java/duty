@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.goldnet.duty.mapper.SlotGameManageMapper">
+
+    <resultMap id="BaseResultMap" type="com.goldnet.duty.entity.SlotGameManage">
+            <id property="id" column="id" jdbcType="OTHER"/>
+            <result property="game_name" column="game_name" jdbcType="VARCHAR"/>
+            <result property="game_platform" column="game_platform" jdbcType="VARCHAR"/>
+            <result property="game_status" column="game_status" jdbcType="VARCHAR"/>
+            <result property="recommend" column="recommend" jdbcType="VARCHAR"/>
+            <result property="game_img_url" column="game_img_url" jdbcType="VARCHAR"/>
+            <result property="game_id" column="game_id" jdbcType="VARCHAR"/>
+            <result property="game_order" column="game_order" jdbcType="OTHER"/>
+            <result property="game_big_type" column="game_big_type" jdbcType="VARCHAR"/>
+            <result property="game_small_type" column="game_small_type" jdbcType="VARCHAR"/>
+            <result property="create_user" column="create_user" jdbcType="VARCHAR"/>
+            <result property="create_date" column="create_date" jdbcType="VARCHAR"/>
+            <result property="update_user" column="update_user" jdbcType="VARCHAR"/>
+            <result property="update_date" column="update_date" jdbcType="VARCHAR"/>
+            <result property="account1" column="account1" jdbcType="OTHER"/>
+            <result property="parent_id" column="parent_id" jdbcType="OTHER"/>
+            <result property="terminal_flag" column="terminal_flag" jdbcType="OTHER"/>
+            <result property="platform_code" column="platform_code" jdbcType="VARCHAR"/>
+            <result property="category_code" column="category_code" jdbcType="VARCHAR"/>
+            <result property="small_logo_flag" column="small_logo_flag" jdbcType="SMALLINT"/>
+            <result property="game_type_ids" column="game_type_ids" jdbcType="OTHER"/>
+            <result property="top_up" column="top_up" jdbcType="SMALLINT"/>
+            <result property="top_up_time" column="top_up_time" jdbcType="TIMESTAMP"/>
+            <result property="login_open" column="login_open" jdbcType="SMALLINT"/>
+            <result property="href_type" column="href_type" jdbcType="SMALLINT"/>
+            <result property="jump_type" column="jump_type" jdbcType="SMALLINT"/>
+            <result property="h5_url" column="h5_url" jdbcType="VARCHAR"/>
+            <result property="h5_params" column="h5_params" jdbcType="VARCHAR"/>
+            <result property="app_url" column="app_url" jdbcType="VARCHAR"/>
+            <result property="app_params" column="app_params" jdbcType="VARCHAR"/>
+            <result property="h5_href_menu" column="h5_href_menu" jdbcType="OTHER"/>
+            <result property="app_href_menu" column="app_href_menu" jdbcType="OTHER"/>
+            <result property="db_source" column="db_source" jdbcType="VARCHAR"/>
+            <result property="hbapp_game_status" column="hbapp_game_status" jdbcType="VARCHAR"/>
+            <result property="hbapp_small_logo_flag" column="hbapp_small_logo_flag" jdbcType="SMALLINT"/>
+            <result property="hbapp_recommend" column="hbapp_recommend" jdbcType="VARCHAR"/>
+            <result property="hbapp_game_order" column="hbapp_game_order" jdbcType="OTHER"/>
+            <result property="hbapp_support_recommend" column="hbapp_support_recommend" jdbcType="OTHER"/>
+            <result property="hbapp_vertical_img_url" column="hbapp_vertical_img_url" jdbcType="VARCHAR"/>
+            <result property="hbapp_horizontal_img_url" column="hbapp_horizontal_img_url" jdbcType="VARCHAR"/>
+            <result property="hbapp_top_up" column="hbapp_top_up" jdbcType="SMALLINT"/>
+            <result property="hbapp_top_up_time" column="hbapp_top_up_time" jdbcType="TIMESTAMP"/>
+            <result property="block_rotation" column="block_rotation" jdbcType="OTHER"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,game_name,game_platform,
+        game_status,recommend,game_img_url,
+        game_id,game_order,game_big_type,
+        game_small_type,create_user,create_date,
+        update_user,update_date,account1,
+        parent_id,terminal_flag,platform_code,
+        category_code,small_logo_flag,game_type_ids,
+        top_up,top_up_time,login_open,
+        href_type,jump_type,h5_url,
+        h5_params,app_url,app_params,
+        h5_href_menu,app_href_menu,db_source,
+        hbapp_game_status,hbapp_small_logo_flag,hbapp_recommend,
+        hbapp_game_order,hbapp_support_recommend,hbapp_vertical_img_url,
+        hbapp_horizontal_img_url,hbapp_top_up,hbapp_top_up_time,
+        block_rotation
+    </sql>
+</mapper>

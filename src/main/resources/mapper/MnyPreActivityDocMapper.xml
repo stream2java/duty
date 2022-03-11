@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.goldnet.duty.mapper.MnyPreActivityDocMapper">
+
+    <resultMap id="BaseResultMap" type="com.goldnet.duty.entity.MnyPreActivityDoc">
+            <id property="doc_id" column="doc_id" jdbcType="OTHER"/>
+            <result property="doc_name" column="doc_name" jdbcType="VARCHAR"/>
+            <result property="auditing_status" column="auditing_status" jdbcType="OTHER"/>
+            <result property="create_user" column="create_user" jdbcType="VARCHAR"/>
+            <result property="create_time" column="create_time" jdbcType="TIMESTAMP"/>
+            <result property="update_user" column="update_user" jdbcType="VARCHAR"/>
+            <result property="update_time" column="update_time" jdbcType="TIMESTAMP"/>
+            <result property="kind_id" column="kind_id" jdbcType="OTHER"/>
+            <result property="effect_time" column="effect_time" jdbcType="TIMESTAMP"/>
+            <result property="end_time" column="end_time" jdbcType="TIMESTAMP"/>
+            <result property="cancel_reason" column="cancel_reason" jdbcType="VARCHAR"/>
+            <result property="cancel_time" column="cancel_time" jdbcType="TIMESTAMP"/>
+            <result property="stockholder_id" column="stockholder_id" jdbcType="OTHER"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        doc_id,doc_name,auditing_status,
+        create_user,create_time,update_user,
+        update_time,kind_id,effect_time,
+        end_time,cancel_reason,cancel_time,
+        stockholder_id
+    </sql>
+</mapper>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.goldnet.duty.mapper.MnyRebateMapper">
+
+    <resultMap id="BaseResultMap" type="com.goldnet.duty.entity.MnyRebate">
+            <id property="rebate_id" column="rebate_id" jdbcType="OTHER"/>
+            <result property="agent_id" column="agent_id" jdbcType="OTHER"/>
+            <result property="ddgd_id" column="ddgd_id" jdbcType="OTHER"/>
+            <result property="currency_id" column="currency_id" jdbcType="OTHER"/>
+            <result property="periods_id" column="periods_id" jdbcType="OTHER"/>
+            <result property="valid_member_total" column="valid_member_total" jdbcType="OTHER"/>
+            <result property="all_payouts_total" column="all_payouts_total" jdbcType="NUMERIC"/>
+            <result property="all_payouts_now" column="all_payouts_now" jdbcType="NUMERIC"/>
+            <result property="all_cathectic_total" column="all_cathectic_total" jdbcType="NUMERIC"/>
+            <result property="all_cathectic_now" column="all_cathectic_now" jdbcType="NUMERIC"/>
+            <result property="cost_total" column="cost_total" jdbcType="NUMERIC"/>
+            <result property="cost_now" column="cost_now" jdbcType="NUMERIC"/>
+            <result property="can_get_rebate" column="can_get_rebate" jdbcType="NUMERIC"/>
+            <result property="has_get_rebate" column="has_get_rebate" jdbcType="NUMERIC"/>
+            <result property="status" column="status" jdbcType="VARCHAR"/>
+            <result property="collectbank" column="collectbank" jdbcType="OTHER"/>
+            <result property="remark" column="remark" jdbcType="VARCHAR"/>
+            <result property="founder" column="founder" jdbcType="VARCHAR"/>
+            <result property="foundtime" column="foundtime" jdbcType="TIMESTAMP"/>
+            <result property="moder" column="moder" jdbcType="VARCHAR"/>
+            <result property="modtime" column="modtime" jdbcType="TIMESTAMP"/>
+            <result property="charge" column="charge" jdbcType="NUMERIC"/>
+            <result property="agent_account" column="agent_account" jdbcType="VARCHAR"/>
+            <result property="agent_name" column="agent_name" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        rebate_id,agent_id,ddgd_id,
+        currency_id,periods_id,valid_member_total,
+        all_payouts_total,all_payouts_now,all_cathectic_total,
+        all_cathectic_now,cost_total,cost_now,
+        can_get_rebate,has_get_rebate,status,
+        collectbank,remark,founder,
+        foundtime,moder,modtime,
+        charge,agent_account,agent_name
+    </sql>
+</mapper>

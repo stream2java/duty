@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.goldnet.duty.mapper.ApiBettingDetailMapper">
+
+    <resultMap id="BaseResultMap" type="com.goldnet.duty.entity.ApiBettingDetail">
+            <id property="id" column="id" jdbcType="OTHER"/>
+            <result property="account" column="account" jdbcType="VARCHAR"/>
+            <result property="account0" column="account0" jdbcType="OTHER"/>
+            <result property="account1" column="account1" jdbcType="OTHER"/>
+            <result property="account2" column="account2" jdbcType="OTHER"/>
+            <result property="account3" column="account3" jdbcType="OTHER"/>
+            <result property="account4" column="account4" jdbcType="OTHER"/>
+            <result property="account5" column="account5" jdbcType="OTHER"/>
+            <result property="account6" column="account6" jdbcType="OTHER"/>
+            <result property="betting_num" column="betting_num" jdbcType="OTHER"/>
+            <result property="betting_amount" column="betting_amount" jdbcType="NUMERIC"/>
+            <result property="profit_loss" column="profit_loss" jdbcType="NUMERIC"/>
+            <result property="real_betting_amount" column="real_betting_amount" jdbcType="NUMERIC"/>
+            <result property="import_batch_id" column="import_batch_id" jdbcType="OTHER"/>
+            <result property="betting_date" column="betting_date" jdbcType="DATE"/>
+            <result property="platform" column="platform" jdbcType="VARCHAR"/>
+            <result property="progressive_amount" column="progressive_amount" jdbcType="NUMERIC"/>
+            <result property="progressive_pool" column="progressive_pool" jdbcType="NUMERIC"/>
+            <result property="station_durl" column="station_durl" jdbcType="VARCHAR"/>
+            <result property="type" column="type" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,account,account0,
+        account1,account2,account3,
+        account4,account5,account6,
+        betting_num,betting_amount,profit_loss,
+        real_betting_amount,import_batch_id,betting_date,
+        platform,progressive_amount,progressive_pool,
+        station_durl,type
+    </sql>
+</mapper>

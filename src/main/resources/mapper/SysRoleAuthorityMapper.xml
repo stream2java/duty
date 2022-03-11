@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.goldnet.duty.mapper.SysRoleAuthorityMapper">
+
+    <resultMap id="BaseResultMap" type="com.goldnet.duty.entity.SysRoleAuthority">
+            <result property="role_authority_id" column="role_authority_id" jdbcType="OTHER"/>
+            <result property="role_id" column="role_id" jdbcType="OTHER"/>
+            <result property="authority_id" column="authority_id" jdbcType="OTHER"/>
+            <result property="create_user" column="create_user" jdbcType="VARCHAR"/>
+            <result property="create_date_time" column="create_date_time" jdbcType="TIMESTAMP"/>
+            <result property="update_user" column="update_user" jdbcType="VARCHAR"/>
+            <result property="update_date_time" column="update_date_time" jdbcType="TIMESTAMP"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        role_authority_id,role_id,authority_id,
+        create_user,create_date_time,update_user,
+        update_date_time
+    </sql>
+</mapper>

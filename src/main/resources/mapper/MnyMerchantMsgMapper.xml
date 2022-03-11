@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.goldnet.duty.mapper.MnyMerchantMsgMapper">
+
+    <resultMap id="BaseResultMap" type="com.goldnet.duty.entity.MnyMerchantMsg">
+            <id property="id" column="id" jdbcType="OTHER"/>
+            <result property="logmsg" column="logmsg" jdbcType="VARCHAR"/>
+            <result property="createtime" column="createtime" jdbcType="TIMESTAMP"/>
+            <result property="stockholderid" column="stockholderid" jdbcType="OTHER"/>
+            <result property="memberid" column="memberid" jdbcType="OTHER"/>
+            <result property="bjtime" column="bjtime" jdbcType="TIMESTAMP"/>
+            <result property="merchantno" column="merchantno" jdbcType="VARCHAR"/>
+            <result property="isdrawordeposit" column="isdrawordeposit" jdbcType="OTHER"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,logmsg,createtime,
+        stockholderid,memberid,bjtime,
+        merchantno,isdrawordeposit
+    </sql>
+</mapper>

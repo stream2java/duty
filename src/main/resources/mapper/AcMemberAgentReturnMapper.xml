@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.goldnet.duty.mapper.AcMemberAgentReturnMapper">
+
+    <resultMap id="BaseResultMap" type="com.goldnet.duty.entity.AcMemberAgentReturn">
+            <id property="agent_return_id" column="agent_return_id" jdbcType="OTHER"/>
+            <result property="account_id" column="account_id" jdbcType="OTHER"/>
+            <result property="lotery_id" column="lotery_id" jdbcType="OTHER"/>
+            <result property="plate_id" column="plate_id" jdbcType="OTHER"/>
+            <result property="type_id" column="type_id" jdbcType="OTHER"/>
+            <result property="return0" column="return0" jdbcType="NUMERIC"/>
+            <result property="return1" column="return1" jdbcType="NUMERIC"/>
+            <result property="return2" column="return2" jdbcType="NUMERIC"/>
+            <result property="return3" column="return3" jdbcType="NUMERIC"/>
+            <result property="return4" column="return4" jdbcType="NUMERIC"/>
+            <result property="return5" column="return5" jdbcType="NUMERIC"/>
+            <result property="return6" column="return6" jdbcType="NUMERIC"/>
+            <result property="agent_id0" column="agent_id0" jdbcType="OTHER"/>
+            <result property="agent_id1" column="agent_id1" jdbcType="OTHER"/>
+            <result property="agent_id2" column="agent_id2" jdbcType="OTHER"/>
+            <result property="agent_id3" column="agent_id3" jdbcType="OTHER"/>
+            <result property="agent_id4" column="agent_id4" jdbcType="OTHER"/>
+            <result property="agent_id5" column="agent_id5" jdbcType="OTHER"/>
+            <result property="agent_id6" column="agent_id6" jdbcType="OTHER"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        agent_return_id,account_id,lotery_id,
+        plate_id,type_id,return0,
+        return1,return2,return3,
+        return4,return5,return6,
+        agent_id0,agent_id1,agent_id2,
+        agent_id3,agent_id4,agent_id5,
+        agent_id6
+    </sql>
+</mapper>

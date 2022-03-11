@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.goldnet.duty.mapper.GeActivitySettingMapper">
+
+    <resultMap id="BaseResultMap" type="com.goldnet.duty.entity.GeActivitySetting">
+            <id property="id" column="id" jdbcType="OTHER"/>
+            <result property="account1" column="account1" jdbcType="OTHER"/>
+            <result property="activity_enable" column="activity_enable" jdbcType="SMALLINT"/>
+            <result property="level_ids" column="level_ids" jdbcType="OTHER"/>
+            <result property="pc_rule" column="pc_rule" jdbcType="VARCHAR"/>
+            <result property="wap_rule" column="wap_rule" jdbcType="VARCHAR"/>
+            <result property="create_time" column="create_time" jdbcType="TIMESTAMP"/>
+            <result property="create_user" column="create_user" jdbcType="VARCHAR"/>
+            <result property="update_time" column="update_time" jdbcType="TIMESTAMP"/>
+            <result property="update_user" column="update_user" jdbcType="VARCHAR"/>
+            <result property="level_type" column="level_type" jdbcType="SMALLINT"/>
+            <result property="wap_rule_temp" column="wap_rule_temp" jdbcType="VARCHAR"/>
+            <result property="pc_rule_temp" column="pc_rule_temp" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,account1,activity_enable,
+        level_ids,pc_rule,wap_rule,
+        create_time,create_user,update_time,
+        update_user,level_type,wap_rule_temp,
+        pc_rule_temp
+    </sql>
+</mapper>

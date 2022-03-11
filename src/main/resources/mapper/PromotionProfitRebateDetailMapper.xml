@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.goldnet.duty.mapper.PromotionProfitRebateDetailMapper">
+
+    <resultMap id="BaseResultMap" type="com.goldnet.duty.entity.PromotionProfitRebateDetail">
+            <id property="id" column="id" jdbcType="BIGINT"/>
+            <result property="event_id" column="event_id" jdbcType="OTHER"/>
+            <result property="account1" column="account1" jdbcType="OTHER"/>
+            <result property="account_id" column="account_id" jdbcType="OTHER"/>
+            <result property="account" column="account" jdbcType="VARCHAR"/>
+            <result property="sub_fee" column="sub_fee" jdbcType="NUMERIC"/>
+            <result property="current_commission" column="current_commission" jdbcType="NUMERIC"/>
+            <result property="last_commission" column="last_commission" jdbcType="NUMERIC"/>
+            <result property="total_commission" column="total_commission" jdbcType="NUMERIC"/>
+            <result property="sub_profit_amount" column="sub_profit_amount" jdbcType="NUMERIC"/>
+            <result property="status" column="status" jdbcType="SMALLINT"/>
+            <result property="intermediate_state_time" column="intermediate_state_time" jdbcType="TIMESTAMP"/>
+            <result property="terminal_state_time" column="terminal_state_time" jdbcType="TIMESTAMP"/>
+            <result property="create_time" column="create_time" jdbcType="TIMESTAMP"/>
+            <result property="create_user" column="create_user" jdbcType="VARCHAR"/>
+            <result property="update_time" column="update_time" jdbcType="TIMESTAMP"/>
+            <result property="update_user" column="update_user" jdbcType="VARCHAR"/>
+            <result property="effective_account" column="effective_account" jdbcType="OTHER"/>
+            <result property="parent_accounts" column="parent_accounts" jdbcType="VARCHAR"/>
+            <result property="depot_rebate_percent" column="depot_rebate_percent" jdbcType="NUMERIC"/>
+            <result property="account_type" column="account_type" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,event_id,account1,
+        account_id,account,sub_fee,
+        current_commission,last_commission,total_commission,
+        sub_profit_amount,status,intermediate_state_time,
+        terminal_state_time,create_time,create_user,
+        update_time,update_user,effective_account,
+        parent_accounts,depot_rebate_percent,account_type
+    </sql>
+</mapper>

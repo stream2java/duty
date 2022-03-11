@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.goldnet.duty.mapper.SeasonNotes1Mapper">
+
+    <resultMap id="BaseResultMap" type="com.goldnet.duty.entity.SeasonNotes1">
+            <id property="a_one" column="a_one" jdbcType="OTHER"/>
+            <result property="b_two" column="b_two" jdbcType="VARCHAR"/>
+            <result property="c_three" column="c_three" jdbcType="VARCHAR"/>
+            <result property="d_four" column="d_four" jdbcType="VARCHAR"/>
+            <result property="e_create_date" column="e_create_date" jdbcType="TIMESTAMP"/>
+            <result property="f_status" column="f_status" jdbcType="OTHER"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        a_one,b_two,c_three,
+        d_four,e_create_date,f_status
+    </sql>
+</mapper>

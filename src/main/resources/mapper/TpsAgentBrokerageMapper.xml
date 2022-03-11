@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.goldnet.duty.mapper.TpsAgentBrokerageMapper">
+
+    <resultMap id="BaseResultMap" type="com.goldnet.duty.entity.TpsAgentBrokerage">
+            <id property="id" column="id" jdbcType="OTHER"/>
+            <result property="brokerage_id" column="brokerage_id" jdbcType="OTHER"/>
+            <result property="platform_id" column="platform_id" jdbcType="OTHER"/>
+            <result property="game_type" column="game_type" jdbcType="OTHER"/>
+            <result property="rebate" column="rebate" jdbcType="NUMERIC"/>
+            <result property="waterbreak" column="waterbreak" jdbcType="NUMERIC"/>
+            <result property="plat_game_code" column="plat_game_code" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,brokerage_id,platform_id,
+        game_type,rebate,waterbreak,
+        plat_game_code
+    </sql>
+</mapper>

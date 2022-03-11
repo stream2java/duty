@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.goldnet.duty.mapper.ApiCurrentRecord202202Mapper">
+
+    <resultMap id="BaseResultMap" type="com.goldnet.duty.entity.ApiCurrentRecord202202">
+            <id property="current_record_id" column="current_record_id" jdbcType="OTHER"/>
+            <result property="bet_start_date" column="bet_start_date" jdbcType="TIMESTAMP"/>
+            <result property="api_id" column="api_id" jdbcType="OTHER"/>
+            <result property="bet_end_date" column="bet_end_date" jdbcType="TIMESTAMP"/>
+            <result property="account_id6" column="account_id6" jdbcType="OTHER"/>
+            <result property="desk_name" column="desk_name" jdbcType="VARCHAR"/>
+            <result property="bet_code" column="bet_code" jdbcType="VARCHAR"/>
+            <result property="bet_amount" column="bet_amount" jdbcType="NUMERIC"/>
+            <result property="pay_out" column="pay_out" jdbcType="NUMERIC"/>
+            <result property="game_type" column="game_type" jdbcType="VARCHAR"/>
+            <result property="bet_content" column="bet_content" jdbcType="VARCHAR"/>
+            <result property="api_name" column="api_name" jdbcType="VARCHAR"/>
+            <result property="account_id1" column="account_id1" jdbcType="OTHER"/>
+            <result property="account_id2" column="account_id2" jdbcType="OTHER"/>
+            <result property="account_id3" column="account_id3" jdbcType="OTHER"/>
+            <result property="account_id4" column="account_id4" jdbcType="OTHER"/>
+            <result property="account_id5" column="account_id5" jdbcType="OTHER"/>
+            <result property="account_id0" column="account_id0" jdbcType="OTHER"/>
+            <result property="gameid" column="gameid" jdbcType="VARCHAR"/>
+            <result property="game_category" column="game_category" jdbcType="VARCHAR"/>
+            <result property="valid_bet_amount" column="valid_bet_amount" jdbcType="NUMERIC"/>
+            <result property="award_result" column="award_result" jdbcType="VARCHAR"/>
+            <result property="is_award" column="is_award" jdbcType="OTHER"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        current_record_id,bet_start_date,api_id,
+        bet_end_date,account_id6,desk_name,
+        bet_code,bet_amount,pay_out,
+        game_type,bet_content,api_name,
+        account_id1,account_id2,account_id3,
+        account_id4,account_id5,account_id0,
+        gameid,game_category,valid_bet_amount,
+        award_result,is_award
+    </sql>
+</mapper>

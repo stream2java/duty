@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.goldnet.duty.mapper.SysCustomGameRecommendMapper">
+
+    <resultMap id="BaseResultMap" type="com.goldnet.duty.entity.SysCustomGameRecommend">
+            <id property="id" column="id" jdbcType="OTHER"/>
+            <result property="account1" column="account1" jdbcType="OTHER"/>
+            <result property="station_sub_id" column="station_sub_id" jdbcType="OTHER"/>
+            <result property="game_name" column="game_name" jdbcType="VARCHAR"/>
+            <result property="jump_type" column="jump_type" jdbcType="OTHER"/>
+            <result property="h5_url" column="h5_url" jdbcType="VARCHAR"/>
+            <result property="app_url" column="app_url" jdbcType="VARCHAR"/>
+            <result property="jump_url" column="jump_url" jdbcType="VARCHAR"/>
+            <result property="href_type" column="href_type" jdbcType="OTHER"/>
+            <result property="game_img_url" column="game_img_url" jdbcType="VARCHAR"/>
+            <result property="is_hot" column="is_hot" jdbcType="SMALLINT"/>
+            <result property="open_flag" column="open_flag" jdbcType="SMALLINT"/>
+            <result property="sort" column="sort" jdbcType="SMALLINT"/>
+            <result property="create_user" column="create_user" jdbcType="VARCHAR"/>
+            <result property="create_time" column="create_time" jdbcType="TIMESTAMP"/>
+            <result property="update_user" column="update_user" jdbcType="VARCHAR"/>
+            <result property="update_time" column="update_time" jdbcType="TIMESTAMP"/>
+            <result property="status" column="status" jdbcType="SMALLINT"/>
+            <result property="top_up" column="top_up" jdbcType="SMALLINT"/>
+            <result property="top_up_time" column="top_up_time" jdbcType="TIMESTAMP"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,account1,station_sub_id,
+        game_name,jump_type,h5_url,
+        app_url,jump_url,href_type,
+        game_img_url,is_hot,open_flag,
+        sort,create_user,create_time,
+        update_user,update_time,status,
+        top_up,top_up_time
+    </sql>
+</mapper>

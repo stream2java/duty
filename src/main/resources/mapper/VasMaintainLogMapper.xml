@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.goldnet.duty.mapper.VasMaintainLogMapper">
+
+    <resultMap id="BaseResultMap" type="com.goldnet.duty.entity.VasMaintainLog">
+            <id property="id" column="id" jdbcType="VARCHAR"/>
+            <result property="create_time" column="create_time" jdbcType="TIMESTAMP"/>
+            <result property="member_start_time" column="member_start_time" jdbcType="VARCHAR"/>
+            <result property="member_end_time" column="member_end_time" jdbcType="VARCHAR"/>
+            <result property="plat_start_time" column="plat_start_time" jdbcType="VARCHAR"/>
+            <result property="plat_end_time" column="plat_end_time" jdbcType="VARCHAR"/>
+            <result property="remark" column="remark" jdbcType="VARCHAR"/>
+            <result property="operator" column="operator" jdbcType="VARCHAR"/>
+            <result property="type" column="type" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,create_time,member_start_time,
+        member_end_time,plat_start_time,plat_end_time,
+        remark,operator,type
+    </sql>
+</mapper>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.goldnet.duty.mapper.TmpApiDetailLoginLogMapper">
+
+    <resultMap id="BaseResultMap" type="com.goldnet.duty.entity.TmpApiDetailLoginLog">
+            <result property="account1" column="account1" jdbcType="OTHER"/>
+            <result property="account6" column="account6" jdbcType="OTHER"/>
+            <result property="api_account" column="api_account" jdbcType="VARCHAR"/>
+            <result property="account" column="account" jdbcType="VARCHAR"/>
+            <result property="op_time" column="op_time" jdbcType="TIMESTAMP"/>
+            <result property="op_status" column="op_status" jdbcType="OTHER"/>
+            <result property="api_name" column="api_name" jdbcType="VARCHAR"/>
+            <result property="api_key" column="api_key" jdbcType="VARCHAR"/>
+            <result property="account0" column="account0" jdbcType="OTHER"/>
+            <result property="account2" column="account2" jdbcType="OTHER"/>
+            <result property="account3" column="account3" jdbcType="OTHER"/>
+            <result property="account4" column="account4" jdbcType="OTHER"/>
+            <result property="account5" column="account5" jdbcType="OTHER"/>
+            <result property="id" column="id" jdbcType="OTHER"/>
+            <result property="last_login_time" column="last_login_time" jdbcType="TIMESTAMP"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        account1,account6,api_account,
+        account,op_time,op_status,
+        api_name,api_key,account0,
+        account2,account3,account4,
+        account5,id,last_login_time
+    </sql>
+</mapper>

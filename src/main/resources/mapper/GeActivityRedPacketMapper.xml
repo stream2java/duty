@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.goldnet.duty.mapper.GeActivityRedPacketMapper">
+
+    <resultMap id="BaseResultMap" type="com.goldnet.duty.entity.GeActivityRedPacket">
+            <id property="id" column="id" jdbcType="BIGINT"/>
+            <result property="activity_id" column="activity_id" jdbcType="BIGINT"/>
+            <result property="start_time" column="start_time" jdbcType="TIME"/>
+            <result property="end_time" column="end_time" jdbcType="TIME"/>
+            <result property="level_ids" column="level_ids" jdbcType="OTHER"/>
+            <result property="deposit_amount" column="deposit_amount" jdbcType="NUMERIC"/>
+            <result property="valid_bet_amount" column="valid_bet_amount" jdbcType="NUMERIC"/>
+            <result property="relation_type" column="relation_type" jdbcType="SMALLINT"/>
+            <result property="split_type" column="split_type" jdbcType="SMALLINT"/>
+            <result property="total_amount" column="total_amount" jdbcType="NUMERIC"/>
+            <result property="num" column="num" jdbcType="OTHER"/>
+            <result property="min_amount" column="min_amount" jdbcType="NUMERIC"/>
+            <result property="max_amount" column="max_amount" jdbcType="NUMERIC"/>
+            <result property="check_num" column="check_num" jdbcType="OTHER"/>
+            <result property="create_time" column="create_time" jdbcType="TIMESTAMP"/>
+            <result property="create_user" column="create_user" jdbcType="VARCHAR"/>
+            <result property="update_time" column="update_time" jdbcType="TIMESTAMP"/>
+            <result property="update_user" column="update_user" jdbcType="VARCHAR"/>
+            <result property="account1" column="account1" jdbcType="OTHER"/>
+            <result property="check_data" column="check_data" jdbcType="SMALLINT"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,activity_id,start_time,
+        end_time,level_ids,deposit_amount,
+        valid_bet_amount,relation_type,split_type,
+        total_amount,num,min_amount,
+        max_amount,check_num,create_time,
+        create_user,update_time,update_user,
+        account1,check_data
+    </sql>
+</mapper>

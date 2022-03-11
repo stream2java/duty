@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.goldnet.duty.mapper.YuebaoSummaryTotalMapper">
+
+    <resultMap id="BaseResultMap" type="com.goldnet.duty.entity.YuebaoSummaryTotal">
+            <id property="id" column="id" jdbcType="OTHER"/>
+            <result property="account1" column="account1" jdbcType="OTHER"/>
+            <result property="agent_id" column="agent_id" jdbcType="OTHER"/>
+            <result property="member_id" column="member_id" jdbcType="OTHER"/>
+            <result property="member_account" column="member_account" jdbcType="VARCHAR"/>
+            <result property="agent_account" column="agent_account" jdbcType="VARCHAR"/>
+            <result property="deposit" column="deposit" jdbcType="NUMERIC"/>
+            <result property="withdraw" column="withdraw" jdbcType="NUMERIC"/>
+            <result property="interest" column="interest" jdbcType="NUMERIC"/>
+            <result property="summary_date" column="summary_date" jdbcType="DATE"/>
+            <result property="create_time" column="create_time" jdbcType="TIMESTAMP"/>
+            <result property="interest_num" column="interest_num" jdbcType="OTHER"/>
+            <result property="artificial_deposit" column="artificial_deposit" jdbcType="NUMERIC"/>
+            <result property="artificial_draw" column="artificial_draw" jdbcType="NUMERIC"/>
+            <result property="artificial_interest" column="artificial_interest" jdbcType="NUMERIC"/>
+            <result property="artificial_interest_num" column="artificial_interest_num" jdbcType="NUMERIC"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,account1,agent_id,
+        member_id,member_account,agent_account,
+        deposit,withdraw,interest,
+        summary_date,create_time,interest_num,
+        artificial_deposit,artificial_draw,artificial_interest,
+        artificial_interest_num
+    </sql>
+</mapper>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.goldnet.duty.mapper.WiDiscountsActivityMapper">
+
+    <resultMap id="BaseResultMap" type="com.goldnet.duty.entity.WiDiscountsActivity">
+            <id property="id" column="id" jdbcType="OTHER"/>
+            <result property="title" column="title" jdbcType="VARCHAR"/>
+            <result property="classify_id" column="classify_id" jdbcType="OTHER"/>
+            <result property="status" column="status" jdbcType="OTHER"/>
+            <result property="account1" column="account1" jdbcType="OTHER"/>
+            <result property="type" column="type" jdbcType="VARCHAR"/>
+            <result property="pic_status" column="pic_status" jdbcType="OTHER"/>
+            <result property="pic_context" column="pic_context" jdbcType="VARCHAR"/>
+            <result property="txt_context" column="txt_context" jdbcType="VARCHAR"/>
+            <result property="create_user" column="create_user" jdbcType="VARCHAR"/>
+            <result property="create_time" column="create_time" jdbcType="TIMESTAMP"/>
+            <result property="update_user" column="update_user" jdbcType="VARCHAR"/>
+            <result property="update_time" column="update_time" jdbcType="TIMESTAMP"/>
+            <result property="mobpre_radio" column="mobpre_radio" jdbcType="OTHER"/>
+            <result property="mouse_off_pic" column="mouse_off_pic" jdbcType="VARCHAR"/>
+            <result property="title_ico" column="title_ico" jdbcType="OTHER"/>
+            <result property="title_describe" column="title_describe" jdbcType="VARCHAR"/>
+            <result property="old_id" column="old_id" jdbcType="OTHER"/>
+            <result property="sort_num" column="sort_num" jdbcType="OTHER"/>
+            <result property="station_sub_id" column="station_sub_id" jdbcType="OTHER"/>
+            <result property="title_ico_id" column="title_ico_id" jdbcType="OTHER"/>
+            <result property="txt_context_hb" column="txt_context_hb" jdbcType="VARCHAR"/>
+            <result property="pic_context_hb" column="pic_context_hb" jdbcType="VARCHAR"/>
+            <result property="txt_context_status" column="txt_context_status" jdbcType="OTHER"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,title,classify_id,
+        status,account1,type,
+        pic_status,pic_context,txt_context,
+        create_user,create_time,update_user,
+        update_time,mobpre_radio,mouse_off_pic,
+        title_ico,title_describe,old_id,
+        sort_num,station_sub_id,title_ico_id,
+        txt_context_hb,pic_context_hb,txt_context_status
+    </sql>
+</mapper>

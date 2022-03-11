@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.goldnet.duty.mapper.MnyAddAgentSetMapper">
+
+    <resultMap id="BaseResultMap" type="com.goldnet.duty.entity.MnyAddAgentSet">
+            <id property="add_agent_set_id" column="add_agent_set_id" jdbcType="OTHER"/>
+            <result property="field_name" column="field_name" jdbcType="VARCHAR"/>
+            <result property="field_type" column="field_type" jdbcType="OTHER"/>
+            <result property="status_set" column="status_set" jdbcType="OTHER"/>
+            <result property="ddgd_id" column="ddgd_id" jdbcType="OTHER"/>
+            <result property="create_user" column="create_user" jdbcType="VARCHAR"/>
+            <result property="create_time" column="create_time" jdbcType="TIMESTAMP"/>
+            <result property="update_user" column="update_user" jdbcType="VARCHAR"/>
+            <result property="update_time" column="update_time" jdbcType="TIMESTAMP"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        add_agent_set_id,field_name,field_type,
+        status_set,ddgd_id,create_user,
+        create_time,update_user,update_time
+    </sql>
+</mapper>

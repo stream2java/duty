@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.goldnet.duty.mapper.GeAtConfigMapper">
+
+    <resultMap id="BaseResultMap" type="com.goldnet.duty.entity.GeAtConfig">
+            <id property="org_current_record_id" column="org_current_record_id" jdbcType="BIGINT"/>
+            <result property="current_record_id" column="current_record_id" jdbcType="BIGINT"/>
+            <result property="create_date_time" column="create_date_time" jdbcType="TIMESTAMP"/>
+            <result property="betting_code" column="betting_code" jdbcType="VARCHAR"/>
+            <result property="member_account" column="member_account" jdbcType="VARCHAR"/>
+            <result property="account_id" column="account_id" jdbcType="OTHER"/>
+            <result property="remark" column="remark" jdbcType="VARCHAR"/>
+            <result property="trade_limit" column="trade_limit" jdbcType="NUMERIC"/>
+            <result property="fix_status" column="fix_status" jdbcType="BOOLEAN"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        org_current_record_id,current_record_id,create_date_time,
+        betting_code,member_account,account_id,
+        remark,trade_limit,fix_status
+    </sql>
+</mapper>

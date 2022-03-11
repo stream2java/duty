@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.goldnet.duty.mapper.MnyBackPreSetTypeMapper">
+
+    <resultMap id="BaseResultMap" type="com.goldnet.duty.entity.MnyBackPreSetType">
+            <id property="id" column="id" jdbcType="OTHER"/>
+            <id property="ddgd_id" column="ddgd_id" jdbcType="OTHER"/>
+            <result property="category_name" column="category_name" jdbcType="VARCHAR"/>
+            <result property="rate" column="rate" jdbcType="OTHER"/>
+            <result property="parent_id" column="parent_id" jdbcType="OTHER"/>
+            <result property="sort" column="sort" jdbcType="OTHER"/>
+            <result property="realtime_level_ids" column="realtime_level_ids" jdbcType="OTHER"/>
+            <result property="check_num" column="check_num" jdbcType="OTHER"/>
+            <result property="enable_realtime" column="enable_realtime" jdbcType="SMALLINT"/>
+            <result property="account_type_realtime" column="account_type_realtime" jdbcType="VARCHAR"/>
+            <result property="min_realtime_pre" column="min_realtime_pre" jdbcType="NUMERIC"/>
+            <result property="create_time" column="create_time" jdbcType="TIMESTAMP"/>
+            <result property="update_time" column="update_time" jdbcType="TIMESTAMP"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,ddgd_id,category_name,
+        rate,parent_id,sort,
+        realtime_level_ids,check_num,enable_realtime,
+        account_type_realtime,min_realtime_pre,create_time,
+        update_time
+    </sql>
+</mapper>

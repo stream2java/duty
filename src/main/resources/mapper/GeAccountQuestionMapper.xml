@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.goldnet.duty.mapper.GeAccountQuestionMapper">
+
+    <resultMap id="BaseResultMap" type="com.goldnet.duty.entity.GeAccountQuestion">
+            <id property="question_id" column="question_id" jdbcType="OTHER"/>
+            <result property="code" column="code" jdbcType="VARCHAR"/>
+            <result property="error_range" column="error_range" jdbcType="OTHER"/>
+            <result property="display" column="display" jdbcType="OTHER"/>
+            <result property="account1" column="account1" jdbcType="OTHER"/>
+            <result property="create_time" column="create_time" jdbcType="TIMESTAMP"/>
+            <result property="remark" column="remark" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        question_id,code,error_range,
+        display,account1,create_time,
+        remark
+    </sql>
+</mapper>

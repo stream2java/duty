@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.goldnet.duty.mapper.GeVideoHostMapper">
+
+    <resultMap id="BaseResultMap" type="com.goldnet.duty.entity.GeVideoHost">
+            <id property="host_id" column="host_id" jdbcType="OTHER"/>
+            <result property="host_name" column="host_name" jdbcType="VARCHAR"/>
+            <result property="host_tag" column="host_tag" jdbcType="VARCHAR"/>
+            <result property="host_password" column="host_password" jdbcType="VARCHAR"/>
+            <result property="host_ip" column="host_ip" jdbcType="VARCHAR"/>
+            <result property="create_date_time" column="create_date_time" jdbcType="DATE"/>
+            <result property="update_date_tiem" column="update_date_tiem" jdbcType="DATE"/>
+            <result property="last_connect_time" column="last_connect_time" jdbcType="DATE"/>
+            <result property="remark" column="remark" jdbcType="VARCHAR"/>
+            <result property="is_enable" column="is_enable" jdbcType="OTHER"/>
+            <result property="parent_id" column="parent_id" jdbcType="OTHER"/>
+            <result property="game_type_id" column="game_type_id" jdbcType="OTHER"/>
+            <result property="create_user" column="create_user" jdbcType="VARCHAR"/>
+            <result property="update_user" column="update_user" jdbcType="VARCHAR"/>
+            <result property="is_connect" column="is_connect" jdbcType="OTHER"/>
+            <result property="type" column="type" jdbcType="OTHER"/>
+            <result property="port" column="port" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        host_id,host_name,host_tag,
+        host_password,host_ip,create_date_time,
+        update_date_tiem,last_connect_time,remark,
+        is_enable,parent_id,game_type_id,
+        create_user,update_user,is_connect,
+        type,port
+    </sql>
+</mapper>

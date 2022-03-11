@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.goldnet.duty.mapper.TpsEventDetails20210727Mapper">
+
+    <resultMap id="BaseResultMap" type="com.goldnet.duty.entity.TpsEventDetails20210727">
+            <result property="id" column="id" jdbcType="OTHER"/>
+            <result property="platform" column="platform" jdbcType="VARCHAR"/>
+            <result property="game_code" column="game_code" jdbcType="VARCHAR"/>
+            <result property="bet_total" column="bet_total" jdbcType="NUMERIC"/>
+            <result property="pre" column="pre" jdbcType="NUMERIC"/>
+            <result property="member_id" column="member_id" jdbcType="OTHER"/>
+            <result property="event_uuid" column="event_uuid" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,platform,game_code,
+        bet_total,pre,member_id,
+        event_uuid
+    </sql>
+</mapper>

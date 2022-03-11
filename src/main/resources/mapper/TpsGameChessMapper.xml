@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.goldnet.duty.mapper.TpsGameChessMapper">
+
+    <resultMap id="BaseResultMap" type="com.goldnet.duty.entity.TpsGameChess">
+            <id property="id" column="id" jdbcType="OTHER"/>
+            <result property="platform_code" column="platform_code" jdbcType="VARCHAR"/>
+            <result property="name" column="name" jdbcType="VARCHAR"/>
+            <result property="img_url" column="img_url" jdbcType="VARCHAR"/>
+            <result property="remark" column="remark" jdbcType="VARCHAR"/>
+            <result property="status" column="status" jdbcType="OTHER"/>
+            <result property="game_id" column="game_id" jdbcType="VARCHAR"/>
+            <result property="game_code" column="game_code" jdbcType="VARCHAR"/>
+            <result property="game_alias" column="game_alias" jdbcType="VARCHAR"/>
+            <result property="sort" column="sort" jdbcType="OTHER"/>
+            <result property="create_user" column="create_user" jdbcType="VARCHAR"/>
+            <result property="create_time" column="create_time" jdbcType="TIMESTAMP"/>
+            <result property="update_user" column="update_user" jdbcType="VARCHAR"/>
+            <result property="update_time" column="update_time" jdbcType="TIMESTAMP"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,platform_code,name,
+        img_url,remark,status,
+        game_id,game_code,game_alias,
+        sort,create_user,create_time,
+        update_user,update_time
+    </sql>
+</mapper>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.goldnet.duty.mapper.WiPhotoDocMapper">
+
+    <resultMap id="BaseResultMap" type="com.goldnet.duty.entity.WiPhotoDoc">
+            <id property="id" column="id" jdbcType="OTHER"/>
+            <result property="ddgd_id" column="ddgd_id" jdbcType="OTHER"/>
+            <result property="type" column="type" jdbcType="VARCHAR"/>
+            <result property="create_user" column="create_user" jdbcType="VARCHAR"/>
+            <result property="create_time" column="create_time" jdbcType="TIMESTAMP"/>
+            <result property="update_user" column="update_user" jdbcType="VARCHAR"/>
+            <result property="update_time" column="update_time" jdbcType="TIMESTAMP"/>
+            <result property="title_big" column="title_big" jdbcType="VARCHAR"/>
+            <result property="title_sim" column="title_sim" jdbcType="VARCHAR"/>
+            <result property="title_eng" column="title_eng" jdbcType="VARCHAR"/>
+            <result property="doc_id" column="doc_id" jdbcType="OTHER"/>
+            <result property="mouse_status_big" column="mouse_status_big" jdbcType="OTHER"/>
+            <result property="mouse_status_sim" column="mouse_status_sim" jdbcType="OTHER"/>
+            <result property="mouse_status_eng" column="mouse_status_eng" jdbcType="OTHER"/>
+            <result property="mouse_off_pic_big" column="mouse_off_pic_big" jdbcType="VARCHAR"/>
+            <result property="mouse_off_pic_sim" column="mouse_off_pic_sim" jdbcType="VARCHAR"/>
+            <result property="mouse_off_pic_eng" column="mouse_off_pic_eng" jdbcType="VARCHAR"/>
+            <result property="mouse_in_pic_big" column="mouse_in_pic_big" jdbcType="VARCHAR"/>
+            <result property="mouse_in_pic_sim" column="mouse_in_pic_sim" jdbcType="VARCHAR"/>
+            <result property="mouse_in_pic_eng" column="mouse_in_pic_eng" jdbcType="VARCHAR"/>
+            <result property="mouse_out_pic_big" column="mouse_out_pic_big" jdbcType="VARCHAR"/>
+            <result property="mouse_out_pic_sim" column="mouse_out_pic_sim" jdbcType="VARCHAR"/>
+            <result property="mouse_out_pic_eng" column="mouse_out_pic_eng" jdbcType="VARCHAR"/>
+            <result property="pic_status_big" column="pic_status_big" jdbcType="OTHER"/>
+            <result property="pic_status_sim" column="pic_status_sim" jdbcType="OTHER"/>
+            <result property="pic_status_eng" column="pic_status_eng" jdbcType="OTHER"/>
+            <result property="cpic_big" column="cpic_big" jdbcType="VARCHAR"/>
+            <result property="cpic_sim" column="cpic_sim" jdbcType="VARCHAR"/>
+            <result property="cpic_eng" column="cpic_eng" jdbcType="VARCHAR"/>
+            <result property="context_big" column="context_big" jdbcType="VARCHAR"/>
+            <result property="context_sim" column="context_sim" jdbcType="VARCHAR"/>
+            <result property="context_eng" column="context_eng" jdbcType="VARCHAR"/>
+            <result property="float_position_big" column="float_position_big" jdbcType="OTHER"/>
+            <result property="float_position_sim" column="float_position_sim" jdbcType="OTHER"/>
+            <result property="float_position_eng" column="float_position_eng" jdbcType="OTHER"/>
+            <result property="junction_big" column="junction_big" jdbcType="VARCHAR"/>
+            <result property="junction_sim" column="junction_sim" jdbcType="VARCHAR"/>
+            <result property="junction_eng" column="junction_eng" jdbcType="VARCHAR"/>
+            <result property="old_sort" column="old_sort" jdbcType="OTHER"/>
+            <result property="now_sort" column="now_sort" jdbcType="OTHER"/>
+            <result property="title_describe_big" column="title_describe_big" jdbcType="VARCHAR"/>
+            <result property="title_describe_sim" column="title_describe_sim" jdbcType="VARCHAR"/>
+            <result property="title_describe_eng" column="title_describe_eng" jdbcType="VARCHAR"/>
+            <result property="en_height" column="en_height" jdbcType="OTHER"/>
+            <result property="gbk_height" column="gbk_height" jdbcType="OTHER"/>
+            <result property="big5_height" column="big5_height" jdbcType="OTHER"/>
+            <result property="en_width" column="en_width" jdbcType="OTHER"/>
+            <result property="gbk_width" column="gbk_width" jdbcType="OTHER"/>
+            <result property="big5_width" column="big5_width" jdbcType="OTHER"/>
+            <result property="href_target_big" column="href_target_big" jdbcType="VARCHAR"/>
+            <result property="href_target_sim" column="href_target_sim" jdbcType="VARCHAR"/>
+            <result property="href_target_eng" column="href_target_eng" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,ddgd_id,type,
+        create_user,create_time,update_user,
+        update_time,title_big,title_sim,
+        title_eng,doc_id,mouse_status_big,
+        mouse_status_sim,mouse_status_eng,mouse_off_pic_big,
+        mouse_off_pic_sim,mouse_off_pic_eng,mouse_in_pic_big,
+        mouse_in_pic_sim,mouse_in_pic_eng,mouse_out_pic_big,
+        mouse_out_pic_sim,mouse_out_pic_eng,pic_status_big,
+        pic_status_sim,pic_status_eng,cpic_big,
+        cpic_sim,cpic_eng,context_big,
+        context_sim,context_eng,float_position_big,
+        float_position_sim,float_position_eng,junction_big,
+        junction_sim,junction_eng,old_sort,
+        now_sort,title_describe_big,title_describe_sim,
+        title_describe_eng,en_height,gbk_height,
+        big5_height,en_width,gbk_width,
+        big5_width,href_target_big,href_target_sim,
+        href_target_eng
+    </sql>
+</mapper>

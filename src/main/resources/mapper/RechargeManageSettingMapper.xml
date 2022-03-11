@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.goldnet.duty.mapper.RechargeManageSettingMapper">
+
+    <resultMap id="BaseResultMap" type="com.goldnet.duty.entity.RechargeManageSetting">
+            <id property="id" column="id" jdbcType="OTHER"/>
+            <result property="name" column="name" jdbcType="VARCHAR"/>
+            <result property="order_index" column="order_index" jdbcType="OTHER"/>
+            <result property="corner_mark" column="corner_mark" jdbcType="OTHER"/>
+            <result property="picture_address" column="picture_address" jdbcType="VARCHAR"/>
+            <result property="stockholderid" column="stockholderid" jdbcType="OTHER"/>
+            <result property="recharge_type_id" column="recharge_type_id" jdbcType="OTHER"/>
+            <result property="create_date_time" column="create_date_time" jdbcType="TIMESTAMP"/>
+            <result property="update_date_time" column="update_date_time" jdbcType="TIMESTAMP"/>
+            <result property="website" column="website" jdbcType="VARCHAR"/>
+            <result property="protocol" column="protocol" jdbcType="VARCHAR"/>
+            <result property="level_ids" column="level_ids" jdbcType="OTHER"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,name,order_index,
+        corner_mark,picture_address,stockholderid,
+        recharge_type_id,create_date_time,update_date_time,
+        website,protocol,level_ids
+    </sql>
+</mapper>

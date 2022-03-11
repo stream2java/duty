@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.goldnet.duty.mapper.TpsCodeQuantitySetMapper">
+
+    <resultMap id="BaseResultMap" type="com.goldnet.duty.entity.TpsCodeQuantitySet">
+            <id property="id" column="id" jdbcType="OTHER"/>
+            <result property="code_set_id" column="code_set_id" jdbcType="OTHER"/>
+            <result property="platform_code" column="platform_code" jdbcType="VARCHAR"/>
+            <result property="platform_game_type" column="platform_game_type" jdbcType="VARCHAR"/>
+            <result property="online_check_status" column="online_check_status" jdbcType="OTHER"/>
+            <result property="online_check_num" column="online_check_num" jdbcType="OTHER"/>
+            <result property="comp_check_status" column="comp_check_status" jdbcType="OTHER"/>
+            <result property="comp_check_num" column="comp_check_num" jdbcType="OTHER"/>
+            <result property="bet_status" column="bet_status" jdbcType="OTHER"/>
+            <result property="create_time" column="create_time" jdbcType="TIMESTAMP"/>
+            <result property="update_time" column="update_time" jdbcType="TIMESTAMP"/>
+            <result property="yuebao_check_status" column="yuebao_check_status" jdbcType="OTHER"/>
+            <result property="yuebao_check_num" column="yuebao_check_num" jdbcType="OTHER"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,code_set_id,platform_code,
+        platform_game_type,online_check_status,online_check_num,
+        comp_check_status,comp_check_num,bet_status,
+        create_time,update_time,yuebao_check_status,
+        yuebao_check_num
+    </sql>
+</mapper>

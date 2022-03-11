@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.goldnet.duty.mapper.PayPlatformIpListMapper">
+
+    <resultMap id="BaseResultMap" type="com.goldnet.duty.entity.PayPlatformIpList">
+            <result property="id" column="id" jdbcType="OTHER"/>
+            <result property="accountid1" column="accountid1" jdbcType="VARCHAR"/>
+            <result property="ip" column="ip" jdbcType="VARCHAR"/>
+            <result property="create_user" column="create_user" jdbcType="VARCHAR"/>
+            <result property="create_date" column="create_date" jdbcType="VARCHAR"/>
+            <result property="update_user" column="update_user" jdbcType="VARCHAR"/>
+            <result property="update_date" column="update_date" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,accountid1,ip,
+        create_user,create_date,update_user,
+        update_date
+    </sql>
+</mapper>

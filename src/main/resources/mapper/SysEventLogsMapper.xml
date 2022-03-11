@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.goldnet.duty.mapper.SysEventLogsMapper">
+
+    <resultMap id="BaseResultMap" type="com.goldnet.duty.entity.SysEventLogs">
+            <id property="log_id" column="log_id" jdbcType="VARCHAR"/>
+            <result property="operator" column="operator" jdbcType="OTHER"/>
+            <result property="message" column="message" jdbcType="VARCHAR"/>
+            <result property="group_info" column="group_info" jdbcType="VARCHAR"/>
+            <result property="package_path" column="package_path" jdbcType="VARCHAR"/>
+            <result property="method" column="method" jdbcType="VARCHAR"/>
+            <result property="running_time" column="running_time" jdbcType="VARCHAR"/>
+            <result property="status" column="status" jdbcType="VARCHAR"/>
+            <result property="result_info" column="result_info" jdbcType="VARCHAR"/>
+            <result property="error_info" column="error_info" jdbcType="VARCHAR"/>
+            <result property="event_time" column="event_time" jdbcType="TIMESTAMP"/>
+            <result property="operator_name" column="operator_name" jdbcType="VARCHAR"/>
+            <result property="start_time" column="start_time" jdbcType="TIMESTAMP"/>
+            <result property="end_time" column="end_time" jdbcType="TIMESTAMP"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        log_id,operator,message,
+        group_info,package_path,method,
+        running_time,status,result_info,
+        error_info,event_time,operator_name,
+        start_time,end_time
+    </sql>
+</mapper>

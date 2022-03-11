@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.goldnet.duty.mapper.GeLoginMapper">
+
+    <resultMap id="BaseResultMap" type="com.goldnet.duty.entity.GeLogin">
+            <id property="id" column="id" jdbcType="OTHER"/>
+            <result property="account" column="account" jdbcType="VARCHAR"/>
+            <result property="login_ip" column="login_ip" jdbcType="VARCHAR"/>
+            <result property="browser" column="browser" jdbcType="VARCHAR"/>
+            <result property="login_time" column="login_time" jdbcType="TIMESTAMP"/>
+            <result property="create_user" column="create_user" jdbcType="VARCHAR"/>
+            <result property="create_time" column="create_time" jdbcType="TIMESTAMP"/>
+            <result property="update_user" column="update_user" jdbcType="VARCHAR"/>
+            <result property="update_time" column="update_time" jdbcType="TIMESTAMP"/>
+            <result property="remark" column="remark" jdbcType="VARCHAR"/>
+            <result property="account_id" column="account_id" jdbcType="OTHER"/>
+            <result property="rate" column="rate" jdbcType="VARCHAR"/>
+            <result property="login_state" column="login_state" jdbcType="VARCHAR"/>
+            <result property="status" column="status" jdbcType="OTHER"/>
+            <result property="account1" column="account1" jdbcType="OTHER"/>
+            <result property="account2" column="account2" jdbcType="OTHER"/>
+            <result property="account3" column="account3" jdbcType="OTHER"/>
+            <result property="account4" column="account4" jdbcType="OTHER"/>
+            <result property="account5" column="account5" jdbcType="OTHER"/>
+            <result property="type" column="type" jdbcType="VARCHAR"/>
+            <result property="terminal" column="terminal" jdbcType="OTHER"/>
+            <result property="login_location" column="login_location" jdbcType="VARCHAR"/>
+            <result property="device" column="device" jdbcType="OTHER"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,account,login_ip,
+        browser,login_time,create_user,
+        create_time,update_user,update_time,
+        remark,account_id,rate,
+        login_state,status,account1,
+        account2,account3,account4,
+        account5,type,terminal,
+        login_location,device
+    </sql>
+</mapper>

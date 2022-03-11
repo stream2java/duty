@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.goldnet.duty.mapper.GeLotterySeriesMapper">
+
+    <resultMap id="BaseResultMap" type="com.goldnet.duty.entity.GeLotterySeries">
+            <id property="id" column="id" jdbcType="OTHER"/>
+            <result property="lottery_id" column="lottery_id" jdbcType="OTHER"/>
+            <result property="series_id" column="series_id" jdbcType="OTHER"/>
+            <result property="lottery_order" column="lottery_order" jdbcType="OTHER"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,lottery_id,series_id,
+        lottery_order
+    </sql>
+</mapper>

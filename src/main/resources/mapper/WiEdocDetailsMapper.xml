@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.goldnet.duty.mapper.WiEdocDetailsMapper">
+
+    <resultMap id="BaseResultMap" type="com.goldnet.duty.entity.WiEdocDetails">
+            <id property="id" column="id" jdbcType="OTHER"/>
+            <result property="create_user" column="create_user" jdbcType="VARCHAR"/>
+            <result property="create_time" column="create_time" jdbcType="TIMESTAMP"/>
+            <result property="update_user" column="update_user" jdbcType="VARCHAR"/>
+            <result property="update_time" column="update_time" jdbcType="TIMESTAMP"/>
+            <result property="title_big" column="title_big" jdbcType="VARCHAR"/>
+            <result property="title_sim" column="title_sim" jdbcType="VARCHAR"/>
+            <result property="title_eng" column="title_eng" jdbcType="VARCHAR"/>
+            <result property="doc_id" column="doc_id" jdbcType="OTHER"/>
+            <result property="pic_status_big" column="pic_status_big" jdbcType="OTHER"/>
+            <result property="pic_status_sim" column="pic_status_sim" jdbcType="OTHER"/>
+            <result property="pic_status_eng" column="pic_status_eng" jdbcType="OTHER"/>
+            <result property="cpic_big" column="cpic_big" jdbcType="VARCHAR"/>
+            <result property="cpic_sim" column="cpic_sim" jdbcType="VARCHAR"/>
+            <result property="cpic_eng" column="cpic_eng" jdbcType="VARCHAR"/>
+            <result property="context_big" column="context_big" jdbcType="VARCHAR"/>
+            <result property="context_sim" column="context_sim" jdbcType="VARCHAR"/>
+            <result property="context_eng" column="context_eng" jdbcType="VARCHAR"/>
+            <result property="old_sort" column="old_sort" jdbcType="OTHER"/>
+            <result property="now_sort" column="now_sort" jdbcType="OTHER"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,create_user,create_time,
+        update_user,update_time,title_big,
+        title_sim,title_eng,doc_id,
+        pic_status_big,pic_status_sim,pic_status_eng,
+        cpic_big,cpic_sim,cpic_eng,
+        context_big,context_sim,context_eng,
+        old_sort,now_sort
+    </sql>
+</mapper>

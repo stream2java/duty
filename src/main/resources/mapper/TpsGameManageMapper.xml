@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.goldnet.duty.mapper.TpsGameManageMapper">
+
+    <resultMap id="BaseResultMap" type="com.goldnet.duty.entity.TpsGameManage">
+            <id property="id" column="id" jdbcType="OTHER"/>
+            <result property="category_name" column="category_name" jdbcType="VARCHAR"/>
+            <result property="category_code" column="category_code" jdbcType="VARCHAR"/>
+            <result property="parent_code" column="parent_code" jdbcType="VARCHAR"/>
+            <result property="parent_id" column="parent_id" jdbcType="OTHER"/>
+            <result property="category_level" column="category_level" jdbcType="SMALLINT"/>
+            <result property="sort" column="sort" jdbcType="OTHER"/>
+            <result property="show_child" column="show_child" jdbcType="SMALLINT"/>
+            <result property="category_img_url" column="category_img_url" jdbcType="VARCHAR"/>
+            <result property="create_user" column="create_user" jdbcType="VARCHAR"/>
+            <result property="create_time" column="create_time" jdbcType="TIMESTAMP"/>
+            <result property="update_user" column="update_user" jdbcType="VARCHAR"/>
+            <result property="update_time" column="update_time" jdbcType="TIMESTAMP"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,category_name,category_code,
+        parent_code,parent_id,category_level,
+        sort,show_child,category_img_url,
+        create_user,create_time,update_user,
+        update_time
+    </sql>
+</mapper>

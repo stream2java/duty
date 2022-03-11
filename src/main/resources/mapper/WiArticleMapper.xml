@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.goldnet.duty.mapper.WiArticleMapper">
+
+    <resultMap id="BaseResultMap" type="com.goldnet.duty.entity.WiArticle">
+            <id property="id" column="id" jdbcType="OTHER"/>
+            <result property="doc_title" column="doc_title" jdbcType="VARCHAR"/>
+            <result property="big_title" column="big_title" jdbcType="VARCHAR"/>
+            <result property="eng_title" column="eng_title" jdbcType="VARCHAR"/>
+            <result property="sim_title" column="sim_title" jdbcType="VARCHAR"/>
+            <result property="big_intro" column="big_intro" jdbcType="VARCHAR"/>
+            <result property="eng_intro" column="eng_intro" jdbcType="VARCHAR"/>
+            <result property="sim_intro" column="sim_intro" jdbcType="VARCHAR"/>
+            <result property="big_title_img" column="big_title_img" jdbcType="VARCHAR"/>
+            <result property="eng_title_img" column="eng_title_img" jdbcType="VARCHAR"/>
+            <result property="sim_title_img" column="sim_title_img" jdbcType="VARCHAR"/>
+            <result property="big_title_in_img" column="big_title_in_img" jdbcType="VARCHAR"/>
+            <result property="eng_title_in_img" column="eng_title_in_img" jdbcType="VARCHAR"/>
+            <result property="sim_title_in_img" column="sim_title_in_img" jdbcType="VARCHAR"/>
+            <result property="big_title_out_img" column="big_title_out_img" jdbcType="VARCHAR"/>
+            <result property="eng_title_out_img" column="eng_title_out_img" jdbcType="VARCHAR"/>
+            <result property="sim_title_out_img" column="sim_title_out_img" jdbcType="VARCHAR"/>
+            <result property="title_type" column="title_type" jdbcType="OTHER"/>
+            <result property="content_type" column="content_type" jdbcType="OTHER"/>
+            <result property="link_url" column="link_url" jdbcType="VARCHAR"/>
+            <result property="big_content" column="big_content" jdbcType="VARCHAR"/>
+            <result property="eng_content" column="eng_content" jdbcType="VARCHAR"/>
+            <result property="sim_content" column="sim_content" jdbcType="VARCHAR"/>
+            <result property="big_content_img" column="big_content_img" jdbcType="VARCHAR"/>
+            <result property="eng_content_img" column="eng_content_img" jdbcType="VARCHAR"/>
+            <result property="sim_content_img" column="sim_content_img" jdbcType="VARCHAR"/>
+            <result property="category_id" column="category_id" jdbcType="OTHER"/>
+            <result property="section_id" column="section_id" jdbcType="OTHER"/>
+            <result property="effect" column="effect" jdbcType="VARCHAR"/>
+            <result property="sort_id" column="sort_id" jdbcType="OTHER"/>
+            <result property="account1" column="account1" jdbcType="OTHER"/>
+            <result property="station_id" column="station_id" jdbcType="OTHER"/>
+            <result property="create_time" column="create_time" jdbcType="TIMESTAMP"/>
+            <result property="update_time" column="update_time" jdbcType="TIMESTAMP"/>
+            <result property="give_auditing_time" column="give_auditing_time" jdbcType="TIMESTAMP"/>
+            <result property="effect_time" column="effect_time" jdbcType="TIMESTAMP"/>
+            <result property="check_time" column="check_time" jdbcType="TIMESTAMP"/>
+            <result property="auditing_status" column="auditing_status" jdbcType="OTHER"/>
+            <result property="cancel_reason" column="cancel_reason" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,doc_title,big_title,
+        eng_title,sim_title,big_intro,
+        eng_intro,sim_intro,big_title_img,
+        eng_title_img,sim_title_img,big_title_in_img,
+        eng_title_in_img,sim_title_in_img,big_title_out_img,
+        eng_title_out_img,sim_title_out_img,title_type,
+        content_type,link_url,big_content,
+        eng_content,sim_content,big_content_img,
+        eng_content_img,sim_content_img,category_id,
+        section_id,effect,sort_id,
+        account1,station_id,create_time,
+        update_time,give_auditing_time,effect_time,
+        check_time,auditing_status,cancel_reason
+    </sql>
+</mapper>

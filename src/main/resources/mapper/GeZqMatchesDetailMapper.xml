@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.goldnet.duty.mapper.GeZqMatchesDetailMapper">
+
+    <resultMap id="BaseResultMap" type="com.goldnet.duty.entity.GeZqMatchesDetail">
+            <id property="matches_detail_id" column="matches_detail_id" jdbcType="OTHER"/>
+            <result property="matches_id" column="matches_id" jdbcType="OTHER"/>
+            <result property="h_team" column="h_team" jdbcType="VARCHAR"/>
+            <result property="g_team" column="g_team" jdbcType="VARCHAR"/>
+            <result property="betting_start_date" column="betting_start_date" jdbcType="VARCHAR"/>
+            <result property="betting_end_date" column="betting_end_date" jdbcType="VARCHAR"/>
+            <result property="create_user" column="create_user" jdbcType="VARCHAR"/>
+            <result property="create_date_time" column="create_date_time" jdbcType="TIMESTAMP"/>
+            <result property="update_user" column="update_user" jdbcType="VARCHAR"/>
+            <result property="update_date_time" column="update_date_time" jdbcType="TIMESTAMP"/>
+            <result property="is_live" column="is_live" jdbcType="VARCHAR"/>
+            <result property="is_live_start" column="is_live_start" jdbcType="VARCHAR"/>
+            <result property="live_time" column="live_time" jdbcType="VARCHAR"/>
+            <result property="live_status" column="live_status" jdbcType="VARCHAR"/>
+            <result property="h_score" column="h_score" jdbcType="OTHER"/>
+            <result property="g_score" column="g_score" jdbcType="OTHER"/>
+            <result property="start_time" column="start_time" jdbcType="TIMESTAMP"/>
+            <result property="is_lose" column="is_lose" jdbcType="VARCHAR"/>
+            <result property="h_illegal" column="h_illegal" jdbcType="VARCHAR"/>
+            <result property="g_illegal" column="g_illegal" jdbcType="VARCHAR"/>
+            <result property="is_mix" column="is_mix" jdbcType="VARCHAR"/>
+            <result property="is_future" column="is_future" jdbcType="VARCHAR"/>
+            <result property="h_code" column="h_code" jdbcType="OTHER"/>
+            <result property="g_code" column="g_code" jdbcType="OTHER"/>
+            <result property="mat_code" column="mat_code" jdbcType="OTHER"/>
+            <result property="is_show" column="is_show" jdbcType="VARCHAR"/>
+            <result property="is_mix_show" column="is_mix_show" jdbcType="VARCHAR"/>
+            <result property="is_bet_show" column="is_bet_show" jdbcType="VARCHAR"/>
+            <result property="is_balance" column="is_balance" jdbcType="VARCHAR"/>
+            <result property="is_result" column="is_result" jdbcType="OTHER"/>
+            <result property="lottery_id" column="lottery_id" jdbcType="OTHER"/>
+            <result property="onlykey" column="onlykey" jdbcType="VARCHAR"/>
+            <result property="bettype" column="bettype" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        matches_detail_id,matches_id,h_team,
+        g_team,betting_start_date,betting_end_date,
+        create_user,create_date_time,update_user,
+        update_date_time,is_live,is_live_start,
+        live_time,live_status,h_score,
+        g_score,start_time,is_lose,
+        h_illegal,g_illegal,is_mix,
+        is_future,h_code,g_code,
+        mat_code,is_show,is_mix_show,
+        is_bet_show,is_balance,is_result,
+        lottery_id,onlykey,bettype
+    </sql>
+</mapper>

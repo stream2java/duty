@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.goldnet.duty.mapper.GeActivityMapper">
+
+    <resultMap id="BaseResultMap" type="com.goldnet.duty.entity.GeActivity">
+            <id property="id" column="id" jdbcType="BIGINT"/>
+            <result property="account1" column="account1" jdbcType="OTHER"/>
+            <result property="activity_name" column="activity_name" jdbcType="VARCHAR"/>
+            <result property="activity_type" column="activity_type" jdbcType="SMALLINT"/>
+            <result property="activity_valid" column="activity_valid" jdbcType="SMALLINT"/>
+            <result property="activity_days" column="activity_days" jdbcType="VARCHAR"/>
+            <result property="week_days" column="week_days" jdbcType="OTHER"/>
+            <result property="start_date" column="start_date" jdbcType="DATE"/>
+            <result property="end_date" column="end_date" jdbcType="DATE"/>
+            <result property="create_time" column="create_time" jdbcType="TIMESTAMP"/>
+            <result property="create_user" column="create_user" jdbcType="VARCHAR"/>
+            <result property="update_time" column="update_time" jdbcType="TIMESTAMP"/>
+            <result property="update_user" column="update_user" jdbcType="VARCHAR"/>
+            <result property="activity_enable" column="activity_enable" jdbcType="SMALLINT"/>
+            <result property="open_time" column="open_time" jdbcType="TIMESTAMP"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,account1,activity_name,
+        activity_type,activity_valid,activity_days,
+        week_days,start_date,end_date,
+        create_time,create_user,update_time,
+        update_user,activity_enable,open_time
+    </sql>
+</mapper>

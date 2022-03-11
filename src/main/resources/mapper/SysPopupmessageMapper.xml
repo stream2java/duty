@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.goldnet.duty.mapper.SysPopupmessageMapper">
+
+    <resultMap id="BaseResultMap" type="com.goldnet.duty.entity.SysPopupmessage">
+            <result property="id" column="id" jdbcType="OTHER"/>
+            <result property="create_date_time" column="create_date_time" jdbcType="TIMESTAMP"/>
+            <result property="big5_content" column="big5_content" jdbcType="VARCHAR"/>
+            <result property="gbk_content" column="gbk_content" jdbcType="VARCHAR"/>
+            <result property="en_content" column="en_content" jdbcType="VARCHAR"/>
+            <result property="rate" column="rate" jdbcType="OTHER"/>
+            <result property="status" column="status" jdbcType="OTHER"/>
+            <result property="stockholder_id" column="stockholder_id" jdbcType="OTHER"/>
+            <result property="big5_pic_url" column="big5_pic_url" jdbcType="VARCHAR"/>
+            <result property="gbk_pic_url" column="gbk_pic_url" jdbcType="VARCHAR"/>
+            <result property="en_pic_url" column="en_pic_url" jdbcType="VARCHAR"/>
+            <result property="big5_msg_type" column="big5_msg_type" jdbcType="OTHER"/>
+            <result property="gbk_msg_type" column="gbk_msg_type" jdbcType="OTHER"/>
+            <result property="en_msg_type" column="en_msg_type" jdbcType="OTHER"/>
+            <result property="big5_width" column="big5_width" jdbcType="OTHER"/>
+            <result property="gbk_width" column="gbk_width" jdbcType="OTHER"/>
+            <result property="en_width" column="en_width" jdbcType="OTHER"/>
+            <result property="big5_height" column="big5_height" jdbcType="OTHER"/>
+            <result property="gbk_height" column="gbk_height" jdbcType="OTHER"/>
+            <result property="en_height" column="en_height" jdbcType="OTHER"/>
+            <result property="last_update_time" column="last_update_time" jdbcType="TIMESTAMP"/>
+            <result property="title" column="title" jdbcType="VARCHAR"/>
+            <result property="level_id" column="level_id" jdbcType="VARCHAR"/>
+            <result property="agent_id" column="agent_id" jdbcType="VARCHAR"/>
+            <result property="show_type" column="show_type" jdbcType="SMALLINT"/>
+            <result property="terminal_type" column="terminal_type" jdbcType="SMALLINT"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,create_date_time,big5_content,
+        gbk_content,en_content,rate,
+        status,stockholder_id,big5_pic_url,
+        gbk_pic_url,en_pic_url,big5_msg_type,
+        gbk_msg_type,en_msg_type,big5_width,
+        gbk_width,en_width,big5_height,
+        gbk_height,en_height,last_update_time,
+        title,level_id,agent_id,
+        show_type,terminal_type
+    </sql>
+</mapper>

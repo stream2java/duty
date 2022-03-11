@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.goldnet.duty.mapper.SysLeaveMessageMapper">
+
+    <resultMap id="BaseResultMap" type="com.goldnet.duty.entity.SysLeaveMessage">
+            <id property="id" column="id" jdbcType="OTHER"/>
+            <result property="content" column="content" jdbcType="VARCHAR"/>
+            <result property="account_name" column="account_name" jdbcType="VARCHAR"/>
+            <result property="account1" column="account1" jdbcType="OTHER"/>
+            <result property="message_id" column="message_id" jdbcType="OTHER"/>
+            <result property="send_time" column="send_time" jdbcType="TIMESTAMP"/>
+            <result property="status" column="status" jdbcType="OTHER"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,content,account_name,
+        account1,message_id,send_time,
+        status
+    </sql>
+</mapper>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.goldnet.duty.mapper.WiEditAlternationPlayMapper">
+
+    <resultMap id="BaseResultMap" type="com.goldnet.duty.entity.WiEditAlternationPlay">
+            <id property="play_id" column="play_id" jdbcType="OTHER"/>
+            <result property="ddgd_id" column="ddgd_id" jdbcType="OTHER"/>
+            <result property="create_user" column="create_user" jdbcType="VARCHAR"/>
+            <result property="create_time" column="create_time" jdbcType="TIMESTAMP"/>
+            <result property="update_user" column="update_user" jdbcType="VARCHAR"/>
+            <result property="update_time" column="update_time" jdbcType="TIMESTAMP"/>
+            <result property="old_sort" column="old_sort" jdbcType="OTHER"/>
+            <result property="now_sort" column="now_sort" jdbcType="OTHER"/>
+            <result property="title_tra" column="title_tra" jdbcType="VARCHAR"/>
+            <result property="title_sim" column="title_sim" jdbcType="VARCHAR"/>
+            <result property="title_eng" column="title_eng" jdbcType="VARCHAR"/>
+            <result property="pic_tra" column="pic_tra" jdbcType="VARCHAR"/>
+            <result property="pic_sim" column="pic_sim" jdbcType="VARCHAR"/>
+            <result property="pic_eng" column="pic_eng" jdbcType="VARCHAR"/>
+            <result property="delay_time_tra" column="delay_time_tra" jdbcType="OTHER"/>
+            <result property="delay_time_sim" column="delay_time_sim" jdbcType="OTHER"/>
+            <result property="delay_time_eng" column="delay_time_eng" jdbcType="OTHER"/>
+            <result property="junction_tra" column="junction_tra" jdbcType="VARCHAR"/>
+            <result property="junction_sim" column="junction_sim" jdbcType="VARCHAR"/>
+            <result property="junction_eng" column="junction_eng" jdbcType="VARCHAR"/>
+            <result property="doc_id" column="doc_id" jdbcType="OTHER"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        play_id,ddgd_id,create_user,
+        create_time,update_user,update_time,
+        old_sort,now_sort,title_tra,
+        title_sim,title_eng,pic_tra,
+        pic_sim,pic_eng,delay_time_tra,
+        delay_time_sim,delay_time_eng,junction_tra,
+        junction_sim,junction_eng,doc_id
+    </sql>
+</mapper>

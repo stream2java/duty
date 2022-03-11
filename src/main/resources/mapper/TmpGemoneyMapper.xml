@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.goldnet.duty.mapper.TmpGemoneyMapper">
+
+    <resultMap id="BaseResultMap" type="com.goldnet.duty.entity.TmpGemoney">
+            <result property="id" column="id" jdbcType="OTHER"/>
+            <result property="money" column="money" jdbcType="NUMERIC"/>
+            <result property="init_money" column="init_money" jdbcType="NUMERIC"/>
+            <result property="create_user" column="create_user" jdbcType="VARCHAR"/>
+            <result property="create_time" column="create_time" jdbcType="TIMESTAMP"/>
+            <result property="update_user" column="update_user" jdbcType="VARCHAR"/>
+            <result property="update_time" column="update_time" jdbcType="TIMESTAMP"/>
+            <result property="account_id" column="account_id" jdbcType="OTHER"/>
+            <result property="money_type" column="money_type" jdbcType="VARCHAR"/>
+            <result property="currency_money" column="currency_money" jdbcType="OTHER"/>
+            <result property="hg_money" column="hg_money" jdbcType="NUMERIC"/>
+            <result property="ea_money" column="ea_money" jdbcType="NUMERIC"/>
+            <result property="bb_money" column="bb_money" jdbcType="NUMERIC"/>
+            <result property="hg_update_time" column="hg_update_time" jdbcType="VARCHAR"/>
+            <result property="ea_update_time" column="ea_update_time" jdbcType="VARCHAR"/>
+            <result property="bb_update_time" column="bb_update_time" jdbcType="VARCHAR"/>
+            <result property="ag_money" column="ag_money" jdbcType="NUMERIC"/>
+            <result property="ag_update_time" column="ag_update_time" jdbcType="VARCHAR"/>
+            <result property="mg_money" column="mg_money" jdbcType="NUMERIC"/>
+            <result property="og_money" column="og_money" jdbcType="NUMERIC"/>
+            <result property="mg_update_time" column="mg_update_time" jdbcType="VARCHAR"/>
+            <result property="og_update_time" column="og_update_time" jdbcType="VARCHAR"/>
+            <result property="opus_money" column="opus_money" jdbcType="NUMERIC"/>
+            <result property="opus_update_time" column="opus_update_time" jdbcType="VARCHAR"/>
+            <result property="ibc_money" column="ibc_money" jdbcType="NUMERIC"/>
+            <result property="ibc_update_time" column="ibc_update_time" jdbcType="VARCHAR"/>
+            <result property="dios_money" column="dios_money" jdbcType="NUMERIC"/>
+            <result property="dios_update_time" column="dios_update_time" jdbcType="VARCHAR"/>
+            <result property="pt_money" column="pt_money" jdbcType="NUMERIC"/>
+            <result property="pt_update_time" column="pt_update_time" jdbcType="VARCHAR"/>
+            <result property="lebo_money" column="lebo_money" jdbcType="NUMERIC"/>
+            <result property="lebo_update_time" column="lebo_update_time" jdbcType="VARCHAR"/>
+            <result property="ogs_money" column="ogs_money" jdbcType="NUMERIC"/>
+            <result property="ogs_update_time" column="ogs_update_time" jdbcType="VARCHAR"/>
+            <result property="ab_money" column="ab_money" jdbcType="NUMERIC"/>
+            <result property="ab_update_time" column="ab_update_time" jdbcType="VARCHAR"/>
+            <result property="ogg_money" column="ogg_money" jdbcType="NUMERIC"/>
+            <result property="ogg_update_time" column="ogg_update_time" jdbcType="VARCHAR"/>
+            <result property="ds_money" column="ds_money" jdbcType="NUMERIC"/>
+            <result property="ds_update_time" column="ds_update_time" jdbcType="VARCHAR"/>
+            <result property="mwg_money" column="mwg_money" jdbcType="NUMERIC"/>
+            <result property="mwg_update_time" column="mwg_update_time" jdbcType="VARCHAR"/>
+            <result property="cp_money" column="cp_money" jdbcType="NUMERIC"/>
+            <result property="cp_update_time" column="cp_update_time" jdbcType="VARCHAR"/>
+            <result property="ty_money" column="ty_money" jdbcType="NUMERIC"/>
+            <result property="ty_update_time" column="ty_update_time" jdbcType="VARCHAR"/>
+            <result property="nmg_money" column="nmg_money" jdbcType="NUMERIC"/>
+            <result property="nmg_update_time" column="nmg_update_time" jdbcType="VARCHAR"/>
+            <result property="cmd_money" column="cmd_money" jdbcType="NUMERIC"/>
+            <result property="cmd_update_time" column="cmd_update_time" jdbcType="VARCHAR"/>
+            <result property="vg_money" column="vg_money" jdbcType="NUMERIC"/>
+            <result property="vg_update_time" column="vg_update_time" jdbcType="VARCHAR"/>
+            <result property="pp_money" column="pp_money" jdbcType="NUMERIC"/>
+            <result property="pp_update_time" column="pp_update_time" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,money,init_money,
+        create_user,create_time,update_user,
+        update_time,account_id,money_type,
+        currency_money,hg_money,ea_money,
+        bb_money,hg_update_time,ea_update_time,
+        bb_update_time,ag_money,ag_update_time,
+        mg_money,og_money,mg_update_time,
+        og_update_time,opus_money,opus_update_time,
+        ibc_money,ibc_update_time,dios_money,
+        dios_update_time,pt_money,pt_update_time,
+        lebo_money,lebo_update_time,ogs_money,
+        ogs_update_time,ab_money,ab_update_time,
+        ogg_money,ogg_update_time,ds_money,
+        ds_update_time,mwg_money,mwg_update_time,
+        cp_money,cp_update_time,ty_money,
+        ty_update_time,nmg_money,nmg_update_time,
+        cmd_money,cmd_update_time,vg_money,
+        vg_update_time,pp_money,pp_update_time
+    </sql>
+</mapper>

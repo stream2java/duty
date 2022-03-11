@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.goldnet.duty.mapper.AppPackAddressManagerMapper">
+
+    <resultMap id="BaseResultMap" type="com.goldnet.duty.entity.AppPackAddressManager">
+            <id property="id" column="id" jdbcType="OTHER"/>
+            <result property="app_type" column="app_type" jdbcType="OTHER"/>
+            <result property="device_type" column="device_type" jdbcType="OTHER"/>
+            <result property="pack_address" column="pack_address" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,app_type,device_type,
+        pack_address
+    </sql>
+</mapper>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.goldnet.duty.mapper.YuebaoCashFlowMapper">
+
+    <resultMap id="BaseResultMap" type="com.goldnet.duty.entity.YuebaoCashFlow">
+            <id property="id" column="id" jdbcType="BIGINT"/>
+            <result property="account1" column="account1" jdbcType="OTHER"/>
+            <result property="member_id" column="member_id" jdbcType="OTHER"/>
+            <result property="member_account" column="member_account" jdbcType="VARCHAR"/>
+            <result property="level_id" column="level_id" jdbcType="OTHER"/>
+            <result property="level_name" column="level_name" jdbcType="VARCHAR"/>
+            <result property="agent_id" column="agent_id" jdbcType="OTHER"/>
+            <result property="agent_account" column="agent_account" jdbcType="VARCHAR"/>
+            <result property="trade_type" column="trade_type" jdbcType="SMALLINT"/>
+            <result property="flow_type" column="flow_type" jdbcType="SMALLINT"/>
+            <result property="draw_type" column="draw_type" jdbcType="SMALLINT"/>
+            <result property="balance" column="balance" jdbcType="NUMERIC"/>
+            <result property="trade_money" column="trade_money" jdbcType="NUMERIC"/>
+            <result property="deposit_bill_no" column="deposit_bill_no" jdbcType="VARCHAR"/>
+            <result property="withdraw_bill_no" column="withdraw_bill_no" jdbcType="VARCHAR"/>
+            <result property="remark" column="remark" jdbcType="VARCHAR"/>
+            <result property="create_time" column="create_time" jdbcType="TIMESTAMP"/>
+            <result property="type" column="type" jdbcType="VARCHAR"/>
+            <result property="operator_id" column="operator_id" jdbcType="OTHER"/>
+            <result property="operator_account" column="operator_account" jdbcType="VARCHAR"/>
+            <result property="update_time" column="update_time" jdbcType="TIMESTAMP"/>
+            <result property="member_remark" column="member_remark" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,account1,member_id,
+        member_account,level_id,level_name,
+        agent_id,agent_account,trade_type,
+        flow_type,draw_type,balance,
+        trade_money,deposit_bill_no,withdraw_bill_no,
+        remark,create_time,type,
+        operator_id,operator_account,update_time,
+        member_remark
+    </sql>
+</mapper>

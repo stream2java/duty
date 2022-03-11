@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.goldnet.duty.mapper.TpsGameManageStationSubMapper">
+
+    <resultMap id="BaseResultMap" type="com.goldnet.duty.entity.TpsGameManageStationSub">
+            <id property="id" column="id" jdbcType="OTHER"/>
+            <result property="account1" column="account1" jdbcType="OTHER"/>
+            <result property="station_sub_id" column="station_sub_id" jdbcType="OTHER"/>
+            <result property="manage_id" column="manage_id" jdbcType="OTHER"/>
+            <result property="open_status" column="open_status" jdbcType="OTHER"/>
+            <result property="sort" column="sort" jdbcType="OTHER"/>
+            <result property="create_time" column="create_time" jdbcType="TIMESTAMP"/>
+            <result property="create_user" column="create_user" jdbcType="VARCHAR"/>
+            <result property="update_time" column="update_time" jdbcType="TIMESTAMP"/>
+            <result property="update_user" column="update_user" jdbcType="VARCHAR"/>
+            <result property="click_flag" column="click_flag" jdbcType="OTHER"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,account1,station_sub_id,
+        manage_id,open_status,sort,
+        create_time,create_user,update_time,
+        update_user,click_flag
+    </sql>
+</mapper>

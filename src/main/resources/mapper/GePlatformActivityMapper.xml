@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.goldnet.duty.mapper.GePlatformActivityMapper">
+
+    <resultMap id="BaseResultMap" type="com.goldnet.duty.entity.GePlatformActivity">
+            <id property="id" column="id" jdbcType="BIGINT"/>
+            <result property="account1" column="account1" jdbcType="OTHER"/>
+            <result property="db_sync_id" column="db_sync_id" jdbcType="VARCHAR"/>
+            <result property="activity_title" column="activity_title" jdbcType="VARCHAR"/>
+            <result property="sort" column="sort" jdbcType="OTHER"/>
+            <result property="start_time" column="start_time" jdbcType="VARCHAR"/>
+            <result property="end_time" column="end_time" jdbcType="VARCHAR"/>
+            <result property="platform_code" column="platform_code" jdbcType="VARCHAR"/>
+            <result property="platform_name" column="platform_name" jdbcType="VARCHAR"/>
+            <result property="status" column="status" jdbcType="SMALLINT"/>
+            <result property="activity_enable" column="activity_enable" jdbcType="SMALLINT"/>
+            <result property="title_type_wap" column="title_type_wap" jdbcType="SMALLINT"/>
+            <result property="title_icon_wap" column="title_icon_wap" jdbcType="SMALLINT"/>
+            <result property="title_pic_wap" column="title_pic_wap" jdbcType="VARCHAR"/>
+            <result property="title_txt_wap" column="title_txt_wap" jdbcType="VARCHAR"/>
+            <result property="title_type_pc" column="title_type_pc" jdbcType="SMALLINT"/>
+            <result property="title_icon_pc" column="title_icon_pc" jdbcType="VARCHAR"/>
+            <result property="title_pic_pc" column="title_pic_pc" jdbcType="VARCHAR"/>
+            <result property="title_txt_pc" column="title_txt_pc" jdbcType="VARCHAR"/>
+            <result property="content_pc" column="content_pc" jdbcType="VARCHAR"/>
+            <result property="content_wap" column="content_wap" jdbcType="VARCHAR"/>
+            <result property="activity_title_temp" column="activity_title_temp" jdbcType="VARCHAR"/>
+            <result property="content_pc_temp" column="content_pc_temp" jdbcType="VARCHAR"/>
+            <result property="content_wap_temp" column="content_wap_temp" jdbcType="VARCHAR"/>
+            <result property="create_time" column="create_time" jdbcType="TIMESTAMP"/>
+            <result property="create_user" column="create_user" jdbcType="VARCHAR"/>
+            <result property="update_time" column="update_time" jdbcType="TIMESTAMP"/>
+            <result property="update_user" column="update_user" jdbcType="VARCHAR"/>
+            <result property="title_type_hbapp" column="title_type_hbapp" jdbcType="SMALLINT"/>
+            <result property="title_icon_hbapp" column="title_icon_hbapp" jdbcType="SMALLINT"/>
+            <result property="title_pic_hbapp" column="title_pic_hbapp" jdbcType="VARCHAR"/>
+            <result property="title_txt_hbapp" column="title_txt_hbapp" jdbcType="VARCHAR"/>
+            <result property="content_hbapp" column="content_hbapp" jdbcType="VARCHAR"/>
+            <result property="content_hbapp_temp" column="content_hbapp_temp" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,account1,db_sync_id,
+        activity_title,sort,start_time,
+        end_time,platform_code,platform_name,
+        status,activity_enable,title_type_wap,
+        title_icon_wap,title_pic_wap,title_txt_wap,
+        title_type_pc,title_icon_pc,title_pic_pc,
+        title_txt_pc,content_pc,content_wap,
+        activity_title_temp,content_pc_temp,content_wap_temp,
+        create_time,create_user,update_time,
+        update_user,title_type_hbapp,title_icon_hbapp,
+        title_pic_hbapp,title_txt_hbapp,content_hbapp,
+        content_hbapp_temp
+    </sql>
+</mapper>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.goldnet.duty.mapper.TpsPlatformInfoMapper">
+
+    <resultMap id="BaseResultMap" type="com.goldnet.duty.entity.TpsPlatformInfo">
+            <id property="id" column="id" jdbcType="OTHER"/>
+            <result property="platform_name" column="platform_name" jdbcType="VARCHAR"/>
+            <result property="platform_code" column="platform_code" jdbcType="VARCHAR"/>
+            <result property="code_name" column="code_name" jdbcType="VARCHAR"/>
+            <result property="lowercase_code" column="lowercase_code" jdbcType="VARCHAR"/>
+            <result property="parent_platform_code" column="parent_platform_code" jdbcType="VARCHAR"/>
+            <result property="create_time" column="create_time" jdbcType="TIMESTAMP"/>
+            <result property="update_time" column="update_time" jdbcType="TIMESTAMP"/>
+            <result property="create_user" column="create_user" jdbcType="VARCHAR"/>
+            <result property="update_user" column="update_user" jdbcType="VARCHAR"/>
+            <result property="status" column="status" jdbcType="OTHER"/>
+            <result property="type_id" column="type_id" jdbcType="OTHER"/>
+            <result property="parent_id" column="parent_id" jdbcType="OTHER"/>
+            <result property="sort" column="sort" jdbcType="OTHER"/>
+            <result property="remark" column="remark" jdbcType="VARCHAR"/>
+            <result property="jockpot" column="jockpot" jdbcType="OTHER"/>
+            <result property="utc" column="utc" jdbcType="OTHER"/>
+            <result property="freeplay" column="freeplay" jdbcType="OTHER"/>
+            <result property="jump_type" column="jump_type" jdbcType="OTHER"/>
+            <result property="jump_param" column="jump_param" jdbcType="VARCHAR"/>
+            <result property="import_utc" column="import_utc" jdbcType="OTHER"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,platform_name,platform_code,
+        code_name,lowercase_code,parent_platform_code,
+        create_time,update_time,create_user,
+        update_user,status,type_id,
+        parent_id,sort,remark,
+        jockpot,utc,freeplay,
+        jump_type,jump_param,import_utc
+    </sql>
+</mapper>

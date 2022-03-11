@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.goldnet.duty.mapper.AppJpushMessageMapper">
+
+    <resultMap id="BaseResultMap" type="com.goldnet.duty.entity.AppJpushMessage">
+            <id property="id" column="id" jdbcType="OTHER"/>
+            <result property="content" column="content" jdbcType="VARCHAR"/>
+            <result property="title" column="title" jdbcType="VARCHAR"/>
+            <result property="account1" column="account1" jdbcType="OTHER"/>
+            <result property="jpush_message_id" column="jpush_message_id" jdbcType="VARCHAR"/>
+            <result property="send_time" column="send_time" jdbcType="TIMESTAMP"/>
+            <result property="status" column="status" jdbcType="OTHER"/>
+            <result property="target" column="target" jdbcType="OTHER"/>
+            <result property="tags" column="tags" jdbcType="OTHER"/>
+            <result property="platform" column="platform" jdbcType="OTHER"/>
+            <result property="live_time" column="live_time" jdbcType="OTHER"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,content,title,
+        account1,jpush_message_id,send_time,
+        status,target,tags,
+        platform,live_time
+    </sql>
+</mapper>

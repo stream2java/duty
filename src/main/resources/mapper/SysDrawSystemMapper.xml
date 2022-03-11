@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.goldnet.duty.mapper.SysDrawSystemMapper">
+
+    <resultMap id="BaseResultMap" type="com.goldnet.duty.entity.SysDrawSystem">
+            <id property="id" column="id" jdbcType="OTHER"/>
+            <result property="pay_name" column="pay_name" jdbcType="VARCHAR"/>
+            <result property="remit_gateway" column="remit_gateway" jdbcType="VARCHAR"/>
+            <result property="remit_path" column="remit_path" jdbcType="VARCHAR"/>
+            <result property="balance_gateway" column="balance_gateway" jdbcType="VARCHAR"/>
+            <result property="balance_path" column="balance_path" jdbcType="VARCHAR"/>
+            <result property="status" column="status" jdbcType="OTHER"/>
+            <result property="banktype" column="banktype" jdbcType="OTHER"/>
+            <result property="bean_name" column="bean_name" jdbcType="VARCHAR"/>
+            <result property="mer_console_alias" column="mer_console_alias" jdbcType="VARCHAR"/>
+            <result property="mer_no_alias" column="mer_no_alias" jdbcType="VARCHAR"/>
+            <result property="mer_key_alias" column="mer_key_alias" jdbcType="VARCHAR"/>
+            <result property="mer_console_prompt" column="mer_console_prompt" jdbcType="VARCHAR"/>
+            <result property="create_time" column="create_time" jdbcType="VARCHAR"/>
+            <result property="update_time" column="update_time" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,pay_name,remit_gateway,
+        remit_path,balance_gateway,balance_path,
+        status,banktype,bean_name,
+        mer_console_alias,mer_no_alias,mer_key_alias,
+        mer_console_prompt,create_time,update_time
+    </sql>
+</mapper>

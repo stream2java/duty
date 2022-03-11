@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.goldnet.duty.mapper.MnyCompCheckSettingMapper">
+
+    <resultMap id="BaseResultMap" type="com.goldnet.duty.entity.MnyCompCheckSetting">
+            <id property="id" column="id" jdbcType="OTHER"/>
+            <result property="comp_record_id" column="comp_record_id" jdbcType="OTHER"/>
+            <result property="deposit_money" column="deposit_money" jdbcType="NUMERIC"/>
+            <result property="preferential" column="preferential" jdbcType="NUMERIC"/>
+            <result property="comp_check_status" column="comp_check_status" jdbcType="OTHER"/>
+            <result property="comp_check_num" column="comp_check_num" jdbcType="OTHER"/>
+            <result property="normal_check_status" column="normal_check_status" jdbcType="OTHER"/>
+            <result property="normal_per" column="normal_per" jdbcType="OTHER"/>
+            <result property="normal_relax" column="normal_relax" jdbcType="NUMERIC"/>
+            <result property="normal_adm_per" column="normal_adm_per" jdbcType="OTHER"/>
+            <result property="comp_bet" column="comp_bet" jdbcType="NUMERIC"/>
+            <result property="create_time" column="create_time" jdbcType="TIMESTAMP"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,comp_record_id,deposit_money,
+        preferential,comp_check_status,comp_check_num,
+        normal_check_status,normal_per,normal_relax,
+        normal_adm_per,comp_bet,create_time
+    </sql>
+</mapper>

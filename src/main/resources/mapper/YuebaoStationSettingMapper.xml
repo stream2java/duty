@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.goldnet.duty.mapper.YuebaoStationSettingMapper">
+
+    <resultMap id="BaseResultMap" type="com.goldnet.duty.entity.YuebaoStationSetting">
+            <id property="id" column="id" jdbcType="OTHER"/>
+            <result property="account1" column="account1" jdbcType="OTHER"/>
+            <result property="station_id" column="station_id" jdbcType="OTHER"/>
+            <result property="switch_flag" column="switch_flag" jdbcType="SMALLINT"/>
+            <result property="interest_cycle" column="interest_cycle" jdbcType="OTHER"/>
+            <result property="interest_rate" column="interest_rate" jdbcType="NUMERIC"/>
+            <result property="addition_interest_rate" column="addition_interest_rate" jdbcType="NUMERIC"/>
+            <result property="create_time" column="create_time" jdbcType="TIMESTAMP"/>
+            <result property="create_account" column="create_account" jdbcType="VARCHAR"/>
+            <result property="update_time" column="update_time" jdbcType="TIMESTAMP"/>
+            <result property="update_account" column="update_account" jdbcType="VARCHAR"/>
+            <result property="level_ids" column="level_ids" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,account1,station_id,
+        switch_flag,interest_cycle,interest_rate,
+        addition_interest_rate,create_time,create_account,
+        update_time,update_account,level_ids
+    </sql>
+</mapper>

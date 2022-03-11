@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.goldnet.duty.mapper.MnyMerchantExtractMapper">
+
+    <resultMap id="BaseResultMap" type="com.goldnet.duty.entity.MnyMerchantExtract">
+            <id property="id" column="id" jdbcType="OTHER"/>
+            <result property="merchantname" column="merchantname" jdbcType="VARCHAR"/>
+            <result property="status" column="status" jdbcType="OTHER"/>
+            <result property="merchantorder" column="merchantorder" jdbcType="OTHER"/>
+            <result property="maxsum" column="maxsum" jdbcType="NUMERIC"/>
+            <result property="merchantkey" column="merchantkey" jdbcType="VARCHAR"/>
+            <result property="createtime" column="createtime" jdbcType="TIMESTAMP"/>
+            <result property="updatetime" column="updatetime" jdbcType="TIMESTAMP"/>
+            <result property="drawsystemid" column="drawsystemid" jdbcType="OTHER"/>
+            <result property="stockholderid" column="stockholderid" jdbcType="OTHER"/>
+            <result property="askstatus" column="askstatus" jdbcType="OTHER"/>
+            <result property="merchantno" column="merchantno" jdbcType="VARCHAR"/>
+            <result property="levelid" column="levelid" jdbcType="OTHER"/>
+            <result property="ismaxsum" column="ismaxsum" jdbcType="BOOLEAN"/>
+            <result property="domain_pay" column="domain_pay" jdbcType="VARCHAR"/>
+            <result property="merchant_console" column="merchant_console" jdbcType="VARCHAR"/>
+            <result property="quota" column="quota" jdbcType="NUMERIC"/>
+            <result property="merchant_gateway" column="merchant_gateway" jdbcType="VARCHAR"/>
+            <result property="privatekey" column="privatekey" jdbcType="VARCHAR"/>
+            <result property="lower_limit_amount" column="lower_limit_amount" jdbcType="NUMERIC"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,merchantname,status,
+        merchantorder,maxsum,merchantkey,
+        createtime,updatetime,drawsystemid,
+        stockholderid,askstatus,merchantno,
+        levelid,ismaxsum,domain_pay,
+        merchant_console,quota,merchant_gateway,
+        privatekey,lower_limit_amount
+    </sql>
+</mapper>

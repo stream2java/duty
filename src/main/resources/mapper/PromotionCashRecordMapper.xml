@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.goldnet.duty.mapper.PromotionCashRecordMapper">
+
+    <resultMap id="BaseResultMap" type="com.goldnet.duty.entity.PromotionCashRecord">
+            <id property="id" column="id" jdbcType="OTHER"/>
+            <result property="account1" column="account1" jdbcType="OTHER"/>
+            <result property="account_id" column="account_id" jdbcType="OTHER"/>
+            <result property="account" column="account" jdbcType="VARCHAR"/>
+            <result property="rebate_amount" column="rebate_amount" jdbcType="NUMERIC"/>
+            <result property="type" column="type" jdbcType="SMALLINT"/>
+            <result property="event_id" column="event_id" jdbcType="OTHER"/>
+            <result property="event_name" column="event_name" jdbcType="VARCHAR"/>
+            <result property="other_args" column="other_args" jdbcType="VARCHAR"/>
+            <result property="create_time" column="create_time" jdbcType="TIMESTAMP"/>
+            <result property="create_user" column="create_user" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,account1,account_id,
+        account,rebate_amount,type,
+        event_id,event_name,other_args,
+        create_time,create_user
+    </sql>
+</mapper>

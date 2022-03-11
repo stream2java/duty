@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.goldnet.duty.mapper.MnyEventDetails20210727Mapper">
+
+    <resultMap id="BaseResultMap" type="com.goldnet.duty.entity.MnyEventDetails20210727">
+            <result property="details_id" column="details_id" jdbcType="OTHER"/>
+            <result property="member_id" column="member_id" jdbcType="OTHER"/>
+            <result property="create_user" column="create_user" jdbcType="VARCHAR"/>
+            <result property="create_time" column="create_time" jdbcType="TIMESTAMP"/>
+            <result property="update_user" column="update_user" jdbcType="VARCHAR"/>
+            <result property="update_time" column="update_time" jdbcType="TIMESTAMP"/>
+            <result property="backdrop_state" column="backdrop_state" jdbcType="VARCHAR"/>
+            <result property="stockholder_id" column="stockholder_id" jdbcType="OTHER"/>
+            <result property="event_id" column="event_id" jdbcType="OTHER"/>
+            <result property="eventuuid" column="eventuuid" jdbcType="VARCHAR"/>
+            <result property="count_money" column="count_money" jdbcType="NUMERIC"/>
+            <result property="status" column="status" jdbcType="OTHER"/>
+            <result property="pre_realtime_record_ids" column="pre_realtime_record_ids" jdbcType="BIGINT"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        details_id,member_id,create_user,
+        create_time,update_user,update_time,
+        backdrop_state,stockholder_id,event_id,
+        eventuuid,count_money,status,
+        pre_realtime_record_ids
+    </sql>
+</mapper>

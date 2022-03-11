@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.goldnet.duty.mapper.TaskLogMapper">
+
+    <resultMap id="BaseResultMap" type="com.goldnet.duty.entity.TaskLog">
+            <id property="task_log_id" column="task_log_id" jdbcType="OTHER"/>
+            <result property="task_name" column="task_name" jdbcType="VARCHAR"/>
+            <result property="fail_amount" column="fail_amount" jdbcType="OTHER"/>
+            <result property="start_date" column="start_date" jdbcType="TIMESTAMP"/>
+            <result property="end_date" column="end_date" jdbcType="TIMESTAMP"/>
+            <result property="status" column="status" jdbcType="VARCHAR"/>
+            <result property="success_amount" column="success_amount" jdbcType="OTHER"/>
+            <result property="repeat_run_date" column="repeat_run_date" jdbcType="TIMESTAMP"/>
+            <result property="api_name" column="api_name" jdbcType="VARCHAR"/>
+            <result property="remark" column="remark" jdbcType="VARCHAR"/>
+            <result property="create_date" column="create_date" jdbcType="TIMESTAMP"/>
+            <result property="runtimes" column="runtimes" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        task_log_id,task_name,fail_amount,
+        start_date,end_date,status,
+        success_amount,repeat_run_date,api_name,
+        remark,create_date,runtimes
+    </sql>
+</mapper>

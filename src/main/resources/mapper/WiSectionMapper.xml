@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.goldnet.duty.mapper.WiSectionMapper">
+
+    <resultMap id="BaseResultMap" type="com.goldnet.duty.entity.WiSection">
+            <id property="id" column="id" jdbcType="OTHER"/>
+            <result property="station_key" column="station_key" jdbcType="VARCHAR"/>
+            <result property="title" column="title" jdbcType="VARCHAR"/>
+            <result property="depath" column="depath" jdbcType="VARCHAR"/>
+            <result property="parent_id" column="parent_id" jdbcType="OTHER"/>
+            <result property="has_child" column="has_child" jdbcType="OTHER"/>
+            <result property="img_setting" column="img_setting" jdbcType="VARCHAR"/>
+            <result property="category" column="category" jdbcType="OTHER"/>
+            <result property="section_type" column="section_type" jdbcType="VARCHAR"/>
+            <result property="sort_id" column="sort_id" jdbcType="OTHER"/>
+            <result property="remark" column="remark" jdbcType="VARCHAR"/>
+            <result property="account1" column="account1" jdbcType="OTHER"/>
+            <result property="station_id" column="station_id" jdbcType="OTHER"/>
+            <result property="section_level" column="section_level" jdbcType="OTHER"/>
+            <result property="preview_url" column="preview_url" jdbcType="VARCHAR"/>
+            <result property="station_sub_id" column="station_sub_id" jdbcType="OTHER"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,station_key,title,
+        depath,parent_id,has_child,
+        img_setting,category,section_type,
+        sort_id,remark,account1,
+        station_id,section_level,preview_url,
+        station_sub_id
+    </sql>
+</mapper>

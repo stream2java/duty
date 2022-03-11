@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.goldnet.duty.mapper.GeVgeJackpotSettingMapper">
+
+    <resultMap id="BaseResultMap" type="com.goldnet.duty.entity.GeVgeJackpotSetting">
+            <result property="jsid" column="jsid" jdbcType="OTHER"/>
+            <result property="grand_chance" column="grand_chance" jdbcType="NUMERIC"/>
+            <result property="major_chance" column="major_chance" jdbcType="NUMERIC"/>
+            <result property="minor_chance" column="minor_chance" jdbcType="NUMERIC"/>
+            <result property="mini_chance" column="mini_chance" jdbcType="NUMERIC"/>
+            <result property="grand_ratio" column="grand_ratio" jdbcType="NUMERIC"/>
+            <result property="major_ratio" column="major_ratio" jdbcType="NUMERIC"/>
+            <result property="minor_ratio" column="minor_ratio" jdbcType="NUMERIC"/>
+            <result property="mini_ratio" column="mini_ratio" jdbcType="NUMERIC"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        jsid,grand_chance,major_chance,
+        minor_chance,mini_chance,grand_ratio,
+        major_ratio,minor_ratio,mini_ratio
+    </sql>
+</mapper>

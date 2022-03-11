@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.goldnet.duty.mapper.GeZqMatchesResultAgentMapper">
+
+    <resultMap id="BaseResultMap" type="com.goldnet.duty.entity.GeZqMatchesResultAgent">
+            <result property="matches_result_id" column="matches_result_id" jdbcType="OTHER"/>
+            <result property="u_h_score" column="u_h_score" jdbcType="OTHER"/>
+            <result property="u_g_score" column="u_g_score" jdbcType="OTHER"/>
+            <result property="d_h_score" column="d_h_score" jdbcType="OTHER"/>
+            <result property="d_g_score" column="d_g_score" jdbcType="OTHER"/>
+            <result property="matches_id" column="matches_id" jdbcType="OTHER"/>
+            <result property="agent_id" column="agent_id" jdbcType="OTHER"/>
+            <result property="create_user" column="create_user" jdbcType="VARCHAR"/>
+            <result property="create_date_time" column="create_date_time" jdbcType="TIMESTAMP"/>
+            <result property="update_user" column="update_user" jdbcType="VARCHAR"/>
+            <result property="update_date_time" column="update_date_time" jdbcType="TIMESTAMP"/>
+            <result property="status" column="status" jdbcType="VARCHAR"/>
+            <result property="c_h_score" column="c_h_score" jdbcType="OTHER"/>
+            <result property="c_g_score" column="c_g_score" jdbcType="OTHER"/>
+            <result property="c_goals" column="c_goals" jdbcType="OTHER"/>
+            <result property="champion_id" column="champion_id" jdbcType="OTHER"/>
+            <result property="champion_win_id" column="champion_win_id" jdbcType="OTHER"/>
+            <result property="remark" column="remark" jdbcType="VARCHAR"/>
+            <result property="lottery" column="lottery" jdbcType="OTHER"/>
+            <result property="full_h" column="full_h" jdbcType="VARCHAR"/>
+            <result property="full_g" column="full_g" jdbcType="VARCHAR"/>
+            <result property="hr1_h" column="hr1_h" jdbcType="VARCHAR"/>
+            <result property="hr1_g" column="hr1_g" jdbcType="VARCHAR"/>
+            <result property="hr2_h" column="hr2_h" jdbcType="VARCHAR"/>
+            <result property="quarter1_h" column="quarter1_h" jdbcType="VARCHAR"/>
+            <result property="quarter1_g" column="quarter1_g" jdbcType="VARCHAR"/>
+            <result property="quarter2_h" column="quarter2_h" jdbcType="VARCHAR"/>
+            <result property="quarter2_g" column="quarter2_g" jdbcType="VARCHAR"/>
+            <result property="quarter3_h" column="quarter3_h" jdbcType="VARCHAR"/>
+            <result property="quarter3_g" column="quarter3_g" jdbcType="VARCHAR"/>
+            <result property="quarter4_h" column="quarter4_h" jdbcType="VARCHAR"/>
+            <result property="quarter4_g" column="quarter4_g" jdbcType="VARCHAR"/>
+            <result property="extra_time_h" column="extra_time_h" jdbcType="VARCHAR"/>
+            <result property="extra_time_g" column="extra_time_g" jdbcType="VARCHAR"/>
+            <result property="hr2_g" column="hr2_g" jdbcType="VARCHAR"/>
+            <result property="px_order" column="px_order" jdbcType="OTHER"/>
+            <result property="quarter5_h" column="quarter5_h" jdbcType="VARCHAR"/>
+            <result property="quarter5_g" column="quarter5_g" jdbcType="VARCHAR"/>
+            <result property="numberwin_h" column="numberwin_h" jdbcType="VARCHAR"/>
+            <result property="numberwin_c" column="numberwin_c" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        matches_result_id,u_h_score,u_g_score,
+        d_h_score,d_g_score,matches_id,
+        agent_id,create_user,create_date_time,
+        update_user,update_date_time,status,
+        c_h_score,c_g_score,c_goals,
+        champion_id,champion_win_id,remark,
+        lottery,full_h,full_g,
+        hr1_h,hr1_g,hr2_h,
+        quarter1_h,quarter1_g,quarter2_h,
+        quarter2_g,quarter3_h,quarter3_g,
+        quarter4_h,quarter4_g,extra_time_h,
+        extra_time_g,hr2_g,px_order,
+        quarter5_h,quarter5_g,numberwin_h,
+        numberwin_c
+    </sql>
+</mapper>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.goldnet.duty.mapper.MnyBankListMapper">
+
+    <resultMap id="BaseResultMap" type="com.goldnet.duty.entity.MnyBankList">
+            <id property="id" column="id" jdbcType="OTHER"/>
+            <result property="bankname" column="bankname" jdbcType="VARCHAR"/>
+            <result property="bankkey" column="bankkey" jdbcType="VARCHAR"/>
+            <result property="banktype" column="banktype" jdbcType="OTHER"/>
+            <result property="isbank" column="isbank" jdbcType="OTHER"/>
+            <result property="sortnum" column="sortnum" jdbcType="OTHER"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,bankname,bankkey,
+        banktype,isbank,sortnum
+    </sql>
+</mapper>

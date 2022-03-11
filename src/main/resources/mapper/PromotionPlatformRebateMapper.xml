@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.goldnet.duty.mapper.PromotionPlatformRebateMapper">
+
+    <resultMap id="BaseResultMap" type="com.goldnet.duty.entity.PromotionPlatformRebate">
+            <id property="id" column="id" jdbcType="OTHER"/>
+            <result property="account_id" column="account_id" jdbcType="OTHER"/>
+            <result property="game_type_code" column="game_type_code" jdbcType="VARCHAR"/>
+            <result property="betting_rebate_percent" column="betting_rebate_percent" jdbcType="NUMERIC"/>
+            <result property="profit_rebate_percent" column="profit_rebate_percent" jdbcType="NUMERIC"/>
+            <result property="create_time" column="create_time" jdbcType="TIMESTAMP"/>
+            <result property="create_user" column="create_user" jdbcType="VARCHAR"/>
+            <result property="update_time" column="update_time" jdbcType="TIMESTAMP"/>
+            <result property="update_user" column="update_user" jdbcType="VARCHAR"/>
+            <result property="self_betting_rebate_percent" column="self_betting_rebate_percent" jdbcType="NUMERIC"/>
+            <result property="self_profit_rebate_percent" column="self_profit_rebate_percent" jdbcType="NUMERIC"/>
+            <result property="account1" column="account1" jdbcType="OTHER"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,account_id,game_type_code,
+        betting_rebate_percent,profit_rebate_percent,create_time,
+        create_user,update_time,update_user,
+        self_betting_rebate_percent,self_profit_rebate_percent,account1
+    </sql>
+</mapper>

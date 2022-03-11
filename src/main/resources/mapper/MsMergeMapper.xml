@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.goldnet.duty.mapper.MsMergeMapper">
+
+    <resultMap id="BaseResultMap" type="com.goldnet.duty.entity.MsMerge">
+            <id property="merge_id" column="merge_id" jdbcType="OTHER"/>
+            <result property="template_id" column="template_id" jdbcType="OTHER"/>
+            <result property="game_ids" column="game_ids" jdbcType="OTHER"/>
+            <result property="game_name" column="game_name" jdbcType="VARCHAR"/>
+            <result property="game_types" column="game_types" jdbcType="VARCHAR"/>
+            <result property="state" column="state" jdbcType="CHAR"/>
+            <result property="create_user" column="create_user" jdbcType="VARCHAR"/>
+            <result property="create_datetime" column="create_datetime" jdbcType="TIMESTAMP"/>
+            <result property="update_user" column="update_user" jdbcType="VARCHAR"/>
+            <result property="update_datetime" column="update_datetime" jdbcType="TIMESTAMP"/>
+            <result property="is_merge" column="is_merge" jdbcType="OTHER"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        merge_id,template_id,game_ids,
+        game_name,game_types,state,
+        create_user,create_datetime,update_user,
+        update_datetime,is_merge
+    </sql>
+</mapper>

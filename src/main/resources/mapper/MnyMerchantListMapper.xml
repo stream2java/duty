@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.goldnet.duty.mapper.MnyMerchantListMapper">
+
+    <resultMap id="BaseResultMap" type="com.goldnet.duty.entity.MnyMerchantList">
+            <id property="id" column="id" jdbcType="OTHER"/>
+            <result property="merchantname" column="merchantname" jdbcType="VARCHAR"/>
+            <result property="status" column="status" jdbcType="OTHER"/>
+            <result property="merchantorder" column="merchantorder" jdbcType="OTHER"/>
+            <result property="maxsum" column="maxsum" jdbcType="NUMERIC"/>
+            <result property="merchantkey" column="merchantkey" jdbcType="VARCHAR"/>
+            <result property="createtime" column="createtime" jdbcType="TIMESTAMP"/>
+            <result property="updatetime" column="updatetime" jdbcType="TIMESTAMP"/>
+            <result property="paysystemid" column="paysystemid" jdbcType="OTHER"/>
+            <result property="stockholderid" column="stockholderid" jdbcType="OTHER"/>
+            <result property="askstatus" column="askstatus" jdbcType="OTHER"/>
+            <result property="merchantno" column="merchantno" jdbcType="VARCHAR"/>
+            <result property="levelid" column="levelid" jdbcType="OTHER"/>
+            <result property="ismaxsum" column="ismaxsum" jdbcType="BOOLEAN"/>
+            <result property="domain_pay" column="domain_pay" jdbcType="VARCHAR"/>
+            <result property="merchant_console" column="merchant_console" jdbcType="VARCHAR"/>
+            <result property="merchant_gateway" column="merchant_gateway" jdbcType="VARCHAR"/>
+            <result property="quota" column="quota" jdbcType="NUMERIC"/>
+            <result property="ismobileopen" column="ismobileopen" jdbcType="VARCHAR"/>
+            <result property="md5key" column="md5key" jdbcType="VARCHAR"/>
+            <result property="min_quota" column="min_quota" jdbcType="NUMERIC"/>
+            <result property="pc_channel_name" column="pc_channel_name" jdbcType="VARCHAR"/>
+            <result property="h5_channel_name" column="h5_channel_name" jdbcType="VARCHAR"/>
+            <result property="protocol_type" column="protocol_type" jdbcType="VARCHAR"/>
+            <result property="merchant_description" column="merchant_description" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,merchantname,status,
+        merchantorder,maxsum,merchantkey,
+        createtime,updatetime,paysystemid,
+        stockholderid,askstatus,merchantno,
+        levelid,ismaxsum,domain_pay,
+        merchant_console,merchant_gateway,quota,
+        ismobileopen,md5key,min_quota,
+        pc_channel_name,h5_channel_name,protocol_type,
+        merchant_description
+    </sql>
+</mapper>

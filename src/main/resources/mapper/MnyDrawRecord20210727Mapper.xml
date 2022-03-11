@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.goldnet.duty.mapper.MnyDrawRecord20210727Mapper">
+
+    <resultMap id="BaseResultMap" type="com.goldnet.duty.entity.MnyDrawRecord20210727">
+            <result property="draw_record_id" column="draw_record_id" jdbcType="OTHER"/>
+            <result property="level_id" column="level_id" jdbcType="OTHER"/>
+            <result property="member_id" column="member_id" jdbcType="OTHER"/>
+            <result property="draw_limit" column="draw_limit" jdbcType="NUMERIC"/>
+            <result property="poundage" column="poundage" jdbcType="NUMERIC"/>
+            <result property="pre_money" column="pre_money" jdbcType="NUMERIC"/>
+            <result property="draw_money" column="draw_money" jdbcType="NUMERIC"/>
+            <result property="draw_situation" column="draw_situation" jdbcType="VARCHAR"/>
+            <result property="deduct_pre" column="deduct_pre" jdbcType="OTHER"/>
+            <result property="draw_status" column="draw_status" jdbcType="OTHER"/>
+            <result property="create_user" column="create_user" jdbcType="VARCHAR"/>
+            <result property="create_time" column="create_time" jdbcType="TIMESTAMP"/>
+            <result property="update_user" column="update_user" jdbcType="VARCHAR"/>
+            <result property="update_time" column="update_time" jdbcType="TIMESTAMP"/>
+            <result property="remark" column="remark" jdbcType="VARCHAR"/>
+            <result property="pre_check_status" column="pre_check_status" jdbcType="OTHER"/>
+            <result property="draw_money_remark" column="draw_money_remark" jdbcType="VARCHAR"/>
+            <result property="draw_project_id" column="draw_project_id" jdbcType="OTHER"/>
+            <result property="stockholder_id" column="stockholder_id" jdbcType="OTHER"/>
+            <result property="normal_check_status" column="normal_check_status" jdbcType="OTHER"/>
+            <result property="deduct_pre_money" column="deduct_pre_money" jdbcType="NUMERIC"/>
+            <result property="deduct_adm_money" column="deduct_adm_money" jdbcType="NUMERIC"/>
+            <result property="check_time_start" column="check_time_start" jdbcType="TIMESTAMP"/>
+            <result property="check_time_end" column="check_time_end" jdbcType="TIMESTAMP"/>
+            <result property="record_time" column="record_time" jdbcType="TIMESTAMP"/>
+            <result property="repeat_draw_poundage" column="repeat_draw_poundage" jdbcType="NUMERIC"/>
+            <result property="order_no" column="order_no" jdbcType="VARCHAR"/>
+            <result property="member_account" column="member_account" jdbcType="VARCHAR"/>
+            <result property="account_id2" column="account_id2" jdbcType="OTHER"/>
+            <result property="account2_name" column="account2_name" jdbcType="VARCHAR"/>
+            <result property="level_name" column="level_name" jdbcType="VARCHAR"/>
+            <result property="card_name" column="card_name" jdbcType="VARCHAR"/>
+            <result property="bank_name" column="bank_name" jdbcType="VARCHAR"/>
+            <result property="bank_account" column="bank_account" jdbcType="VARCHAR"/>
+            <result property="province" column="province" jdbcType="VARCHAR"/>
+            <result property="city" column="city" jdbcType="VARCHAR"/>
+            <result property="phone" column="phone" jdbcType="VARCHAR"/>
+            <result property="member_message_remark" column="member_message_remark" jdbcType="VARCHAR"/>
+            <result property="account5_name" column="account5_name" jdbcType="VARCHAR"/>
+            <result property="account_id5" column="account_id5" jdbcType="OTHER"/>
+            <result property="merchant_id" column="merchant_id" jdbcType="OTHER"/>
+            <result property="lock_account" column="lock_account" jdbcType="VARCHAR"/>
+            <result property="qremark" column="qremark" jdbcType="VARCHAR"/>
+            <result property="wx_account" column="wx_account" jdbcType="VARCHAR"/>
+            <result property="wx_nickname" column="wx_nickname" jdbcType="VARCHAR"/>
+            <result property="wx_temp" column="wx_temp" jdbcType="VARCHAR"/>
+            <result property="prepare_draw_status" column="prepare_draw_status" jdbcType="OTHER"/>
+            <result property="type" column="type" jdbcType="VARCHAR"/>
+            <result property="draw_type" column="draw_type" jdbcType="OTHER"/>
+            <result property="interest_cycle" column="interest_cycle" jdbcType="OTHER"/>
+            <result property="interest_rate" column="interest_rate" jdbcType="NUMERIC"/>
+            <result property="addition_interest_rate" column="addition_interest_rate" jdbcType="NUMERIC"/>
+            <result property="opening_bank" column="opening_bank" jdbcType="VARCHAR"/>
+            <result property="device" column="device" jdbcType="OTHER"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        draw_record_id,level_id,member_id,
+        draw_limit,poundage,pre_money,
+        draw_money,draw_situation,deduct_pre,
+        draw_status,create_user,create_time,
+        update_user,update_time,remark,
+        pre_check_status,draw_money_remark,draw_project_id,
+        stockholder_id,normal_check_status,deduct_pre_money,
+        deduct_adm_money,check_time_start,check_time_end,
+        record_time,repeat_draw_poundage,order_no,
+        member_account,account_id2,account2_name,
+        level_name,card_name,bank_name,
+        bank_account,province,city,
+        phone,member_message_remark,account5_name,
+        account_id5,merchant_id,lock_account,
+        qremark,wx_account,wx_nickname,
+        wx_temp,prepare_draw_status,type,
+        draw_type,interest_cycle,interest_rate,
+        addition_interest_rate,opening_bank,device
+    </sql>
+</mapper>

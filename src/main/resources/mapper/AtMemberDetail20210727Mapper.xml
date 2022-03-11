@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.goldnet.duty.mapper.AtMemberDetail20210727Mapper">
+
+    <resultMap id="BaseResultMap" type="com.goldnet.duty.entity.AtMemberDetail20210727">
+            <result property="id" column="id" jdbcType="OTHER"/>
+            <result property="account_id" column="account_id" jdbcType="OTHER"/>
+            <result property="depositnum" column="depositnum" jdbcType="OTHER"/>
+            <result property="deposittotal" column="deposittotal" jdbcType="NUMERIC"/>
+            <result property="maxdeposit" column="maxdeposit" jdbcType="NUMERIC"/>
+            <result property="collectnum" column="collectnum" jdbcType="OTHER"/>
+            <result property="collecttotal" column="collecttotal" jdbcType="NUMERIC"/>
+            <result property="manual_collect_num" column="manual_collect_num" jdbcType="OTHER"/>
+            <result property="draw_num" column="draw_num" jdbcType="OTHER"/>
+            <result property="first_deposit_type" column="first_deposit_type" jdbcType="OTHER"/>
+            <result property="first_deposit_amount" column="first_deposit_amount" jdbcType="NUMERIC"/>
+            <result property="first_deposit_time" column="first_deposit_time" jdbcType="TIMESTAMP"/>
+            <result property="last_deposit_amount" column="last_deposit_amount" jdbcType="NUMERIC"/>
+            <result property="last_deposit_time" column="last_deposit_time" jdbcType="TIMESTAMP"/>
+            <result property="yuebao_deposit_num" column="yuebao_deposit_num" jdbcType="OTHER"/>
+            <result property="yuebao_deposit_total" column="yuebao_deposit_total" jdbcType="NUMERIC"/>
+            <result property="yuebao_to_balance_num" column="yuebao_to_balance_num" jdbcType="OTHER"/>
+            <result property="yuebao_to_balance_total" column="yuebao_to_balance_total" jdbcType="NUMERIC"/>
+            <result property="yuebao_collect_num" column="yuebao_collect_num" jdbcType="OTHER"/>
+            <result property="yuebao_collect_total" column="yuebao_collect_total" jdbcType="NUMERIC"/>
+            <result property="first_deposit_device" column="first_deposit_device" jdbcType="OTHER"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,account_id,depositnum,
+        deposittotal,maxdeposit,collectnum,
+        collecttotal,manual_collect_num,draw_num,
+        first_deposit_type,first_deposit_amount,first_deposit_time,
+        last_deposit_amount,last_deposit_time,yuebao_deposit_num,
+        yuebao_deposit_total,yuebao_to_balance_num,yuebao_to_balance_total,
+        yuebao_collect_num,yuebao_collect_total,first_deposit_device
+    </sql>
+</mapper>

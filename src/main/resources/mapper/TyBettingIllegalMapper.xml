@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.goldnet.duty.mapper.TyBettingIllegalMapper">
+
+    <resultMap id="BaseResultMap" type="com.goldnet.duty.entity.TyBettingIllegal">
+            <id property="illegal_id" column="illegal_id" jdbcType="OTHER"/>
+            <result property="key" column="key" jdbcType="VARCHAR"/>
+            <result property="sdate" column="sdate" jdbcType="TIMESTAMP"/>
+            <result property="edate" column="edate" jdbcType="TIMESTAMP"/>
+            <result property="illegal_key" column="illegal_key" jdbcType="VARCHAR"/>
+            <result property="original_key" column="original_key" jdbcType="VARCHAR"/>
+            <result property="discover" column="discover" jdbcType="VARCHAR"/>
+            <result property="betting_id" column="betting_id" jdbcType="OTHER"/>
+            <result property="cdate" column="cdate" jdbcType="TIMESTAMP"/>
+            <result property="query_code" column="query_code" jdbcType="OTHER"/>
+            <result property="query_user" column="query_user" jdbcType="OTHER"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        illegal_id,key,sdate,
+        edate,illegal_key,original_key,
+        discover,betting_id,cdate,
+        query_code,query_user
+    </sql>
+</mapper>

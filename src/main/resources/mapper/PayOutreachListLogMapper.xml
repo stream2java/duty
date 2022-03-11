@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.goldnet.duty.mapper.PayOutreachListLogMapper">
+
+    <resultMap id="BaseResultMap" type="com.goldnet.duty.entity.PayOutreachListLog">
+            <result property="id" column="id" jdbcType="OTHER"/>
+            <result property="orderno" column="orderno" jdbcType="VARCHAR"/>
+            <result property="accountid" column="accountid" jdbcType="OTHER"/>
+            <result property="account" column="account" jdbcType="VARCHAR"/>
+            <result property="accountid1" column="accountid1" jdbcType="VARCHAR"/>
+            <result property="accountid5" column="accountid5" jdbcType="VARCHAR"/>
+            <result property="type" column="type" jdbcType="VARCHAR"/>
+            <result property="create_date" column="create_date" jdbcType="VARCHAR"/>
+            <result property="pay_result" column="pay_result" jdbcType="VARCHAR"/>
+            <result property="address" column="address" jdbcType="VARCHAR"/>
+            <result property="param" column="param" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,orderno,accountid,
+        account,accountid1,accountid5,
+        type,create_date,pay_result,
+        address,param
+    </sql>
+</mapper>

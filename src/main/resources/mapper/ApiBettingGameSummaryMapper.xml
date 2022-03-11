@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.goldnet.duty.mapper.ApiBettingGameSummaryMapper">
+
+    <resultMap id="BaseResultMap" type="com.goldnet.duty.entity.ApiBettingGameSummary">
+            <id property="id" column="id" jdbcType="BIGINT"/>
+            <result property="account1" column="account1" jdbcType="OTHER"/>
+            <result property="platform_code" column="platform_code" jdbcType="VARCHAR"/>
+            <result property="gametype" column="gametype" jdbcType="VARCHAR"/>
+            <result property="betting_date" column="betting_date" jdbcType="DATE"/>
+            <result property="valid_amount" column="valid_amount" jdbcType="NUMERIC"/>
+            <result property="profitloss" column="profitloss" jdbcType="NUMERIC"/>
+            <result property="bettingnum" column="bettingnum" jdbcType="OTHER"/>
+            <result property="create_time" column="create_time" jdbcType="TIMESTAMP"/>
+            <result property="update_time" column="update_time" jdbcType="TIMESTAMP"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,account1,platform_code,
+        gametype,betting_date,valid_amount,
+        profitloss,bettingnum,create_time,
+        update_time
+    </sql>
+</mapper>

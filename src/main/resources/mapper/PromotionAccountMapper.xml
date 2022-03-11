@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.goldnet.duty.mapper.PromotionAccountMapper">
+
+    <resultMap id="BaseResultMap" type="com.goldnet.duty.entity.PromotionAccount">
+            <id property="id" column="id" jdbcType="OTHER"/>
+            <result property="account1" column="account1" jdbcType="OTHER"/>
+            <result property="account_id" column="account_id" jdbcType="OTHER"/>
+            <result property="accounts" column="accounts" jdbcType="VARCHAR"/>
+            <result property="account_ids" column="account_ids" jdbcType="OTHER"/>
+            <result property="parent_account_id" column="parent_account_id" jdbcType="OTHER"/>
+            <result property="parent_account" column="parent_account" jdbcType="VARCHAR"/>
+            <result property="level" column="level" jdbcType="SMALLINT"/>
+            <result property="recharge_rebate_percent" column="recharge_rebate_percent" jdbcType="NUMERIC"/>
+            <result property="create_time" column="create_time" jdbcType="TIMESTAMP"/>
+            <result property="create_user" column="create_user" jdbcType="VARCHAR"/>
+            <result property="update_time" column="update_time" jdbcType="TIMESTAMP"/>
+            <result property="update_user" column="update_user" jdbcType="VARCHAR"/>
+            <result property="account" column="account" jdbcType="VARCHAR"/>
+            <result property="register_type" column="register_type" jdbcType="SMALLINT"/>
+            <result property="self_recharge_rebate_percent" column="self_recharge_rebate_percent" jdbcType="NUMERIC"/>
+            <result property="betting_status" column="betting_status" jdbcType="SMALLINT"/>
+            <result property="profit_status" column="profit_status" jdbcType="SMALLINT"/>
+            <result property="recharge_status" column="recharge_status" jdbcType="SMALLINT"/>
+            <result property="self_betting_status" column="self_betting_status" jdbcType="SMALLINT"/>
+            <result property="self_profit_status" column="self_profit_status" jdbcType="SMALLINT"/>
+            <result property="self_recharge_status" column="self_recharge_status" jdbcType="SMALLINT"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,account1,account_id,
+        accounts,account_ids,parent_account_id,
+        parent_account,level,recharge_rebate_percent,
+        create_time,create_user,update_time,
+        update_user,account,register_type,
+        self_recharge_rebate_percent,betting_status,profit_status,
+        recharge_status,self_betting_status,self_profit_status,
+        self_recharge_status
+    </sql>
+</mapper>

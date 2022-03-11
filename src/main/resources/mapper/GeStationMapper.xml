@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.goldnet.duty.mapper.GeStationMapper">
+
+    <resultMap id="BaseResultMap" type="com.goldnet.duty.entity.GeStation">
+            <id property="id" column="id" jdbcType="OTHER"/>
+            <result property="name" column="name" jdbcType="VARCHAR"/>
+            <result property="url" column="url" jdbcType="VARCHAR"/>
+            <result property="parent_partner" column="parent_partner" jdbcType="OTHER"/>
+            <result property="ftp" column="ftp" jdbcType="VARCHAR"/>
+            <result property="remark" column="remark" jdbcType="VARCHAR"/>
+            <result property="status" column="status" jdbcType="VARCHAR"/>
+            <result property="keys" column="keys" jdbcType="VARCHAR"/>
+            <result property="durl" column="durl" jdbcType="VARCHAR"/>
+            <result property="ftpname" column="ftpname" jdbcType="VARCHAR"/>
+            <result property="ftppwd" column="ftppwd" jdbcType="VARCHAR"/>
+            <result property="ftppost" column="ftppost" jdbcType="VARCHAR"/>
+            <result property="account0" column="account0" jdbcType="OTHER"/>
+            <result property="account1" column="account1" jdbcType="OTHER"/>
+            <result property="account2" column="account2" jdbcType="OTHER"/>
+            <result property="account3" column="account3" jdbcType="OTHER"/>
+            <result property="account4" column="account4" jdbcType="OTHER"/>
+            <result property="account5" column="account5" jdbcType="OTHER"/>
+            <result property="week" column="week" jdbcType="VARCHAR"/>
+            <result property="close_time" column="close_time" jdbcType="VARCHAR"/>
+            <result property="open_time" column="open_time" jdbcType="VARCHAR"/>
+            <result property="platform_type" column="platform_type" jdbcType="VARCHAR"/>
+            <result property="float_status" column="float_status" jdbcType="OTHER"/>
+            <result property="login_validcode" column="login_validcode" jdbcType="OTHER"/>
+            <result property="keywords" column="keywords" jdbcType="VARCHAR"/>
+            <result property="color_style" column="color_style" jdbcType="VARCHAR"/>
+            <result property="mongo_server_id" column="mongo_server_id" jdbcType="OTHER"/>
+            <result property="trial_account_num" column="trial_account_num" jdbcType="OTHER"/>
+            <result property="trial_account_money" column="trial_account_money" jdbcType="NUMERIC"/>
+            <result property="new_durl" column="new_durl" jdbcType="VARCHAR"/>
+            <result property="baofoo_wechat_status" column="baofoo_wechat_status" jdbcType="OTHER"/>
+            <result property="template_id" column="template_id" jdbcType="OTHER"/>
+            <result property="static_domain" column="static_domain" jdbcType="VARCHAR"/>
+            <result property="test_account_money" column="test_account_money" jdbcType="NUMERIC"/>
+            <result property="platform_name" column="platform_name" jdbcType="VARCHAR"/>
+            <result property="app_status" column="app_status" jdbcType="VARCHAR"/>
+            <result property="app_code" column="app_code" jdbcType="VARCHAR"/>
+            <result property="station_code" column="station_code" jdbcType="VARCHAR"/>
+            <result property="ip_reg_status" column="ip_reg_status" jdbcType="OTHER"/>
+            <result property="update_ip_reg_time" column="update_ip_reg_time" jdbcType="TIMESTAMP"/>
+            <result property="ip_reg_num" column="ip_reg_num" jdbcType="OTHER"/>
+            <result property="app_domain" column="app_domain" jdbcType="VARCHAR"/>
+            <result property="special_login_status" column="special_login_status" jdbcType="OTHER"/>
+            <result property="multi_channel_status" column="multi_channel_status" jdbcType="OTHER"/>
+            <result property="promotion_storey_num" column="promotion_storey_num" jdbcType="OTHER"/>
+            <result property="promotion_betting_max_rebate" column="promotion_betting_max_rebate" jdbcType="NUMERIC"/>
+            <result property="member_profit_loss" column="member_profit_loss" jdbcType="NUMERIC"/>
+            <result property="enable_native_pay" column="enable_native_pay" jdbcType="SMALLINT"/>
+            <result property="data_source_type" column="data_source_type" jdbcType="SMALLINT"/>
+            <result property="today_report_search" column="today_report_search" jdbcType="SMALLINT"/>
+            <result property="send_to_es" column="send_to_es" jdbcType="SMALLINT"/>
+            <result property="ip_reg_max_num" column="ip_reg_max_num" jdbcType="OTHER"/>
+            <result property="close_mbr_time" column="close_mbr_time" jdbcType="VARCHAR"/>
+            <result property="open_mbr_time" column="open_mbr_time" jdbcType="VARCHAR"/>
+            <result property="data_source_map" column="data_source_map" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,name,url,
+        parent_partner,ftp,remark,
+        status,keys,durl,
+        ftpname,ftppwd,ftppost,
+        account0,account1,account2,
+        account3,account4,account5,
+        week,close_time,open_time,
+        platform_type,float_status,login_validcode,
+        keywords,color_style,mongo_server_id,
+        trial_account_num,trial_account_money,new_durl,
+        baofoo_wechat_status,template_id,static_domain,
+        test_account_money,platform_name,app_status,
+        app_code,station_code,ip_reg_status,
+        update_ip_reg_time,ip_reg_num,app_domain,
+        special_login_status,multi_channel_status,promotion_storey_num,
+        promotion_betting_max_rebate,member_profit_loss,enable_native_pay,
+        data_source_type,today_report_search,send_to_es,
+        ip_reg_max_num,close_mbr_time,open_mbr_time,
+        data_source_map
+    </sql>
+</mapper>

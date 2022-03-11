@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.goldnet.duty.mapper.WiAppUrlMapper">
+
+    <resultMap id="BaseResultMap" type="com.goldnet.duty.entity.WiAppUrl">
+            <id property="id" column="id" jdbcType="OTHER"/>
+            <result property="type" column="type" jdbcType="VARCHAR"/>
+            <result property="page_url" column="page_url" jdbcType="VARCHAR"/>
+            <result property="android_url" column="android_url" jdbcType="VARCHAR"/>
+            <result property="ios_url" column="ios_url" jdbcType="VARCHAR"/>
+            <result property="create_user" column="create_user" jdbcType="VARCHAR"/>
+            <result property="status" column="status" jdbcType="OTHER"/>
+            <result property="create_time" column="create_time" jdbcType="TIMESTAMP"/>
+            <result property="update_time" column="update_time" jdbcType="TIMESTAMP"/>
+            <result property="doc_id" column="doc_id" jdbcType="OTHER"/>
+            <result property="ddgd_id" column="ddgd_id" jdbcType="OTHER"/>
+            <result property="app_down_title" column="app_down_title" jdbcType="VARCHAR"/>
+            <result property="app_down_img" column="app_down_img" jdbcType="VARCHAR"/>
+            <result property="device_type" column="device_type" jdbcType="SMALLINT"/>
+            <result property="app_domain_id" column="app_domain_id" jdbcType="OTHER"/>
+            <result property="enable_download" column="enable_download" jdbcType="OTHER"/>
+            <result property="station_sub_id" column="station_sub_id" jdbcType="OTHER"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,type,page_url,
+        android_url,ios_url,create_user,
+        status,create_time,update_time,
+        doc_id,ddgd_id,app_down_title,
+        app_down_img,device_type,app_domain_id,
+        enable_download,station_sub_id
+    </sql>
+</mapper>

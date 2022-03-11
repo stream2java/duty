@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.goldnet.duty.mapper.PromotionFeeSettingMapper">
+
+    <resultMap id="BaseResultMap" type="com.goldnet.duty.entity.PromotionFeeSetting">
+            <id property="id" column="id" jdbcType="OTHER"/>
+            <result property="account1" column="account1" jdbcType="OTHER"/>
+            <result property="deposit_fee_percent" column="deposit_fee_percent" jdbcType="NUMERIC"/>
+            <result property="deposit_fee_uplimit" column="deposit_fee_uplimit" jdbcType="NUMERIC"/>
+            <result property="draw_fee_percent" column="draw_fee_percent" jdbcType="NUMERIC"/>
+            <result property="draw_fee_uplimit" column="draw_fee_uplimit" jdbcType="NUMERIC"/>
+            <result property="create_time" column="create_time" jdbcType="TIMESTAMP"/>
+            <result property="create_user" column="create_user" jdbcType="VARCHAR"/>
+            <result property="update_time" column="update_time" jdbcType="TIMESTAMP"/>
+            <result property="update_user" column="update_user" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,account1,deposit_fee_percent,
+        deposit_fee_uplimit,draw_fee_percent,draw_fee_uplimit,
+        create_time,create_user,update_time,
+        update_user
+    </sql>
+</mapper>

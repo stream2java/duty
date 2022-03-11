@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.goldnet.duty.mapper.TmpAtMemberMessageMapper">
+
+    <resultMap id="BaseResultMap" type="com.goldnet.duty.entity.TmpAtMemberMessage">
+            <result property="message_id" column="message_id" jdbcType="OTHER"/>
+            <result property="account_id" column="account_id" jdbcType="OTHER"/>
+            <result property="nickname" column="nickname" jdbcType="VARCHAR"/>
+            <result property="birthday" column="birthday" jdbcType="TIMESTAMP"/>
+            <result property="country" column="country" jdbcType="VARCHAR"/>
+            <result property="phone" column="phone" jdbcType="VARCHAR"/>
+            <result property="draw_money_pwd" column="draw_money_pwd" jdbcType="VARCHAR"/>
+            <result property="qq" column="qq" jdbcType="VARCHAR"/>
+            <result property="email" column="email" jdbcType="VARCHAR"/>
+            <result property="bank_account" column="bank_account" jdbcType="VARCHAR"/>
+            <result property="bank_id" column="bank_id" jdbcType="OTHER"/>
+            <result property="card_name" column="card_name" jdbcType="VARCHAR"/>
+            <result property="province" column="province" jdbcType="VARCHAR"/>
+            <result property="city" column="city" jdbcType="VARCHAR"/>
+            <result property="stockholder_id" column="stockholder_id" jdbcType="OTHER"/>
+            <result property="remark" column="remark" jdbcType="VARCHAR"/>
+            <result property="enickname" column="enickname" jdbcType="VARCHAR"/>
+            <result property="cardid" column="cardid" jdbcType="VARCHAR"/>
+            <result property="id_number" column="id_number" jdbcType="VARCHAR"/>
+            <result property="wx_nickname" column="wx_nickname" jdbcType="VARCHAR"/>
+            <result property="weixin_tacc" column="weixin_tacc" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        message_id,account_id,nickname,
+        birthday,country,phone,
+        draw_money_pwd,qq,email,
+        bank_account,bank_id,card_name,
+        province,city,stockholder_id,
+        remark,enickname,cardid,
+        id_number,wx_nickname,weixin_tacc
+    </sql>
+</mapper>

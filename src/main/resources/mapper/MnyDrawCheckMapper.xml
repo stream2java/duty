@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.goldnet.duty.mapper.MnyDrawCheckMapper">
+
+    <resultMap id="BaseResultMap" type="com.goldnet.duty.entity.MnyDrawCheck">
+            <id property="check_id" column="check_id" jdbcType="OTHER"/>
+            <result property="time_start" column="time_start" jdbcType="TIMESTAMP"/>
+            <result property="time_end" column="time_end" jdbcType="TIMESTAMP"/>
+            <result property="deposit_money" column="deposit_money" jdbcType="NUMERIC"/>
+            <result property="preferential" column="preferential" jdbcType="NUMERIC"/>
+            <result property="create_user" column="create_user" jdbcType="VARCHAR"/>
+            <result property="create_time" column="create_time" jdbcType="TIMESTAMP"/>
+            <result property="update_user" column="update_user" jdbcType="VARCHAR"/>
+            <result property="update_time" column="update_time" jdbcType="TIMESTAMP"/>
+            <result property="member_id" column="member_id" jdbcType="OTHER"/>
+            <result property="video_bet" column="video_bet" jdbcType="NUMERIC"/>
+            <result property="probability_bet" column="probability_bet" jdbcType="NUMERIC"/>
+            <result property="bbsport_bet" column="bbsport_bet" jdbcType="NUMERIC"/>
+            <result property="lottery_bet" column="lottery_bet" jdbcType="NUMERIC"/>
+            <result property="sport_bet" column="sport_bet" jdbcType="NUMERIC"/>
+            <result property="pre_check_video_status" column="pre_check_video_status" jdbcType="OTHER"/>
+            <result property="pre_check_ball_status" column="pre_check_ball_status" jdbcType="OTHER"/>
+            <result property="pre_check_comp_status" column="pre_check_comp_status" jdbcType="OTHER"/>
+            <result property="pre_check_status" column="pre_check_status" jdbcType="OTHER"/>
+            <result property="normal_check_relax" column="normal_check_relax" jdbcType="NUMERIC"/>
+            <result property="normal_check_bet_status" column="normal_check_bet_status" jdbcType="OTHER"/>
+            <result property="normal_check_status" column="normal_check_status" jdbcType="OTHER"/>
+            <result property="normal_check_deduct_money" column="normal_check_deduct_money" jdbcType="NUMERIC"/>
+            <result property="draw_type" column="draw_type" jdbcType="OTHER"/>
+            <result property="stockholder_id" column="stockholder_id" jdbcType="OTHER"/>
+            <result property="pre_check_deduct_money" column="pre_check_deduct_money" jdbcType="NUMERIC"/>
+            <result property="draw_check_uuid" column="draw_check_uuid" jdbcType="VARCHAR"/>
+            <result property="normal_per_check" column="normal_per_check" jdbcType="VARCHAR"/>
+            <result property="normal_adm_per" column="normal_adm_per" jdbcType="VARCHAR"/>
+            <result property="pre_check_pass_status" column="pre_check_pass_status" jdbcType="OTHER"/>
+            <result property="my_end_time" column="my_end_time" jdbcType="TIMESTAMP"/>
+            <result property="remainder_real_bet" column="remainder_real_bet" jdbcType="VARCHAR"/>
+            <result property="remainder_ball_bet" column="remainder_ball_bet" jdbcType="VARCHAR"/>
+            <result property="remainder_comp_bet" column="remainder_comp_bet" jdbcType="VARCHAR"/>
+            <result property="pre_check_lottery_status" column="pre_check_lottery_status" jdbcType="OTHER"/>
+            <result property="pre_check_electron_status" column="pre_check_electron_status" jdbcType="OTHER"/>
+            <result property="remainder_lottery_bet" column="remainder_lottery_bet" jdbcType="VARCHAR"/>
+            <result property="remainder_electron_bet" column="remainder_electron_bet" jdbcType="VARCHAR"/>
+            <result property="hg_video_bet" column="hg_video_bet" jdbcType="NUMERIC"/>
+            <result property="ea_video_bet" column="ea_video_bet" jdbcType="NUMERIC"/>
+            <result property="bb_video_bet" column="bb_video_bet" jdbcType="NUMERIC"/>
+            <result property="pre_check_hg_video_status" column="pre_check_hg_video_status" jdbcType="OTHER"/>
+            <result property="pre_check_ea_video_status" column="pre_check_ea_video_status" jdbcType="OTHER"/>
+            <result property="pre_check_bb_video_status" column="pre_check_bb_video_status" jdbcType="OTHER"/>
+            <result property="remainder_hg_real_bet" column="remainder_hg_real_bet" jdbcType="VARCHAR"/>
+            <result property="remainder_ea_real_bet" column="remainder_ea_real_bet" jdbcType="VARCHAR"/>
+            <result property="remainder_bb_real_bet" column="remainder_bb_real_bet" jdbcType="VARCHAR"/>
+            <result property="bb_sport_bet" column="bb_sport_bet" jdbcType="NUMERIC"/>
+            <result property="pre_check_bb_sport_status" column="pre_check_bb_sport_status" jdbcType="OTHER"/>
+            <result property="remainder_bb_sport_bet" column="remainder_bb_sport_bet" jdbcType="VARCHAR"/>
+            <result property="bb_lottery_bet" column="bb_lottery_bet" jdbcType="NUMERIC"/>
+            <result property="pre_check_bb_lottery_status" column="pre_check_bb_lottery_status" jdbcType="OTHER"/>
+            <result property="remainder_bb_lottery_bet" column="remainder_bb_lottery_bet" jdbcType="VARCHAR"/>
+            <result property="bb_electron_bet" column="bb_electron_bet" jdbcType="NUMERIC"/>
+            <result property="pre_check_bb_electron_status" column="pre_check_bb_electron_status" jdbcType="OTHER"/>
+            <result property="remainder_bb_electron_bet" column="remainder_bb_electron_bet" jdbcType="VARCHAR"/>
+            <result property="bb_3d_bet" column="bb_3d_bet" jdbcType="NUMERIC"/>
+            <result property="pre_check_bb_3d_status" column="pre_check_bb_3d_status" jdbcType="OTHER"/>
+            <result property="remainder_bb_3d_bet" column="remainder_bb_3d_bet" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        check_id,time_start,time_end,
+        deposit_money,preferential,create_user,
+        create_time,update_user,update_time,
+        member_id,video_bet,probability_bet,
+        bbsport_bet,lottery_bet,sport_bet,
+        pre_check_video_status,pre_check_ball_status,pre_check_comp_status,
+        pre_check_status,normal_check_relax,normal_check_bet_status,
+        normal_check_status,normal_check_deduct_money,draw_type,
+        stockholder_id,pre_check_deduct_money,draw_check_uuid,
+        normal_per_check,normal_adm_per,pre_check_pass_status,
+        my_end_time,remainder_real_bet,remainder_ball_bet,
+        remainder_comp_bet,pre_check_lottery_status,pre_check_electron_status,
+        remainder_lottery_bet,remainder_electron_bet,hg_video_bet,
+        ea_video_bet,bb_video_bet,pre_check_hg_video_status,
+        pre_check_ea_video_status,pre_check_bb_video_status,remainder_hg_real_bet,
+        remainder_ea_real_bet,remainder_bb_real_bet,bb_sport_bet,
+        pre_check_bb_sport_status,remainder_bb_sport_bet,bb_lottery_bet,
+        pre_check_bb_lottery_status,remainder_bb_lottery_bet,bb_electron_bet,
+        pre_check_bb_electron_status,remainder_bb_electron_bet,bb_3d_bet,
+        pre_check_bb_3d_status,remainder_bb_3d_bet
+    </sql>
+</mapper>

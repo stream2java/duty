@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.goldnet.duty.mapper.MnyHandlingchargeSettingMapper">
+
+    <resultMap id="BaseResultMap" type="com.goldnet.duty.entity.MnyHandlingchargeSetting">
+            <id property="handlingcharge_id" column="handlingcharge_id" jdbcType="OTHER"/>
+            <result property="currency_id" column="currency_id" jdbcType="OTHER"/>
+            <result property="ddgd_id" column="ddgd_id" jdbcType="OTHER"/>
+            <result property="deposit_handlingcharge_setting" column="deposit_handlingcharge_setting" jdbcType="NUMERIC"/>
+            <result property="max_deposit_handlingcharge" column="max_deposit_handlingcharge" jdbcType="NUMERIC"/>
+            <result property="draw_handlingcharge_setting" column="draw_handlingcharge_setting" jdbcType="NUMERIC"/>
+            <result property="max_draw_handlingcharge" column="max_draw_handlingcharge" jdbcType="NUMERIC"/>
+            <result property="effective_time" column="effective_time" jdbcType="TIMESTAMP"/>
+            <result property="founder" column="founder" jdbcType="VARCHAR"/>
+            <result property="foundtime" column="foundtime" jdbcType="TIMESTAMP"/>
+            <result property="moder" column="moder" jdbcType="VARCHAR"/>
+            <result property="modtime" column="modtime" jdbcType="TIMESTAMP"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        handlingcharge_id,currency_id,ddgd_id,
+        deposit_handlingcharge_setting,max_deposit_handlingcharge,draw_handlingcharge_setting,
+        max_draw_handlingcharge,effective_time,founder,
+        foundtime,moder,modtime
+    </sql>
+</mapper>

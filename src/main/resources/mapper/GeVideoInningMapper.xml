@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.goldnet.duty.mapper.GeVideoInningMapper">
+
+    <resultMap id="BaseResultMap" type="com.goldnet.duty.entity.GeVideoInning">
+            <id property="inning_id" column="inning_id" jdbcType="OTHER"/>
+            <result property="create_date_time" column="create_date_time" jdbcType="TIMESTAMP"/>
+            <result property="update_date_time" column="update_date_time" jdbcType="TIMESTAMP"/>
+            <result property="inning" column="inning" jdbcType="OTHER"/>
+            <result property="round" column="round" jdbcType="OTHER"/>
+            <result property="belong_service_id" column="belong_service_id" jdbcType="OTHER"/>
+            <result property="belong_desktop_id" column="belong_desktop_id" jdbcType="OTHER"/>
+            <result property="player_point" column="player_point" jdbcType="OTHER"/>
+            <result property="banker_point" column="banker_point" jdbcType="OTHER"/>
+            <result property="player_poker1" column="player_poker1" jdbcType="VARCHAR"/>
+            <result property="player_poker2" column="player_poker2" jdbcType="VARCHAR"/>
+            <result property="player_poker3" column="player_poker3" jdbcType="VARCHAR"/>
+            <result property="banker_poker1" column="banker_poker1" jdbcType="VARCHAR"/>
+            <result property="banker_poker2" column="banker_poker2" jdbcType="VARCHAR"/>
+            <result property="banker_poker3" column="banker_poker3" jdbcType="VARCHAR"/>
+            <result property="total_betting" column="total_betting" jdbcType="OTHER"/>
+            <result property="total_payout" column="total_payout" jdbcType="NUMERIC"/>
+            <result property="desktop_name" column="desktop_name" jdbcType="VARCHAR"/>
+            <result property="belong_game_type" column="belong_game_type" jdbcType="OTHER"/>
+            <result property="winner" column="winner" jdbcType="OTHER"/>
+            <result property="banker_pair" column="banker_pair" jdbcType="OTHER"/>
+            <result property="banker_odd_even" column="banker_odd_even" jdbcType="OTHER"/>
+            <result property="player_pair" column="player_pair" jdbcType="OTHER"/>
+            <result property="player_odd_even" column="player_odd_even" jdbcType="OTHER"/>
+            <result property="big_small" column="big_small" jdbcType="OTHER"/>
+            <result property="inning_number" column="inning_number" jdbcType="VARCHAR"/>
+            <result property="desktop" column="desktop" jdbcType="VARCHAR"/>
+            <result property="lottery_id" column="lottery_id" jdbcType="OTHER"/>
+            <result property="game_status" column="game_status" jdbcType="OTHER"/>
+            <result property="is_new" column="is_new" jdbcType="OTHER"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        inning_id,create_date_time,update_date_time,
+        inning,round,belong_service_id,
+        belong_desktop_id,player_point,banker_point,
+        player_poker1,player_poker2,player_poker3,
+        banker_poker1,banker_poker2,banker_poker3,
+        total_betting,total_payout,desktop_name,
+        belong_game_type,winner,banker_pair,
+        banker_odd_even,player_pair,player_odd_even,
+        big_small,inning_number,desktop,
+        lottery_id,game_status,is_new
+    </sql>
+</mapper>

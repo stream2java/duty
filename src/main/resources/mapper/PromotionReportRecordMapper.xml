@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.goldnet.duty.mapper.PromotionReportRecordMapper">
+
+    <resultMap id="BaseResultMap" type="com.goldnet.duty.entity.PromotionReportRecord">
+            <id property="id" column="id" jdbcType="OTHER"/>
+            <result property="account1" column="account1" jdbcType="OTHER"/>
+            <result property="account_id" column="account_id" jdbcType="OTHER"/>
+            <result property="account" column="account" jdbcType="VARCHAR"/>
+            <result property="parent_accounts" column="parent_accounts" jdbcType="VARCHAR"/>
+            <result property="parent_account_ids" column="parent_account_ids" jdbcType="OTHER"/>
+            <result property="register_num" column="register_num" jdbcType="OTHER"/>
+            <result property="recharge_num" column="recharge_num" jdbcType="OTHER"/>
+            <result property="betting_num" column="betting_num" jdbcType="OTHER"/>
+            <result property="betting_amount" column="betting_amount" jdbcType="NUMERIC"/>
+            <result property="profit_amount" column="profit_amount" jdbcType="NUMERIC"/>
+            <result property="discount_amount" column="discount_amount" jdbcType="NUMERIC"/>
+            <result property="team_commission" column="team_commission" jdbcType="NUMERIC"/>
+            <result property="recharge_amount" column="recharge_amount" jdbcType="NUMERIC"/>
+            <result property="withdraw_amount" column="withdraw_amount" jdbcType="NUMERIC"/>
+            <result property="team_profit" column="team_profit" jdbcType="NUMERIC"/>
+            <result property="profit" column="profit" jdbcType="NUMERIC"/>
+            <result property="promotion_commission_down" column="promotion_commission_down" jdbcType="NUMERIC"/>
+            <result property="promotion_commission_self" column="promotion_commission_self" jdbcType="NUMERIC"/>
+            <result property="statistics_time" column="statistics_time" jdbcType="DATE"/>
+            <result property="create_time" column="create_time" jdbcType="TIMESTAMP"/>
+            <result property="create_user" column="create_user" jdbcType="VARCHAR"/>
+            <result property="update_time" column="update_time" jdbcType="TIMESTAMP"/>
+            <result property="update_user" column="update_user" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,account1,account_id,
+        account,parent_accounts,parent_account_ids,
+        register_num,recharge_num,betting_num,
+        betting_amount,profit_amount,discount_amount,
+        team_commission,recharge_amount,withdraw_amount,
+        team_profit,profit,promotion_commission_down,
+        promotion_commission_self,statistics_time,create_time,
+        create_user,update_time,update_user
+    </sql>
+</mapper>

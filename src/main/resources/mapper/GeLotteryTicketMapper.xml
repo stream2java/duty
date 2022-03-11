@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.goldnet.duty.mapper.GeLotteryTicketMapper">
+
+    <resultMap id="BaseResultMap" type="com.goldnet.duty.entity.GeLotteryTicket">
+            <id property="lottery_id" column="lottery_id" jdbcType="OTHER"/>
+            <result property="lottery_name" column="lottery_name" jdbcType="VARCHAR"/>
+            <result property="lottery_code" column="lottery_code" jdbcType="VARCHAR"/>
+            <result property="start_date" column="start_date" jdbcType="VARCHAR"/>
+            <result property="spacing_date" column="spacing_date" jdbcType="VARCHAR"/>
+            <result property="end_date" column="end_date" jdbcType="VARCHAR"/>
+            <result property="start_award" column="start_award" jdbcType="VARCHAR"/>
+            <result property="awid_date" column="awid_date" jdbcType="VARCHAR"/>
+            <result property="type" column="type" jdbcType="VARCHAR"/>
+            <result property="lottery_number" column="lottery_number" jdbcType="OTHER"/>
+            <result property="status" column="status" jdbcType="OTHER"/>
+            <result property="remark" column="remark" jdbcType="VARCHAR"/>
+            <result property="create_user" column="create_user" jdbcType="VARCHAR"/>
+            <result property="create_date_time" column="create_date_time" jdbcType="TIMESTAMP"/>
+            <result property="update_date_time" column="update_date_time" jdbcType="TIMESTAMP"/>
+            <result property="update_user" column="update_user" jdbcType="VARCHAR"/>
+            <result property="parent_id" column="parent_id" jdbcType="OTHER"/>
+            <result property="lottery_type" column="lottery_type" jdbcType="VARCHAR"/>
+            <result property="sort_id" column="sort_id" jdbcType="OTHER"/>
+            <result property="auto_period" column="auto_period" jdbcType="OTHER"/>
+            <result property="open" column="open" jdbcType="VARCHAR"/>
+            <result property="close_begin_date_time" column="close_begin_date_time" jdbcType="VARCHAR"/>
+            <result property="close_end_date_time" column="close_end_date_time" jdbcType="VARCHAR"/>
+            <result property="lottery_center_code" column="lottery_center_code" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        lottery_id,lottery_name,lottery_code,
+        start_date,spacing_date,end_date,
+        start_award,awid_date,type,
+        lottery_number,status,remark,
+        create_user,create_date_time,update_date_time,
+        update_user,parent_id,lottery_type,
+        sort_id,auto_period,open,
+        close_begin_date_time,close_end_date_time,lottery_center_code
+    </sql>
+</mapper>

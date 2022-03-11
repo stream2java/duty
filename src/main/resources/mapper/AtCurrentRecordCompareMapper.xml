@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.goldnet.duty.mapper.AtCurrentRecordCompareMapper">
+
+    <resultMap id="BaseResultMap" type="com.goldnet.duty.entity.AtCurrentRecordCompare">
+            <result property="durl" column="durl" jdbcType="VARCHAR"/>
+            <result property="trade_limit" column="trade_limit" jdbcType="NUMERIC"/>
+            <result property="remark" column="remark" jdbcType="VARCHAR"/>
+            <result property="member_account" column="member_account" jdbcType="VARCHAR"/>
+            <result property="betting_code" column="betting_code" jdbcType="VARCHAR"/>
+            <result property="create_date_time" column="create_date_time" jdbcType="TIMESTAMP"/>
+            <result property="origin_member_account" column="origin_member_account" jdbcType="VARCHAR"/>
+            <result property="send_mark" column="send_mark" jdbcType="OTHER"/>
+            <result property="trade_type" column="trade_type" jdbcType="VARCHAR"/>
+            <result property="origin_trade_limit" column="origin_trade_limit" jdbcType="NUMERIC"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        durl,trade_limit,remark,
+        member_account,betting_code,create_date_time,
+        origin_member_account,send_mark,trade_type,
+        origin_trade_limit
+    </sql>
+</mapper>

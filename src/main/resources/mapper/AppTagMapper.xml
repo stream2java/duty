@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.goldnet.duty.mapper.AppTagMapper">
+
+    <resultMap id="BaseResultMap" type="com.goldnet.duty.entity.AppTag">
+            <id property="id" column="id" jdbcType="OTHER"/>
+            <result property="name" column="name" jdbcType="VARCHAR"/>
+            <result property="code" column="code" jdbcType="VARCHAR"/>
+            <result property="account1" column="account1" jdbcType="OTHER"/>
+            <result property="type" column="type" jdbcType="SMALLINT"/>
+            <result property="level_id" column="level_id" jdbcType="OTHER"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,name,code,
+        account1,type,level_id
+    </sql>
+</mapper>

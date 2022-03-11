@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.goldnet.duty.mapper.AtAgentMessageBackupMapper">
+
+    <resultMap id="BaseResultMap" type="com.goldnet.duty.entity.AtAgentMessageBackup">
+            <result property="amb_id" column="amb_id" jdbcType="OTHER"/>
+            <result property="account_id" column="account_id" jdbcType="OTHER"/>
+            <result property="mmb_type" column="mmb_type" jdbcType="OTHER"/>
+            <result property="create_time" column="create_time" jdbcType="TIMESTAMP"/>
+            <result property="spread_url" column="spread_url" jdbcType="VARCHAR"/>
+            <result property="rests_spread_url" column="rests_spread_url" jdbcType="VARCHAR"/>
+            <result property="phone" column="phone" jdbcType="VARCHAR"/>
+            <result property="qq" column="qq" jdbcType="VARCHAR"/>
+            <result property="email" column="email" jdbcType="VARCHAR"/>
+            <result property="bank" column="bank" jdbcType="VARCHAR"/>
+            <result property="bank_account" column="bank_account" jdbcType="VARCHAR"/>
+            <result property="bank_province" column="bank_province" jdbcType="VARCHAR"/>
+            <result property="bank_country" column="bank_country" jdbcType="VARCHAR"/>
+            <result property="draw_money_pwd" column="draw_money_pwd" jdbcType="VARCHAR"/>
+            <result property="real_name" column="real_name" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        amb_id,account_id,mmb_type,
+        create_time,spread_url,rests_spread_url,
+        phone,qq,email,
+        bank,bank_account,bank_province,
+        bank_country,draw_money_pwd,real_name
+    </sql>
+</mapper>

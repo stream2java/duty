@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.goldnet.duty.mapper.MnyMerchantRecord20210727Mapper">
+
+    <resultMap id="BaseResultMap" type="com.goldnet.duty.entity.MnyMerchantRecord20210727">
+            <result property="id" column="id" jdbcType="OTHER"/>
+            <result property="amount" column="amount" jdbcType="NUMERIC"/>
+            <result property="account" column="account" jdbcType="VARCHAR"/>
+            <result property="levelname" column="levelname" jdbcType="VARCHAR"/>
+            <result property="levelno" column="levelno" jdbcType="OTHER"/>
+            <result property="status" column="status" jdbcType="OTHER"/>
+            <result property="paysystem" column="paysystem" jdbcType="VARCHAR"/>
+            <result property="remark" column="remark" jdbcType="VARCHAR"/>
+            <result property="createtime" column="createtime" jdbcType="TIMESTAMP"/>
+            <result property="email" column="email" jdbcType="VARCHAR"/>
+            <result property="phone" column="phone" jdbcType="VARCHAR"/>
+            <result property="memberid" column="memberid" jdbcType="OTHER"/>
+            <result property="stockholderid" column="stockholderid" jdbcType="OTHER"/>
+            <result property="memid" column="memid" jdbcType="OTHER"/>
+            <result property="merchant_id" column="merchant_id" jdbcType="OTHER"/>
+            <result property="youhui" column="youhui" jdbcType="VARCHAR"/>
+            <result property="levelid" column="levelid" jdbcType="OTHER"/>
+            <result property="orderno" column="orderno" jdbcType="VARCHAR"/>
+            <result property="merchantno" column="merchantno" jdbcType="VARCHAR"/>
+            <result property="manaual" column="manaual" jdbcType="OTHER"/>
+            <result property="pay_call_date" column="pay_call_date" jdbcType="TIMESTAMP"/>
+            <result property="bank_key" column="bank_key" jdbcType="VARCHAR"/>
+            <result property="banktype" column="banktype" jdbcType="OTHER"/>
+            <result property="wx_account" column="wx_account" jdbcType="VARCHAR"/>
+            <result property="wx_nickname" column="wx_nickname" jdbcType="VARCHAR"/>
+            <result property="wx_temp" column="wx_temp" jdbcType="VARCHAR"/>
+            <result property="device" column="device" jdbcType="OTHER"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,amount,account,
+        levelname,levelno,status,
+        paysystem,remark,createtime,
+        email,phone,memberid,
+        stockholderid,memid,merchant_id,
+        youhui,levelid,orderno,
+        merchantno,manaual,pay_call_date,
+        bank_key,banktype,wx_account,
+        wx_nickname,wx_temp,device
+    </sql>
+</mapper>

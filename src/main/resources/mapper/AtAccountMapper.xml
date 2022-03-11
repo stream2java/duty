@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.goldnet.duty.mapper.AtAccountMapper">
+
+    <resultMap id="BaseResultMap" type="com.goldnet.duty.entity.AtAccount">
+            <id property="id" column="id" jdbcType="OTHER"/>
+            <result property="account" column="account" jdbcType="VARCHAR"/>
+            <result property="name" column="name" jdbcType="VARCHAR"/>
+            <result property="pwd" column="pwd" jdbcType="VARCHAR"/>
+            <result property="role" column="role" jdbcType="VARCHAR"/>
+            <result property="remark" column="remark" jdbcType="VARCHAR"/>
+            <result property="create_user" column="create_user" jdbcType="VARCHAR"/>
+            <result property="create_time" column="create_time" jdbcType="TIMESTAMP"/>
+            <result property="update_user" column="update_user" jdbcType="VARCHAR"/>
+            <result property="update_time" column="update_time" jdbcType="TIMESTAMP"/>
+            <result property="login_time" column="login_time" jdbcType="TIMESTAMP"/>
+            <result property="login_back" column="login_back" jdbcType="TIMESTAMP"/>
+            <result property="login_num" column="login_num" jdbcType="OTHER"/>
+            <result property="login_ip" column="login_ip" jdbcType="VARCHAR"/>
+            <result property="error_num" column="error_num" jdbcType="OTHER"/>
+            <result property="blacklist" column="blacklist" jdbcType="VARCHAR"/>
+            <result property="old_account" column="old_account" jdbcType="VARCHAR"/>
+            <result property="isonline" column="isonline" jdbcType="VARCHAR"/>
+            <result property="type" column="type" jdbcType="VARCHAR"/>
+            <result property="money_type" column="money_type" jdbcType="VARCHAR"/>
+            <result property="check_status" column="check_status" jdbcType="VARCHAR"/>
+            <result property="login_day_number" column="login_day_number" jdbcType="OTHER"/>
+            <result property="account1" column="account1" jdbcType="OTHER"/>
+            <result property="account2" column="account2" jdbcType="OTHER"/>
+            <result property="account3" column="account3" jdbcType="OTHER"/>
+            <result property="account4" column="account4" jdbcType="OTHER"/>
+            <result property="account5" column="account5" jdbcType="OTHER"/>
+            <result property="account0" column="account0" jdbcType="OTHER"/>
+            <result property="account6" column="account6" jdbcType="OTHER"/>
+            <result property="parent_id" column="parent_id" jdbcType="OTHER"/>
+            <result property="rate" column="rate" jdbcType="OTHER"/>
+            <result property="use_status" column="use_status" jdbcType="OTHER"/>
+            <result property="betting_status" column="betting_status" jdbcType="OTHER"/>
+            <result property="agent_no" column="agent_no" jdbcType="VARCHAR"/>
+            <result property="agent_is_verify" column="agent_is_verify" jdbcType="VARCHAR"/>
+            <result property="mem_is_verify" column="mem_is_verify" jdbcType="VARCHAR"/>
+            <result property="jointime" column="jointime" jdbcType="TIMESTAMP"/>
+            <result property="level_id" column="level_id" jdbcType="OTHER"/>
+            <result property="locking" column="locking" jdbcType="OTHER"/>
+            <result property="currency_id" column="currency_id" jdbcType="OTHER"/>
+            <result property="session_id" column="session_id" jdbcType="VARCHAR"/>
+            <result property="detail_flag" column="detail_flag" jdbcType="VARCHAR"/>
+            <result property="hg_reg" column="hg_reg" jdbcType="OTHER"/>
+            <result property="ea_reg" column="ea_reg" jdbcType="OTHER"/>
+            <result property="bb_reg" column="bb_reg" jdbcType="OTHER"/>
+            <result property="api_pre_code" column="api_pre_code" jdbcType="VARCHAR"/>
+            <result property="dmic_pwd" column="dmic_pwd" jdbcType="VARCHAR"/>
+            <result property="ag_reg" column="ag_reg" jdbcType="OTHER"/>
+            <result property="draw_money_max_limit" column="draw_money_max_limit" jdbcType="NUMERIC"/>
+            <result property="mg_password" column="mg_password" jdbcType="VARCHAR"/>
+            <result property="pt_password" column="pt_password" jdbcType="VARCHAR"/>
+            <result property="og_login_status" column="og_login_status" jdbcType="OTHER"/>
+            <result property="register_ip" column="register_ip" jdbcType="VARCHAR"/>
+            <result property="agent_account" column="agent_account" jdbcType="VARCHAR"/>
+            <result property="transfer_money_status" column="transfer_money_status" jdbcType="OTHER"/>
+            <result property="last_login_platform" column="last_login_platform" jdbcType="VARCHAR"/>
+            <result property="batch_money_max_limit" column="batch_money_max_limit" jdbcType="NUMERIC"/>
+            <result property="monthly_statement_pwd" column="monthly_statement_pwd" jdbcType="VARCHAR"/>
+            <result property="weixin_key" column="weixin_key" jdbcType="VARCHAR"/>
+            <result property="weixin_temp" column="weixin_temp" jdbcType="VARCHAR"/>
+            <result property="weixin_nickname" column="weixin_nickname" jdbcType="VARCHAR"/>
+            <result property="weixin_tacc" column="weixin_tacc" jdbcType="VARCHAR"/>
+            <result property="headimgurl" column="headimgurl" jdbcType="VARCHAR"/>
+            <result property="rapid_money_max_limit" column="rapid_money_max_limit" jdbcType="NUMERIC"/>
+            <result property="cp_parterner" column="cp_parterner" jdbcType="VARCHAR"/>
+            <result property="cp_sign" column="cp_sign" jdbcType="VARCHAR"/>
+            <result property="cp_web_site" column="cp_web_site" jdbcType="VARCHAR"/>
+            <result property="is_init_password" column="is_init_password" jdbcType="OTHER"/>
+            <result property="money_status" column="money_status" jdbcType="OTHER"/>
+            <result property="promotion_status" column="promotion_status" jdbcType="SMALLINT"/>
+            <result property="modify_password_time" column="modify_password_time" jdbcType="TIMESTAMP"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,account,name,
+        pwd,role,remark,
+        create_user,create_time,update_user,
+        update_time,login_time,login_back,
+        login_num,login_ip,error_num,
+        blacklist,old_account,isonline,
+        type,money_type,check_status,
+        login_day_number,account1,account2,
+        account3,account4,account5,
+        account0,account6,parent_id,
+        rate,use_status,betting_status,
+        agent_no,agent_is_verify,mem_is_verify,
+        jointime,level_id,locking,
+        currency_id,session_id,detail_flag,
+        hg_reg,ea_reg,bb_reg,
+        api_pre_code,dmic_pwd,ag_reg,
+        draw_money_max_limit,mg_password,pt_password,
+        og_login_status,register_ip,agent_account,
+        transfer_money_status,last_login_platform,batch_money_max_limit,
+        monthly_statement_pwd,weixin_key,weixin_temp,
+        weixin_nickname,weixin_tacc,headimgurl,
+        rapid_money_max_limit,cp_parterner,cp_sign,
+        cp_web_site,is_init_password,money_status,
+        promotion_status,modify_password_time
+    </sql>
+</mapper>

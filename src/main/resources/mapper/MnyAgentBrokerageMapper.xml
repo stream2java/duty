@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.goldnet.duty.mapper.MnyAgentBrokerageMapper">
+
+    <resultMap id="BaseResultMap" type="com.goldnet.duty.entity.MnyAgentBrokerage">
+            <id property="agentbrokerage_id" column="agentbrokerage_id" jdbcType="OTHER"/>
+            <result property="currency_id" column="currency_id" jdbcType="OTHER"/>
+            <result property="ddgd_id" column="ddgd_id" jdbcType="OTHER"/>
+            <result property="self_gain" column="self_gain" jdbcType="NUMERIC"/>
+            <result property="valid_membertotal" column="valid_membertotal" jdbcType="OTHER"/>
+            <result property="self_validbetting" column="self_validbetting" jdbcType="NUMERIC"/>
+            <result property="valid_member_threshold" column="valid_member_threshold" jdbcType="NUMERIC"/>
+            <result property="founder" column="founder" jdbcType="VARCHAR"/>
+            <result property="foundtime" column="foundtime" jdbcType="TIMESTAMP"/>
+            <result property="moder" column="moder" jdbcType="VARCHAR"/>
+            <result property="modtime" column="modtime" jdbcType="TIMESTAMP"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        agentbrokerage_id,currency_id,ddgd_id,
+        self_gain,valid_membertotal,self_validbetting,
+        valid_member_threshold,founder,foundtime,
+        moder,modtime
+    </sql>
+</mapper>

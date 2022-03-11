@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.goldnet.duty.mapper.GeVgeSlotSettingMapper">
+
+    <resultMap id="BaseResultMap" type="com.goldnet.duty.entity.GeVgeSlotSetting">
+            <id property="slot_set_id" column="slot_set_id" jdbcType="OTHER"/>
+            <result property="slot_type" column="slot_type" jdbcType="OTHER"/>
+            <result property="slot_num" column="slot_num" jdbcType="OTHER"/>
+            <result property="profit" column="profit" jdbcType="NUMERIC"/>
+            <result property="agent" column="agent" jdbcType="OTHER"/>
+            <result property="bet_one" column="bet_one" jdbcType="NUMERIC"/>
+            <result property="bet_two" column="bet_two" jdbcType="NUMERIC"/>
+            <result property="bet_three" column="bet_three" jdbcType="NUMERIC"/>
+            <result property="pot" column="pot" jdbcType="NUMERIC"/>
+            <result property="pot_free" column="pot_free" jdbcType="NUMERIC"/>
+            <result property="pot_payout" column="pot_payout" jdbcType="NUMERIC"/>
+            <result property="ip" column="ip" jdbcType="VARCHAR"/>
+            <result property="port" column="port" jdbcType="VARCHAR"/>
+            <result property="is_enabled" column="is_enabled" jdbcType="VARCHAR"/>
+            <result property="is_enabled_bet" column="is_enabled_bet" jdbcType="VARCHAR"/>
+            <result property="big5_content" column="big5_content" jdbcType="VARCHAR"/>
+            <result property="gbk_content" column="gbk_content" jdbcType="VARCHAR"/>
+            <result property="en_content" column="en_content" jdbcType="VARCHAR"/>
+            <result property="pot_make" column="pot_make" jdbcType="NUMERIC"/>
+            <result property="chance_group" column="chance_group" jdbcType="VARCHAR"/>
+            <result property="chance_group_num" column="chance_group_num" jdbcType="OTHER"/>
+            <result property="chance_group_pot" column="chance_group_pot" jdbcType="NUMERIC"/>
+            <result property="odds" column="odds" jdbcType="OTHER"/>
+            <result property="int_ratio_group" column="int_ratio_group" jdbcType="VARCHAR"/>
+            <result property="int_ratio_default" column="int_ratio_default" jdbcType="VARCHAR"/>
+            <result property="current_pot" column="current_pot" jdbcType="NUMERIC"/>
+            <result property="current_pot_payout" column="current_pot_payout" jdbcType="NUMERIC"/>
+            <result property="newmem_pot" column="newmem_pot" jdbcType="NUMERIC"/>
+            <result property="newmem_pot_payout" column="newmem_pot_payout" jdbcType="NUMERIC"/>
+            <result property="group_id" column="group_id" jdbcType="OTHER"/>
+            <result property="choose" column="choose" jdbcType="VARCHAR"/>
+            <result property="versions" column="versions" jdbcType="OTHER"/>
+            <result property="game_name" column="game_name" jdbcType="VARCHAR"/>
+            <result property="chance" column="chance" jdbcType="NUMERIC"/>
+            <result property="shared_profit" column="shared_profit" jdbcType="NUMERIC"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        slot_set_id,slot_type,slot_num,
+        profit,agent,bet_one,
+        bet_two,bet_three,pot,
+        pot_free,pot_payout,ip,
+        port,is_enabled,is_enabled_bet,
+        big5_content,gbk_content,en_content,
+        pot_make,chance_group,chance_group_num,
+        chance_group_pot,odds,int_ratio_group,
+        int_ratio_default,current_pot,current_pot_payout,
+        newmem_pot,newmem_pot_payout,group_id,
+        choose,versions,game_name,
+        chance,shared_profit
+    </sql>
+</mapper>

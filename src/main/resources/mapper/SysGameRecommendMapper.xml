@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.goldnet.duty.mapper.SysGameRecommendMapper">
+
+    <resultMap id="BaseResultMap" type="com.goldnet.duty.entity.SysGameRecommend">
+            <id property="id" column="id" jdbcType="OTHER"/>
+            <result property="account1" column="account1" jdbcType="OTHER"/>
+            <result property="game_id" column="game_id" jdbcType="OTHER"/>
+            <result property="sort" column="sort" jdbcType="OTHER"/>
+            <result property="game_source" column="game_source" jdbcType="SMALLINT"/>
+            <result property="create_user" column="create_user" jdbcType="VARCHAR"/>
+            <result property="create_time" column="create_time" jdbcType="TIMESTAMP"/>
+            <result property="update_user" column="update_user" jdbcType="VARCHAR"/>
+            <result property="update_time" column="update_time" jdbcType="TIMESTAMP"/>
+            <result property="top_up" column="top_up" jdbcType="SMALLINT"/>
+            <result property="top_up_time" column="top_up_time" jdbcType="TIMESTAMP"/>
+            <result property="hbapp_sort" column="hbapp_sort" jdbcType="OTHER"/>
+            <result property="hbapp_top_up" column="hbapp_top_up" jdbcType="SMALLINT"/>
+            <result property="hbapp_top_up_time" column="hbapp_top_up_time" jdbcType="TIMESTAMP"/>
+            <result property="station_sub_id" column="station_sub_id" jdbcType="OTHER"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,account1,game_id,
+        sort,game_source,create_user,
+        create_time,update_user,update_time,
+        top_up,top_up_time,hbapp_sort,
+        hbapp_top_up,hbapp_top_up_time,station_sub_id
+    </sql>
+</mapper>

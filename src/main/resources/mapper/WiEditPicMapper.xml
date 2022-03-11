@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.goldnet.duty.mapper.WiEditPicMapper">
+
+    <resultMap id="BaseResultMap" type="com.goldnet.duty.entity.WiEditPic">
+            <id property="pic_id" column="pic_id" jdbcType="OTHER"/>
+            <result property="ddgd_id" column="ddgd_id" jdbcType="OTHER"/>
+            <result property="type_id" column="type_id" jdbcType="OTHER"/>
+            <result property="create_user" column="create_user" jdbcType="VARCHAR"/>
+            <result property="create_time" column="create_time" jdbcType="TIMESTAMP"/>
+            <result property="update_user" column="update_user" jdbcType="VARCHAR"/>
+            <result property="update_time" column="update_time" jdbcType="TIMESTAMP"/>
+            <result property="effect_id" column="effect_id" jdbcType="OTHER"/>
+            <result property="junction_type" column="junction_type" jdbcType="OTHER"/>
+            <result property="mouse_status" column="mouse_status" jdbcType="OTHER"/>
+            <result property="close_pic_status" column="close_pic_status" jdbcType="OTHER"/>
+            <result property="title_tra" column="title_tra" jdbcType="VARCHAR"/>
+            <result property="title_sim" column="title_sim" jdbcType="VARCHAR"/>
+            <result property="title_eng" column="title_eng" jdbcType="VARCHAR"/>
+            <result property="image1_tra" column="image1_tra" jdbcType="VARCHAR"/>
+            <result property="image1_sim" column="image1_sim" jdbcType="VARCHAR"/>
+            <result property="image1_eng" column="image1_eng" jdbcType="VARCHAR"/>
+            <result property="image2_tra" column="image2_tra" jdbcType="VARCHAR"/>
+            <result property="image2_sim" column="image2_sim" jdbcType="VARCHAR"/>
+            <result property="image2_eng" column="image2_eng" jdbcType="VARCHAR"/>
+            <result property="image3_tra" column="image3_tra" jdbcType="VARCHAR"/>
+            <result property="image3_sim" column="image3_sim" jdbcType="VARCHAR"/>
+            <result property="image3_eng" column="image3_eng" jdbcType="VARCHAR"/>
+            <result property="junction_tra" column="junction_tra" jdbcType="VARCHAR"/>
+            <result property="junction_sim" column="junction_sim" jdbcType="VARCHAR"/>
+            <result property="junction_eng" column="junction_eng" jdbcType="VARCHAR"/>
+            <result property="junction_window" column="junction_window" jdbcType="OTHER"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        pic_id,ddgd_id,type_id,
+        create_user,create_time,update_user,
+        update_time,effect_id,junction_type,
+        mouse_status,close_pic_status,title_tra,
+        title_sim,title_eng,image1_tra,
+        image1_sim,image1_eng,image2_tra,
+        image2_sim,image2_eng,image3_tra,
+        image3_sim,image3_eng,junction_tra,
+        junction_sim,junction_eng,junction_window
+    </sql>
+</mapper>

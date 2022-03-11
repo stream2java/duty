@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.goldnet.duty.mapper.GeVgeSlotGroupMapper">
+
+    <resultMap id="BaseResultMap" type="com.goldnet.duty.entity.GeVgeSlotGroup">
+            <id property="gid" column="gid" jdbcType="OTHER"/>
+            <result property="group_name" column="group_name" jdbcType="VARCHAR"/>
+            <result property="group_type" column="group_type" jdbcType="OTHER"/>
+            <result property="chance_group" column="chance_group" jdbcType="VARCHAR"/>
+            <result property="chance_group_num" column="chance_group_num" jdbcType="OTHER"/>
+            <result property="chance_group_pot" column="chance_group_pot" jdbcType="NUMERIC"/>
+            <result property="pot" column="pot" jdbcType="NUMERIC"/>
+            <result property="pot_payout" column="pot_payout" jdbcType="NUMERIC"/>
+            <result property="pot_make" column="pot_make" jdbcType="NUMERIC"/>
+            <result property="profit" column="profit" jdbcType="NUMERIC"/>
+            <result property="versions" column="versions" jdbcType="OTHER"/>
+            <result property="group_chance" column="group_chance" jdbcType="NUMERIC"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        gid,group_name,group_type,
+        chance_group,chance_group_num,chance_group_pot,
+        pot,pot_payout,pot_make,
+        profit,versions,group_chance
+    </sql>
+</mapper>

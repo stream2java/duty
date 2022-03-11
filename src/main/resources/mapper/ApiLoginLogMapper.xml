@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.goldnet.duty.mapper.ApiLoginLogMapper">
+
+    <resultMap id="BaseResultMap" type="com.goldnet.duty.entity.ApiLoginLog">
+            <id property="id" column="id" jdbcType="OTHER"/>
+            <result property="account_id" column="account_id" jdbcType="OTHER"/>
+            <result property="account" column="account" jdbcType="VARCHAR"/>
+            <result property="platform" column="platform" jdbcType="VARCHAR"/>
+            <result property="login_time" column="login_time" jdbcType="TIMESTAMP"/>
+            <result property="transfer_money_status" column="transfer_money_status" jdbcType="OTHER"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,account_id,account,
+        platform,login_time,transfer_money_status
+    </sql>
+</mapper>

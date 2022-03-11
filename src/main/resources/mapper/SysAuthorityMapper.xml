@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.goldnet.duty.mapper.SysAuthorityMapper">
+
+    <resultMap id="BaseResultMap" type="com.goldnet.duty.entity.SysAuthority">
+            <id property="authority_id" column="authority_id" jdbcType="OTHER"/>
+            <result property="authority_name" column="authority_name" jdbcType="VARCHAR"/>
+            <result property="authority_url" column="authority_url" jdbcType="VARCHAR"/>
+            <result property="level" column="level" jdbcType="OTHER"/>
+            <result property="parent_id" column="parent_id" jdbcType="OTHER"/>
+            <result property="is_enabled" column="is_enabled" jdbcType="CHAR"/>
+            <result property="is_menu" column="is_menu" jdbcType="CHAR"/>
+            <result property="sort" column="sort" jdbcType="OTHER"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        authority_id,authority_name,authority_url,
+        level,parent_id,is_enabled,
+        is_menu,sort
+    </sql>
+</mapper>

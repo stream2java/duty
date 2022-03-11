@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.goldnet.duty.mapper.GeQuestionMapper">
+
+    <resultMap id="BaseResultMap" type="com.goldnet.duty.entity.GeQuestion">
+            <id property="question_id" column="question_id" jdbcType="OTHER"/>
+            <result property="question_name" column="question_name" jdbcType="VARCHAR"/>
+            <result property="code" column="code" jdbcType="VARCHAR"/>
+            <result property="verify_rule" column="verify_rule" jdbcType="OTHER"/>
+            <result property="error_range" column="error_range" jdbcType="OTHER"/>
+            <result property="unit" column="unit" jdbcType="VARCHAR"/>
+            <result property="sort" column="sort" jdbcType="OTHER"/>
+            <result property="display" column="display" jdbcType="OTHER"/>
+            <result property="remark" column="remark" jdbcType="VARCHAR"/>
+            <result property="input_type" column="input_type" jdbcType="VARCHAR"/>
+            <result property="min_length" column="min_length" jdbcType="OTHER"/>
+            <result property="max_length" column="max_length" jdbcType="OTHER"/>
+            <result property="min_val" column="min_val" jdbcType="OTHER"/>
+            <result property="max_val" column="max_val" jdbcType="OTHER"/>
+            <result property="icon" column="icon" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        question_id,question_name,code,
+        verify_rule,error_range,unit,
+        sort,display,remark,
+        input_type,min_length,max_length,
+        min_val,max_val,icon
+    </sql>
+</mapper>

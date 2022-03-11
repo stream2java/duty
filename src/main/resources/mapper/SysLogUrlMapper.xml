@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.goldnet.duty.mapper.SysLogUrlMapper">
+
+    <resultMap id="BaseResultMap" type="com.goldnet.duty.entity.SysLogUrl">
+            <id property="id" column="id" jdbcType="OTHER"/>
+            <result property="accountid" column="accountid" jdbcType="OTHER"/>
+            <result property="account" column="account" jdbcType="VARCHAR"/>
+            <result property="url" column="url" jdbcType="VARCHAR"/>
+            <result property="params" column="params" jdbcType="VARCHAR"/>
+            <result property="actionname" column="actionname" jdbcType="VARCHAR"/>
+            <result property="visitdate" column="visitdate" jdbcType="TIMESTAMP"/>
+            <result property="method" column="method" jdbcType="VARCHAR"/>
+            <result property="domain" column="domain" jdbcType="VARCHAR"/>
+            <result property="account1" column="account1" jdbcType="OTHER"/>
+            <result property="zhparams" column="zhparams" jdbcType="VARCHAR"/>
+            <result property="type" column="type" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,accountid,account,
+        url,params,actionname,
+        visitdate,method,domain,
+        account1,zhparams,type
+    </sql>
+</mapper>

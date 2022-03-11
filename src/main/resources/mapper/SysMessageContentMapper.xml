@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.goldnet.duty.mapper.SysMessageContentMapper">
+
+    <resultMap id="BaseResultMap" type="com.goldnet.duty.entity.SysMessageContent">
+            <id property="id" column="id" jdbcType="OTHER"/>
+            <result property="big5_subject" column="big5_subject" jdbcType="VARCHAR"/>
+            <result property="gbk_subject" column="gbk_subject" jdbcType="VARCHAR"/>
+            <result property="en_subject" column="en_subject" jdbcType="VARCHAR"/>
+            <result property="big5_content" column="big5_content" jdbcType="VARCHAR"/>
+            <result property="gbk_content" column="gbk_content" jdbcType="VARCHAR"/>
+            <result property="en_content" column="en_content" jdbcType="VARCHAR"/>
+            <result property="create_date_time" column="create_date_time" jdbcType="TIMESTAMP"/>
+            <result property="message_type" column="message_type" jdbcType="OTHER"/>
+            <result property="is_send" column="is_send" jdbcType="OTHER"/>
+            <result property="stockholder_id" column="stockholder_id" jdbcType="OTHER"/>
+            <result property="create_user" column="create_user" jdbcType="VARCHAR"/>
+            <result property="update_user" column="update_user" jdbcType="VARCHAR"/>
+            <result property="update_time" column="update_time" jdbcType="TIMESTAMP"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,big5_subject,gbk_subject,
+        en_subject,big5_content,gbk_content,
+        en_content,create_date_time,message_type,
+        is_send,stockholder_id,create_user,
+        update_user,update_time
+    </sql>
+</mapper>

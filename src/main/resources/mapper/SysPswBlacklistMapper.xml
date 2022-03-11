@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.goldnet.duty.mapper.SysPswBlacklistMapper">
+
+    <resultMap id="BaseResultMap" type="com.goldnet.duty.entity.SysPswBlacklist">
+            <id property="id" column="id" jdbcType="OTHER"/>
+            <result property="black_password" column="black_password" jdbcType="VARCHAR"/>
+            <result property="status" column="status" jdbcType="OTHER"/>
+            <result property="station_ids" column="station_ids" jdbcType="OTHER"/>
+            <result property="update_user" column="update_user" jdbcType="VARCHAR"/>
+            <result property="update_time" column="update_time" jdbcType="TIMESTAMP"/>
+            <result property="del_time" column="del_time" jdbcType="TIMESTAMP"/>
+            <result property="en_black_password" column="en_black_password" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,black_password,status,
+        station_ids,update_user,update_time,
+        del_time,en_black_password
+    </sql>
+</mapper>

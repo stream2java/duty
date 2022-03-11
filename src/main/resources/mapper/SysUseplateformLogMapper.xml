@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.goldnet.duty.mapper.SysUseplateformLogMapper">
+
+    <resultMap id="BaseResultMap" type="com.goldnet.duty.entity.SysUseplateformLog">
+            <id property="log_id" column="log_id" jdbcType="OTHER"/>
+            <result property="log_content" column="log_content" jdbcType="VARCHAR"/>
+            <result property="log_ip" column="log_ip" jdbcType="VARCHAR"/>
+            <result property="log_datetime" column="log_datetime" jdbcType="TIMESTAMP"/>
+            <result property="user_platform" column="user_platform" jdbcType="OTHER"/>
+            <result property="user_account" column="user_account" jdbcType="VARCHAR"/>
+            <result property="user_id" column="user_id" jdbcType="OTHER"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        log_id,log_content,log_ip,
+        log_datetime,user_platform,user_account,
+        user_id
+    </sql>
+</mapper>

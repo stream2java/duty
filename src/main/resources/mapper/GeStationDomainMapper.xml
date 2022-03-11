@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.goldnet.duty.mapper.GeStationDomainMapper">
+
+    <resultMap id="BaseResultMap" type="com.goldnet.duty.entity.GeStationDomain">
+            <id property="id" column="id" jdbcType="OTHER"/>
+            <result property="station_id" column="station_id" jdbcType="OTHER"/>
+            <result property="domain_url" column="domain_url" jdbcType="VARCHAR"/>
+            <result property="status" column="status" jdbcType="OTHER"/>
+            <result property="action_scope" column="action_scope" jdbcType="OTHER"/>
+            <result property="skin_folder" column="skin_folder" jdbcType="VARCHAR"/>
+            <result property="station_son_id" column="station_son_id" jdbcType="OTHER"/>
+            <result property="app_checked" column="app_checked" jdbcType="OTHER"/>
+            <result property="h5skin_folder" column="h5skin_folder" jdbcType="VARCHAR"/>
+            <result property="app_down_checked" column="app_down_checked" jdbcType="OTHER"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,station_id,domain_url,
+        status,action_scope,skin_folder,
+        station_son_id,app_checked,h5skin_folder,
+        app_down_checked
+    </sql>
+</mapper>

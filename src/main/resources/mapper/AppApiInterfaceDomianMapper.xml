@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.goldnet.duty.mapper.AppApiInterfaceDomianMapper">
+
+    <resultMap id="BaseResultMap" type="com.goldnet.duty.entity.AppApiInterfaceDomian">
+            <id property="id" column="id" jdbcType="OTHER"/>
+            <result property="domian_url" column="domian_url" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,domian_url
+    </sql>
+</mapper>

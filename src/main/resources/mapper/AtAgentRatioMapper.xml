@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.goldnet.duty.mapper.AtAgentRatioMapper">
+
+    <resultMap id="BaseResultMap" type="com.goldnet.duty.entity.AtAgentRatio">
+            <id property="id" column="id" jdbcType="OTHER"/>
+            <result property="actual_ratio" column="actual_ratio" jdbcType="NUMERIC"/>
+            <result property="thows_ratio_open" column="thows_ratio_open" jdbcType="VARCHAR"/>
+            <result property="create_date_time" column="create_date_time" jdbcType="TIMESTAMP"/>
+            <result property="create_user" column="create_user" jdbcType="VARCHAR"/>
+            <result property="update_date_time" column="update_date_time" jdbcType="TIMESTAMP"/>
+            <result property="update_user" column="update_user" jdbcType="VARCHAR"/>
+            <result property="account_id" column="account_id" jdbcType="OTHER"/>
+            <result property="is_cascade" column="is_cascade" jdbcType="VARCHAR"/>
+            <result property="category_code" column="category_code" jdbcType="VARCHAR"/>
+            <result property="max_ratio" column="max_ratio" jdbcType="NUMERIC"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,actual_ratio,thows_ratio_open,
+        create_date_time,create_user,update_date_time,
+        update_user,account_id,is_cascade,
+        category_code,max_ratio
+    </sql>
+</mapper>

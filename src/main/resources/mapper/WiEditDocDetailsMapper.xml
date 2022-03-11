@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.goldnet.duty.mapper.WiEditDocDetailsMapper">
+
+    <resultMap id="BaseResultMap" type="com.goldnet.duty.entity.WiEditDocDetails">
+            <id property="details_id" column="details_id" jdbcType="OTHER"/>
+            <result property="create_user" column="create_user" jdbcType="VARCHAR"/>
+            <result property="create_time" column="create_time" jdbcType="TIMESTAMP"/>
+            <result property="update_user" column="update_user" jdbcType="VARCHAR"/>
+            <result property="update_time" column="update_time" jdbcType="TIMESTAMP"/>
+            <result property="ddgd_id" column="ddgd_id" jdbcType="OTHER"/>
+            <result property="old_sort" column="old_sort" jdbcType="OTHER"/>
+            <result property="now_sort" column="now_sort" jdbcType="OTHER"/>
+            <result property="name_tra" column="name_tra" jdbcType="VARCHAR"/>
+            <result property="name_sim" column="name_sim" jdbcType="VARCHAR"/>
+            <result property="name_eng" column="name_eng" jdbcType="VARCHAR"/>
+            <result property="pic_status_tra" column="pic_status_tra" jdbcType="OTHER"/>
+            <result property="pic_status_sim" column="pic_status_sim" jdbcType="OTHER"/>
+            <result property="pic_status_eng" column="pic_status_eng" jdbcType="OTHER"/>
+            <result property="context_pic_tra" column="context_pic_tra" jdbcType="VARCHAR"/>
+            <result property="context_pic_sim" column="context_pic_sim" jdbcType="VARCHAR"/>
+            <result property="context_pic_eng" column="context_pic_eng" jdbcType="VARCHAR"/>
+            <result property="context_tra" column="context_tra" jdbcType="VARCHAR"/>
+            <result property="context_sim" column="context_sim" jdbcType="VARCHAR"/>
+            <result property="context_eng" column="context_eng" jdbcType="VARCHAR"/>
+            <result property="doc_id" column="doc_id" jdbcType="OTHER"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        details_id,create_user,create_time,
+        update_user,update_time,ddgd_id,
+        old_sort,now_sort,name_tra,
+        name_sim,name_eng,pic_status_tra,
+        pic_status_sim,pic_status_eng,context_pic_tra,
+        context_pic_sim,context_pic_eng,context_tra,
+        context_sim,context_eng,doc_id
+    </sql>
+</mapper>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.goldnet.duty.mapper.GePeriodMapper">
+
+    <resultMap id="BaseResultMap" type="com.goldnet.duty.entity.GePeriod">
+            <id property="period_id" column="period_id" jdbcType="OTHER"/>
+            <result property="lottery_code" column="lottery_code" jdbcType="VARCHAR"/>
+            <result property="period_code" column="period_code" jdbcType="VARCHAR"/>
+            <result property="period_date" column="period_date" jdbcType="VARCHAR"/>
+            <result property="betting_start_date" column="betting_start_date" jdbcType="VARCHAR"/>
+            <result property="betting_end_date" column="betting_end_date" jdbcType="VARCHAR"/>
+            <result property="period_end_date" column="period_end_date" jdbcType="VARCHAR"/>
+            <result property="create_user" column="create_user" jdbcType="VARCHAR"/>
+            <result property="create_date_time" column="create_date_time" jdbcType="TIMESTAMP"/>
+            <result property="update_user" column="update_user" jdbcType="VARCHAR"/>
+            <result property="update_date_time" column="update_date_time" jdbcType="TIMESTAMP"/>
+            <result property="lottery_id" column="lottery_id" jdbcType="OTHER"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        period_id,lottery_code,period_code,
+        period_date,betting_start_date,betting_end_date,
+        period_end_date,create_user,create_date_time,
+        update_user,update_date_time,lottery_id
+    </sql>
+</mapper>

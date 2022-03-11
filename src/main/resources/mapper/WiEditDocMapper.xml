@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.goldnet.duty.mapper.WiEditDocMapper">
+
+    <resultMap id="BaseResultMap" type="com.goldnet.duty.entity.WiEditDoc">
+            <id property="edit_doc_id" column="edit_doc_id" jdbcType="OTHER"/>
+            <result property="code" column="code" jdbcType="VARCHAR"/>
+            <result property="title_tra" column="title_tra" jdbcType="VARCHAR"/>
+            <result property="title_sim" column="title_sim" jdbcType="VARCHAR"/>
+            <result property="title_eng" column="title_eng" jdbcType="VARCHAR"/>
+            <result property="status" column="status" jdbcType="OTHER"/>
+            <result property="contact" column="contact" jdbcType="OTHER"/>
+            <result property="agent_login" column="agent_login" jdbcType="OTHER"/>
+            <result property="page_mark" column="page_mark" jdbcType="OTHER"/>
+            <result property="create_user" column="create_user" jdbcType="VARCHAR"/>
+            <result property="create_time" column="create_time" jdbcType="TIMESTAMP"/>
+            <result property="update_user" column="update_user" jdbcType="VARCHAR"/>
+            <result property="update_time" column="update_time" jdbcType="TIMESTAMP"/>
+            <result property="ddgd_id" column="ddgd_id" jdbcType="OTHER"/>
+            <result property="kind_id" column="kind_id" jdbcType="OTHER"/>
+            <result property="doc_type" column="doc_type" jdbcType="OTHER"/>
+            <result property="auditing_status" column="auditing_status" jdbcType="OTHER"/>
+            <result property="effect_time" column="effect_time" jdbcType="TIMESTAMP"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        edit_doc_id,code,title_tra,
+        title_sim,title_eng,status,
+        contact,agent_login,page_mark,
+        create_user,create_time,update_user,
+        update_time,ddgd_id,kind_id,
+        doc_type,auditing_status,effect_time
+    </sql>
+</mapper>

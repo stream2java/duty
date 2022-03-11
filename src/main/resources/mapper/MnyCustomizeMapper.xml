@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.goldnet.duty.mapper.MnyCustomizeMapper">
+
+    <resultMap id="BaseResultMap" type="com.goldnet.duty.entity.MnyCustomize">
+            <id property="customize_id" column="customize_id" jdbcType="OTHER"/>
+            <result property="customize_no" column="customize_no" jdbcType="VARCHAR"/>
+            <result property="customize_name" column="customize_name" jdbcType="VARCHAR"/>
+            <result property="customize_sort" column="customize_sort" jdbcType="OTHER"/>
+            <result property="create_user" column="create_user" jdbcType="VARCHAR"/>
+            <result property="create_time" column="create_time" jdbcType="TIMESTAMP"/>
+            <result property="update_user" column="update_user" jdbcType="VARCHAR"/>
+            <result property="update_time" column="update_time" jdbcType="TIMESTAMP"/>
+            <result property="delete_flag" column="delete_flag" jdbcType="OTHER"/>
+            <result property="stockholder_id" column="stockholder_id" jdbcType="OTHER"/>
+            <result property="uuid" column="uuid" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        customize_id,customize_no,customize_name,
+        customize_sort,create_user,create_time,
+        update_user,update_time,delete_flag,
+        stockholder_id,uuid
+    </sql>
+</mapper>

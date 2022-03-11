@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.goldnet.duty.mapper.AtMemberLoginMapper">
+
+    <resultMap id="BaseResultMap" type="com.goldnet.duty.entity.AtMemberLogin">
+            <id property="account_id" column="account_id" jdbcType="OTHER"/>
+            <result property="login_time" column="login_time" jdbcType="TIMESTAMP"/>
+            <result property="login_back" column="login_back" jdbcType="TIMESTAMP"/>
+            <result property="login_num" column="login_num" jdbcType="OTHER"/>
+            <result property="login_ip" column="login_ip" jdbcType="VARCHAR"/>
+            <result property="error_num" column="error_num" jdbcType="OTHER"/>
+            <result property="session_id" column="session_id" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        account_id,login_time,login_back,
+        login_num,login_ip,error_num,
+        session_id
+    </sql>
+</mapper>

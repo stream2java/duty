@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.goldnet.duty.mapper.GeActivityPacketAmountMapper">
+
+    <resultMap id="BaseResultMap" type="com.goldnet.duty.entity.GeActivityPacketAmount">
+            <id property="id" column="id" jdbcType="BIGINT"/>
+            <result property="activity_id" column="activity_id" jdbcType="BIGINT"/>
+            <result property="account1" column="account1" jdbcType="OTHER"/>
+            <result property="account_id" column="account_id" jdbcType="OTHER"/>
+            <result property="activity_time_id" column="activity_time_id" jdbcType="BIGINT"/>
+            <result property="amount" column="amount" jdbcType="NUMERIC"/>
+            <result property="activity_date" column="activity_date" jdbcType="DATE"/>
+            <result property="create_time" column="create_time" jdbcType="TIMESTAMP"/>
+            <result property="create_user" column="create_user" jdbcType="VARCHAR"/>
+            <result property="update_time" column="update_time" jdbcType="TIMESTAMP"/>
+            <result property="update_user" column="update_user" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,activity_id,account1,
+        account_id,activity_time_id,amount,
+        activity_date,create_time,create_user,
+        update_time,update_user
+    </sql>
+</mapper>

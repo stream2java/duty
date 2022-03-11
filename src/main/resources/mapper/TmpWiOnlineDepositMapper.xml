@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.goldnet.duty.mapper.TmpWiOnlineDepositMapper">
+
+    <resultMap id="BaseResultMap" type="com.goldnet.duty.entity.TmpWiOnlineDeposit">
+            <result property="online_deposit_id" column="online_deposit_id" jdbcType="OTHER"/>
+            <result property="code" column="code" jdbcType="VARCHAR"/>
+            <result property="title_tra" column="title_tra" jdbcType="VARCHAR"/>
+            <result property="title_sim" column="title_sim" jdbcType="VARCHAR"/>
+            <result property="title_eng" column="title_eng" jdbcType="VARCHAR"/>
+            <result property="status" column="status" jdbcType="OTHER"/>
+            <result property="doc_name" column="doc_name" jdbcType="VARCHAR"/>
+            <result property="context_name_tra" column="context_name_tra" jdbcType="VARCHAR"/>
+            <result property="context_name_sim" column="context_name_sim" jdbcType="VARCHAR"/>
+            <result property="context_name_eng" column="context_name_eng" jdbcType="VARCHAR"/>
+            <result property="context_tra" column="context_tra" jdbcType="VARCHAR"/>
+            <result property="context_sim" column="context_sim" jdbcType="VARCHAR"/>
+            <result property="context_eng" column="context_eng" jdbcType="VARCHAR"/>
+            <result property="create_user" column="create_user" jdbcType="VARCHAR"/>
+            <result property="create_time" column="create_time" jdbcType="TIMESTAMP"/>
+            <result property="update_user" column="update_user" jdbcType="VARCHAR"/>
+            <result property="update_time" column="update_time" jdbcType="TIMESTAMP"/>
+            <result property="ddgd_id" column="ddgd_id" jdbcType="OTHER"/>
+            <result property="kind_id" column="kind_id" jdbcType="OTHER"/>
+            <result property="doc_type" column="doc_type" jdbcType="OTHER"/>
+            <result property="auditing_status" column="auditing_status" jdbcType="OTHER"/>
+            <result property="effect_time" column="effect_time" jdbcType="TIMESTAMP"/>
+            <result property="deposit_id" column="deposit_id" jdbcType="OTHER"/>
+            <result property="order_no" column="order_no" jdbcType="OTHER"/>
+            <result property="title_url" column="title_url" jdbcType="VARCHAR"/>
+            <result property="bank_key" column="bank_key" jdbcType="OTHER"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        online_deposit_id,code,title_tra,
+        title_sim,title_eng,status,
+        doc_name,context_name_tra,context_name_sim,
+        context_name_eng,context_tra,context_sim,
+        context_eng,create_user,create_time,
+        update_user,update_time,ddgd_id,
+        kind_id,doc_type,auditing_status,
+        effect_time,deposit_id,order_no,
+        title_url,bank_key
+    </sql>
+</mapper>

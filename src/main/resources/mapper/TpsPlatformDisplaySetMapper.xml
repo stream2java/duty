@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.goldnet.duty.mapper.TpsPlatformDisplaySetMapper">
+
+    <resultMap id="BaseResultMap" type="com.goldnet.duty.entity.TpsPlatformDisplaySet">
+            <id property="id" column="id" jdbcType="OTHER"/>
+            <result property="platform_code" column="platform_code" jdbcType="VARCHAR"/>
+            <result property="alias" column="alias" jdbcType="VARCHAR"/>
+            <result property="sort" column="sort" jdbcType="OTHER"/>
+            <result property="group_id" column="group_id" jdbcType="OTHER"/>
+            <result property="create_time" column="create_time" jdbcType="TIMESTAMP"/>
+            <result property="update_time" column="update_time" jdbcType="TIMESTAMP"/>
+            <result property="create_user" column="create_user" jdbcType="VARCHAR"/>
+            <result property="update_user" column="update_user" jdbcType="VARCHAR"/>
+            <result property="front_dis_status" column="front_dis_status" jdbcType="OTHER"/>
+            <result property="agent_dis_status" column="agent_dis_status" jdbcType="OTHER"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,platform_code,alias,
+        sort,group_id,create_time,
+        update_time,create_user,update_user,
+        front_dis_status,agent_dis_status
+    </sql>
+</mapper>

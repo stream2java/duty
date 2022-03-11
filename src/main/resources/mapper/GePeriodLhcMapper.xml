@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.goldnet.duty.mapper.GePeriodLhcMapper">
+
+    <resultMap id="BaseResultMap" type="com.goldnet.duty.entity.GePeriodLhc">
+            <id property="period_lhc_id" column="period_lhc_id" jdbcType="OTHER"/>
+            <result property="lottery_code" column="lottery_code" jdbcType="VARCHAR"/>
+            <result property="create_user" column="create_user" jdbcType="VARCHAR"/>
+            <result property="create_date_time" column="create_date_time" jdbcType="TIMESTAMP"/>
+            <result property="update_user" column="update_user" jdbcType="VARCHAR"/>
+            <result property="update_date_time" column="update_date_time" jdbcType="TIMESTAMP"/>
+            <result property="lottery_id" column="lottery_id" jdbcType="OTHER"/>
+            <result property="award_time" column="award_time" jdbcType="VARCHAR"/>
+            <result property="auto_close_time" column="auto_close_time" jdbcType="VARCHAR"/>
+            <result property="auto_close_status" column="auto_close_status" jdbcType="VARCHAR"/>
+            <result property="auto_open_time" column="auto_open_time" jdbcType="VARCHAR"/>
+            <result property="auto_open_status" column="auto_open_status" jdbcType="VARCHAR"/>
+            <result property="abcd_status" column="abcd_status" jdbcType="VARCHAR"/>
+            <result property="abcd_time" column="abcd_time" jdbcType="VARCHAR"/>
+            <result property="tbh_status" column="tbh_status" jdbcType="VARCHAR"/>
+            <result property="tbh_time" column="tbh_time" jdbcType="VARCHAR"/>
+            <result property="ztm_status" column="ztm_status" jdbcType="VARCHAR"/>
+            <result property="ztm_time" column="ztm_time" jdbcType="VARCHAR"/>
+            <result property="zm_status" column="zm_status" jdbcType="VARCHAR"/>
+            <result property="zm_time" column="zm_time" jdbcType="VARCHAR"/>
+            <result property="zmaf_status" column="zmaf_status" jdbcType="VARCHAR"/>
+            <result property="zmaf_time" column="zmaf_time" jdbcType="VARCHAR"/>
+            <result property="lm_status" column="lm_status" jdbcType="VARCHAR"/>
+            <result property="lm_time" column="lm_time" jdbcType="VARCHAR"/>
+            <result property="zxbz_status" column="zxbz_status" jdbcType="VARCHAR"/>
+            <result property="zxbz_time" column="zxbz_time" jdbcType="VARCHAR"/>
+            <result property="zmgg_status" column="zmgg_status" jdbcType="VARCHAR"/>
+            <result property="zmgg_time" column="zmgg_time" jdbcType="VARCHAR"/>
+            <result property="sxsbtw_status" column="sxsbtw_status" jdbcType="VARCHAR"/>
+            <result property="sxsbtw_time" column="sxsbtw_time" jdbcType="VARCHAR"/>
+            <result property="yxzxzt_status" column="yxzxzt_status" jdbcType="VARCHAR"/>
+            <result property="yxzxzt_time" column="yxzxzt_time" jdbcType="VARCHAR"/>
+            <result property="hx_status" column="hx_status" jdbcType="VARCHAR"/>
+            <result property="hx_time" column="hx_time" jdbcType="VARCHAR"/>
+            <result property="lxlw_status" column="lxlw_status" jdbcType="VARCHAR"/>
+            <result property="lxlw_time" column="lxlw_time" jdbcType="VARCHAR"/>
+            <result property="bbbbb_status" column="bbbbb_status" jdbcType="VARCHAR"/>
+            <result property="bbbbb_time" column="bbbbb_time" jdbcType="VARCHAR"/>
+            <result property="zxqsb_status" column="zxqsb_status" jdbcType="VARCHAR"/>
+            <result property="zxqsb_time" column="zxqsb_time" jdbcType="VARCHAR"/>
+            <result property="period_code" column="period_code" jdbcType="OTHER"/>
+            <result property="is_award" column="is_award" jdbcType="OTHER"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        period_lhc_id,lottery_code,create_user,
+        create_date_time,update_user,update_date_time,
+        lottery_id,award_time,auto_close_time,
+        auto_close_status,auto_open_time,auto_open_status,
+        abcd_status,abcd_time,tbh_status,
+        tbh_time,ztm_status,ztm_time,
+        zm_status,zm_time,zmaf_status,
+        zmaf_time,lm_status,lm_time,
+        zxbz_status,zxbz_time,zmgg_status,
+        zmgg_time,sxsbtw_status,sxsbtw_time,
+        yxzxzt_status,yxzxzt_time,hx_status,
+        hx_time,lxlw_status,lxlw_time,
+        bbbbb_status,bbbbb_time,zxqsb_status,
+        zxqsb_time,period_code,is_award
+    </sql>
+</mapper>

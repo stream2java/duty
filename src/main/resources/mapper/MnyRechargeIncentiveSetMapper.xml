@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.goldnet.duty.mapper.MnyRechargeIncentiveSetMapper">
+
+    <resultMap id="BaseResultMap" type="com.goldnet.duty.entity.MnyRechargeIncentiveSet">
+            <result property="id" column="id" jdbcType="OTHER"/>
+            <result property="pay_type" column="pay_type" jdbcType="VARCHAR"/>
+            <result property="pay_type_name" column="pay_type_name" jdbcType="VARCHAR"/>
+            <result property="code_quantity_id" column="code_quantity_id" jdbcType="OTHER"/>
+            <result property="pre_per_online" column="pre_per_online" jdbcType="VARCHAR"/>
+            <result property="pre_per_offline" column="pre_per_offline" jdbcType="VARCHAR"/>
+            <result property="create_user" column="create_user" jdbcType="VARCHAR"/>
+            <result property="create_time" column="create_time" jdbcType="TIMESTAMP"/>
+            <result property="update_user" column="update_user" jdbcType="VARCHAR"/>
+            <result property="update_time" column="update_time" jdbcType="TIMESTAMP"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,pay_type,pay_type_name,
+        code_quantity_id,pre_per_online,pre_per_offline,
+        create_user,create_time,update_user,
+        update_time
+    </sql>
+</mapper>

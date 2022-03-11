@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.goldnet.duty.mapper.TpsRebateItemMapper">
+
+    <resultMap id="BaseResultMap" type="com.goldnet.duty.entity.TpsRebateItem">
+            <id property="id" column="id" jdbcType="OTHER"/>
+            <result property="agent_id" column="agent_id" jdbcType="OTHER"/>
+            <result property="periods_id" column="periods_id" jdbcType="OTHER"/>
+            <result property="rebate" column="rebate" jdbcType="NUMERIC"/>
+            <result property="pre" column="pre" jdbcType="NUMERIC"/>
+            <result property="payout_previous" column="payout_previous" jdbcType="NUMERIC"/>
+            <result property="payout_current" column="payout_current" jdbcType="NUMERIC"/>
+            <result property="valid_bet_previous" column="valid_bet_previous" jdbcType="NUMERIC"/>
+            <result property="valid_bet_current" column="valid_bet_current" jdbcType="NUMERIC"/>
+            <result property="platform_code" column="platform_code" jdbcType="VARCHAR"/>
+            <result property="platform_game_code" column="platform_game_code" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,agent_id,periods_id,
+        rebate,pre,payout_previous,
+        payout_current,valid_bet_previous,valid_bet_current,
+        platform_code,platform_game_code
+    </sql>
+</mapper>

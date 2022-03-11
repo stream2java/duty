@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.goldnet.duty.mapper.BbtestMapper">
+
+    <resultMap id="BaseResultMap" type="com.goldnet.duty.entity.Bbtest">
+            <result property="oldid" column="oldid" jdbcType="OTHER"/>
+            <result property="oldaccount" column="oldaccount" jdbcType="VARCHAR"/>
+            <result property="newid" column="newid" jdbcType="OTHER"/>
+            <result property="newaccount" column="newaccount" jdbcType="VARCHAR"/>
+            <result property="betting_code" column="betting_code" jdbcType="VARCHAR"/>
+            <result property="date" column="date" jdbcType="TIMESTAMP"/>
+            <result property="is_notify" column="is_notify" jdbcType="OTHER"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        oldid,oldaccount,newid,
+        newaccount,betting_code,date,
+        is_notify
+    </sql>
+</mapper>

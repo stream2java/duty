@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.goldnet.duty.mapper.GeTyBetdetailLogMapper">
+
+    <resultMap id="BaseResultMap" type="com.goldnet.duty.entity.GeTyBetdetailLog">
+            <result property="logid" column="logid" jdbcType="OTHER"/>
+            <result property="detail_id" column="detail_id" jdbcType="OTHER"/>
+            <result property="betting_code" column="betting_code" jdbcType="VARCHAR"/>
+            <result property="agent" column="agent" jdbcType="OTHER"/>
+            <result property="optype" column="optype" jdbcType="OTHER"/>
+            <result property="matches_id" column="matches_id" jdbcType="OTHER"/>
+            <result property="update_time" column="update_time" jdbcType="TIMESTAMP"/>
+            <result property="remark" column="remark" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        logid,detail_id,betting_code,
+        agent,optype,matches_id,
+        update_time,remark
+    </sql>
+</mapper>

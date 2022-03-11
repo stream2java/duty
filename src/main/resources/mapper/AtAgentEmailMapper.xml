@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.goldnet.duty.mapper.AtAgentEmailMapper">
+
+    <resultMap id="BaseResultMap" type="com.goldnet.duty.entity.AtAgentEmail">
+            <id property="email_id" column="email_id" jdbcType="OTHER"/>
+            <result property="email_server_address" column="email_server_address" jdbcType="VARCHAR"/>
+            <result property="send_email" column="send_email" jdbcType="VARCHAR"/>
+            <result property="email_subject" column="email_subject" jdbcType="VARCHAR"/>
+            <result property="user_name" column="user_name" jdbcType="VARCHAR"/>
+            <result property="pass_word" column="pass_word" jdbcType="VARCHAR"/>
+            <result property="site_name" column="site_name" jdbcType="VARCHAR"/>
+            <result property="ddgd_id" column="ddgd_id" jdbcType="OTHER"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        email_id,email_server_address,send_email,
+        email_subject,user_name,pass_word,
+        site_name,ddgd_id
+    </sql>
+</mapper>

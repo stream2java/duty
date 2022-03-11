@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.goldnet.duty.mapper.GeChipsUsersMapper">
+
+    <resultMap id="BaseResultMap" type="com.goldnet.duty.entity.GeChipsUsers">
+            <id property="id" column="id" jdbcType="OTHER"/>
+            <result property="account6" column="account6" jdbcType="OTHER"/>
+            <result property="chips" column="chips" jdbcType="OTHER"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,account6,chips
+    </sql>
+</mapper>

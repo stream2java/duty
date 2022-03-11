@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.goldnet.duty.mapper.GeZqMatchesDetailSetMapper">
+
+    <resultMap id="BaseResultMap" type="com.goldnet.duty.entity.GeZqMatchesDetailSet">
+            <id property="id" column="id" jdbcType="OTHER"/>
+            <result property="lottery_id" column="lottery_id" jdbcType="OTHER"/>
+            <result property="agent_id" column="agent_id" jdbcType="OTHER"/>
+            <result property="is_show" column="is_show" jdbcType="VARCHAR"/>
+            <result property="create_user" column="create_user" jdbcType="VARCHAR"/>
+            <result property="create_date_time" column="create_date_time" jdbcType="TIMESTAMP"/>
+            <result property="matches_id" column="matches_id" jdbcType="OTHER"/>
+            <result property="champion_id" column="champion_id" jdbcType="OTHER"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,lottery_id,agent_id,
+        is_show,create_user,create_date_time,
+        matches_id,champion_id
+    </sql>
+</mapper>

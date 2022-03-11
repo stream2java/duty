@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.goldnet.duty.mapper.MnyComRecordBackupMapper">
+
+    <resultMap id="BaseResultMap" type="com.goldnet.duty.entity.MnyComRecordBackup">
+            <id property="id" column="id" jdbcType="OTHER"/>
+            <result property="com_record_id" column="com_record_id" jdbcType="OTHER"/>
+            <result property="order_no" column="order_no" jdbcType="VARCHAR"/>
+            <result property="level_id" column="level_id" jdbcType="OTHER"/>
+            <result property="partner_id" column="partner_id" jdbcType="OTHER"/>
+            <result property="member_id" column="member_id" jdbcType="OTHER"/>
+            <result property="deposit_type" column="deposit_type" jdbcType="VARCHAR"/>
+            <result property="deposit_money" column="deposit_money" jdbcType="NUMERIC"/>
+            <result property="deposit_pre" column="deposit_pre" jdbcType="NUMERIC"/>
+            <result property="other_pre" column="other_pre" jdbcType="NUMERIC"/>
+            <result property="status" column="status" jdbcType="OTHER"/>
+            <result property="create_user" column="create_user" jdbcType="VARCHAR"/>
+            <result property="create_time" column="create_time" jdbcType="TIMESTAMP"/>
+            <result property="update_user" column="update_user" jdbcType="VARCHAR"/>
+            <result property="update_time" column="update_time" jdbcType="TIMESTAMP"/>
+            <result property="system_time" column="system_time" jdbcType="TIMESTAMP"/>
+            <result property="deposit_pre_status" column="deposit_pre_status" jdbcType="OTHER"/>
+            <result property="other_pre_status" column="other_pre_status" jdbcType="OTHER"/>
+            <result property="comp_bet_check_status" column="comp_bet_check_status" jdbcType="OTHER"/>
+            <result property="comp_bet" column="comp_bet" jdbcType="NUMERIC"/>
+            <result property="normal_check_status" column="normal_check_status" jdbcType="OTHER"/>
+            <result property="deposit_project_id" column="deposit_project_id" jdbcType="OTHER"/>
+            <result property="deposit_money_remark" column="deposit_money_remark" jdbcType="VARCHAR"/>
+            <result property="deposit_pre_remark" column="deposit_pre_remark" jdbcType="VARCHAR"/>
+            <result property="other_pre_remark" column="other_pre_remark" jdbcType="VARCHAR"/>
+            <result property="stockholder_id" column="stockholder_id" jdbcType="OTHER"/>
+            <result property="currency_id" column="currency_id" jdbcType="OTHER"/>
+            <result property="bank_account_id" column="bank_account_id" jdbcType="OTHER"/>
+            <result property="bb_limit" column="bb_limit" jdbcType="NUMERIC"/>
+            <result property="deposit_man_name" column="deposit_man_name" jdbcType="VARCHAR"/>
+            <result property="pre_rem_per_check" column="pre_rem_per_check" jdbcType="OTHER"/>
+            <result property="member_deposit_bank_id" column="member_deposit_bank_id" jdbcType="OTHER"/>
+            <result property="mem_bank_account" column="mem_bank_account" jdbcType="VARCHAR"/>
+            <result property="mem_bank_name" column="mem_bank_name" jdbcType="VARCHAR"/>
+            <result property="level_name" column="level_name" jdbcType="VARCHAR"/>
+            <result property="account1" column="account1" jdbcType="OTHER"/>
+            <result property="account2" column="account2" jdbcType="OTHER"/>
+            <result property="account3" column="account3" jdbcType="OTHER"/>
+            <result property="account4" column="account4" jdbcType="OTHER"/>
+            <result property="account5" column="account5" jdbcType="OTHER"/>
+            <result property="rate" column="rate" jdbcType="OTHER"/>
+            <result property="account" column="account" jdbcType="VARCHAR"/>
+            <result property="type" column="type" jdbcType="VARCHAR"/>
+            <result property="agent_account" column="agent_account" jdbcType="VARCHAR"/>
+            <result property="chamberlain" column="chamberlain" jdbcType="VARCHAR"/>
+            <result property="company_bank_id" column="company_bank_id" jdbcType="OTHER"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,com_record_id,order_no,
+        level_id,partner_id,member_id,
+        deposit_type,deposit_money,deposit_pre,
+        other_pre,status,create_user,
+        create_time,update_user,update_time,
+        system_time,deposit_pre_status,other_pre_status,
+        comp_bet_check_status,comp_bet,normal_check_status,
+        deposit_project_id,deposit_money_remark,deposit_pre_remark,
+        other_pre_remark,stockholder_id,currency_id,
+        bank_account_id,bb_limit,deposit_man_name,
+        pre_rem_per_check,member_deposit_bank_id,mem_bank_account,
+        mem_bank_name,level_name,account1,
+        account2,account3,account4,
+        account5,rate,account,
+        type,agent_account,chamberlain,
+        company_bank_id
+    </sql>
+</mapper>

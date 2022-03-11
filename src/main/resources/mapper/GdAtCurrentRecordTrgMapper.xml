@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.goldnet.duty.mapper.GdAtCurrentRecordTrgMapper">
+
+    <resultMap id="BaseResultMap" type="com.goldnet.duty.entity.GdAtCurrentRecordTrg">
+            <result property="current_record_id" column="current_record_id" jdbcType="BIGINT"/>
+            <result property="account_id" column="account_id" jdbcType="OTHER"/>
+            <result property="old_trade_limit" column="old_trade_limit" jdbcType="NUMERIC"/>
+            <result property="new_trade_limit" column="new_trade_limit" jdbcType="NUMERIC"/>
+            <result property="old_existing_limit" column="old_existing_limit" jdbcType="NUMERIC"/>
+            <result property="new_existing_limit" column="new_existing_limit" jdbcType="NUMERIC"/>
+            <result property="remark" column="remark" jdbcType="VARCHAR"/>
+            <result property="trade_type" column="trade_type" jdbcType="VARCHAR"/>
+            <result property="old_money" column="old_money" jdbcType="NUMERIC"/>
+            <result property="new_money" column="new_money" jdbcType="NUMERIC"/>
+            <result property="insert_date" column="insert_date" jdbcType="TIMESTAMP"/>
+            <result property="other_remark" column="other_remark" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        current_record_id,account_id,old_trade_limit,
+        new_trade_limit,old_existing_limit,new_existing_limit,
+        remark,trade_type,old_money,
+        new_money,insert_date,other_remark
+    </sql>
+</mapper>

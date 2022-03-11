@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.goldnet.duty.mapper.TyBettingDetails202112Mapper">
+
+    <resultMap id="BaseResultMap" type="com.goldnet.duty.entity.TyBettingDetails202112">
+            <id property="detail_id" column="detail_id" jdbcType="BIGINT"/>
+            <result property="betting_code" column="betting_code" jdbcType="VARCHAR"/>
+            <result property="betting_date" column="betting_date" jdbcType="TIMESTAMP"/>
+            <result property="period" column="period" jdbcType="VARCHAR"/>
+            <result property="project" column="project" jdbcType="VARCHAR"/>
+            <result property="betting_money" column="betting_money" jdbcType="NUMERIC"/>
+            <result property="valid_money" column="valid_money" jdbcType="NUMERIC"/>
+            <result property="odds" column="odds" jdbcType="NUMERIC"/>
+            <result property="odds_group" column="odds_group" jdbcType="VARCHAR"/>
+            <result property="is_winning" column="is_winning" jdbcType="VARCHAR"/>
+            <result property="status" column="status" jdbcType="VARCHAR"/>
+            <result property="member_result" column="member_result" jdbcType="NUMERIC"/>
+            <result property="remark" column="remark" jdbcType="VARCHAR"/>
+            <result property="money_type" column="money_type" jdbcType="VARCHAR"/>
+            <result property="game_type_id" column="game_type_id" jdbcType="OTHER"/>
+            <result property="lottery_id" column="lottery_id" jdbcType="OTHER"/>
+            <result property="plate_id" column="plate_id" jdbcType="OTHER"/>
+            <result property="balance_money" column="balance_money" jdbcType="NUMERIC"/>
+            <result property="flag" column="flag" jdbcType="VARCHAR"/>
+            <result property="betting_status" column="betting_status" jdbcType="VARCHAR"/>
+            <result property="ab_flag" column="ab_flag" jdbcType="VARCHAR"/>
+            <result property="create_date_time" column="create_date_time" jdbcType="TIMESTAMP"/>
+            <result property="create_user" column="create_user" jdbcType="VARCHAR"/>
+            <result property="update_date_time" column="update_date_time" jdbcType="TIMESTAMP"/>
+            <result property="update_user" column="update_user" jdbcType="VARCHAR"/>
+            <result property="return_ratio" column="return_ratio" jdbcType="NUMERIC"/>
+            <result property="account_id0" column="account_id0" jdbcType="OTHER"/>
+            <result property="account_id1" column="account_id1" jdbcType="OTHER"/>
+            <result property="account_id2" column="account_id2" jdbcType="OTHER"/>
+            <result property="account_id3" column="account_id3" jdbcType="OTHER"/>
+            <result property="account_id4" column="account_id4" jdbcType="OTHER"/>
+            <result property="account_id5" column="account_id5" jdbcType="OTHER"/>
+            <result property="account_id6" column="account_id6" jdbcType="OTHER"/>
+            <result property="return0" column="return0" jdbcType="NUMERIC"/>
+            <result property="return1" column="return1" jdbcType="NUMERIC"/>
+            <result property="return2" column="return2" jdbcType="NUMERIC"/>
+            <result property="return3" column="return3" jdbcType="NUMERIC"/>
+            <result property="return4" column="return4" jdbcType="NUMERIC"/>
+            <result property="return5" column="return5" jdbcType="NUMERIC"/>
+            <result property="return6" column="return6" jdbcType="NUMERIC"/>
+            <result property="ratio0" column="ratio0" jdbcType="NUMERIC"/>
+            <result property="ratio1" column="ratio1" jdbcType="NUMERIC"/>
+            <result property="ratio2" column="ratio2" jdbcType="NUMERIC"/>
+            <result property="ratio3" column="ratio3" jdbcType="NUMERIC"/>
+            <result property="ratio4" column="ratio4" jdbcType="NUMERIC"/>
+            <result property="ratio5" column="ratio5" jdbcType="NUMERIC"/>
+            <result property="currency" column="currency" jdbcType="VARCHAR"/>
+            <result property="current_odds" column="current_odds" jdbcType="NUMERIC"/>
+            <result property="op" column="op" jdbcType="VARCHAR"/>
+            <result property="award" column="award" jdbcType="VARCHAR"/>
+            <result property="account_date_time" column="account_date_time" jdbcType="TIMESTAMP"/>
+            <result property="is_balance" column="is_balance" jdbcType="VARCHAR"/>
+            <result property="odds_project" column="odds_project" jdbcType="VARCHAR"/>
+            <result property="key" column="key" jdbcType="VARCHAR"/>
+            <result property="is_mix" column="is_mix" jdbcType="VARCHAR"/>
+            <result property="is_live" column="is_live" jdbcType="VARCHAR"/>
+            <result property="parent_id" column="parent_id" jdbcType="OTHER"/>
+            <result property="child_num" column="child_num" jdbcType="OTHER"/>
+            <result property="md5key" column="md5key" jdbcType="VARCHAR"/>
+            <result property="desktop_id" column="desktop_id" jdbcType="OTHER"/>
+            <result property="state_remark" column="state_remark" jdbcType="VARCHAR"/>
+            <result property="show_odds" column="show_odds" jdbcType="NUMERIC"/>
+            <result property="bet_plate" column="bet_plate" jdbcType="VARCHAR"/>
+            <result property="jockpot" column="jockpot" jdbcType="NUMERIC"/>
+            <result property="jockpot_type" column="jockpot_type" jdbcType="VARCHAR"/>
+            <result property="type" column="type" jdbcType="VARCHAR"/>
+            <result property="lottery_name" column="lottery_name" jdbcType="VARCHAR"/>
+            <result property="game_type_name" column="game_type_name" jdbcType="VARCHAR"/>
+            <result property="cp_id" column="cp_id" jdbcType="BIGINT"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        detail_id,betting_code,betting_date,
+        period,project,betting_money,
+        valid_money,odds,odds_group,
+        is_winning,status,member_result,
+        remark,money_type,game_type_id,
+        lottery_id,plate_id,balance_money,
+        flag,betting_status,ab_flag,
+        create_date_time,create_user,update_date_time,
+        update_user,return_ratio,account_id0,
+        account_id1,account_id2,account_id3,
+        account_id4,account_id5,account_id6,
+        return0,return1,return2,
+        return3,return4,return5,
+        return6,ratio0,ratio1,
+        ratio2,ratio3,ratio4,
+        ratio5,currency,current_odds,
+        op,award,account_date_time,
+        is_balance,odds_project,key,
+        is_mix,is_live,parent_id,
+        child_num,md5key,desktop_id,
+        state_remark,show_odds,bet_plate,
+        jockpot,jockpot_type,type,
+        lottery_name,game_type_name,cp_id
+    </sql>
+</mapper>

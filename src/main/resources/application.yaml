@@ -1,0 +1,12 @@
+spring:
+  datasource:
+    driver-class-name: org.postgresql.Driver
+#    schema: classpath:db/schema-h2.sql
+#    data: classpath:db/data-h2.sql
+    url: jdbc:postgresql://10.34.21.81:11532/GPO
+    username: MylIZ8UUIFO7KZBh1hXEnCPHqugzAm
+    password: eXB#4t+M9y8-7fYa
+
+mybatis-plus:
+  configuration:
+    map-underscore-to-camel-case: false

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.goldnet.duty.mapper.GeVgeSlotNewbieMapper">
+
+    <resultMap id="BaseResultMap" type="com.goldnet.duty.entity.GeVgeSlotNewbie">
+            <result property="nid" column="nid" jdbcType="OTHER"/>
+            <result property="newbie_name" column="newbie_name" jdbcType="VARCHAR"/>
+            <result property="newbie_type" column="newbie_type" jdbcType="VARCHAR"/>
+            <result property="chance_group" column="chance_group" jdbcType="VARCHAR"/>
+            <result property="chance_group_num" column="chance_group_num" jdbcType="OTHER"/>
+            <result property="chance_group_pot" column="chance_group_pot" jdbcType="NUMERIC"/>
+            <result property="pot" column="pot" jdbcType="NUMERIC"/>
+            <result property="pot_payout" column="pot_payout" jdbcType="NUMERIC"/>
+            <result property="pot_make" column="pot_make" jdbcType="NUMERIC"/>
+            <result property="profit" column="profit" jdbcType="NUMERIC"/>
+            <result property="newbie_chance" column="newbie_chance" jdbcType="NUMERIC"/>
+            <result property="choose" column="choose" jdbcType="VARCHAR"/>
+            <result property="bet_num_choose" column="bet_num_choose" jdbcType="VARCHAR"/>
+            <result property="bet_num" column="bet_num" jdbcType="OTHER"/>
+            <result property="money_num_choose" column="money_num_choose" jdbcType="VARCHAR"/>
+            <result property="money_num" column="money_num" jdbcType="NUMERIC"/>
+            <result property="date_num_choose" column="date_num_choose" jdbcType="VARCHAR"/>
+            <result property="date_num" column="date_num" jdbcType="OTHER"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        nid,newbie_name,newbie_type,
+        chance_group,chance_group_num,chance_group_pot,
+        pot,pot_payout,pot_make,
+        profit,newbie_chance,choose,
+        bet_num_choose,bet_num,money_num_choose,
+        money_num,date_num_choose,date_num
+    </sql>
+</mapper>

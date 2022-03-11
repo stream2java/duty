@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.goldnet.duty.mapper.SysMobileModelStationMapper">
+
+    <resultMap id="BaseResultMap" type="com.goldnet.duty.entity.SysMobileModelStation">
+            <id property="id" column="id" jdbcType="BIGINT"/>
+            <result property="account1" column="account1" jdbcType="OTHER"/>
+            <result property="station_sub_id" column="station_sub_id" jdbcType="OTHER"/>
+            <result property="game_id" column="game_id" jdbcType="OTHER"/>
+            <result property="top_up" column="top_up" jdbcType="SMALLINT"/>
+            <result property="top_up_time" column="top_up_time" jdbcType="TIMESTAMP"/>
+            <result property="recommend_flag" column="recommend_flag" jdbcType="SMALLINT"/>
+            <result property="sort" column="sort" jdbcType="OTHER"/>
+            <result property="open_flag" column="open_flag" jdbcType="SMALLINT"/>
+            <result property="hot_flag" column="hot_flag" jdbcType="SMALLINT"/>
+            <result property="terminal_flag" column="terminal_flag" jdbcType="SMALLINT"/>
+            <result property="game_img_url" column="game_img_url" jdbcType="VARCHAR"/>
+            <result property="platform_code" column="platform_code" jdbcType="VARCHAR"/>
+            <result property="game_source" column="game_source" jdbcType="SMALLINT"/>
+            <result property="create_time" column="create_time" jdbcType="TIMESTAMP"/>
+            <result property="create_user" column="create_user" jdbcType="VARCHAR"/>
+            <result property="update_time" column="update_time" jdbcType="TIMESTAMP"/>
+            <result property="update_user" column="update_user" jdbcType="VARCHAR"/>
+            <result property="game_type_ids" column="game_type_ids" jdbcType="OTHER"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,account1,station_sub_id,
+        game_id,top_up,top_up_time,
+        recommend_flag,sort,open_flag,
+        hot_flag,terminal_flag,game_img_url,
+        platform_code,game_source,create_time,
+        create_user,update_time,update_user,
+        game_type_ids
+    </sql>
+</mapper>

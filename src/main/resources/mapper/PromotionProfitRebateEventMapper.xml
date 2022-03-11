@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.goldnet.duty.mapper.PromotionProfitRebateEventMapper">
+
+    <resultMap id="BaseResultMap" type="com.goldnet.duty.entity.PromotionProfitRebateEvent">
+            <id property="id" column="id" jdbcType="OTHER"/>
+            <result property="account1" column="account1" jdbcType="OTHER"/>
+            <result property="event_name" column="event_name" jdbcType="VARCHAR"/>
+            <result property="calculate_time_start" column="calculate_time_start" jdbcType="TIMESTAMP"/>
+            <result property="calculate_time_end" column="calculate_time_end" jdbcType="TIMESTAMP"/>
+            <result property="total_account" column="total_account" jdbcType="OTHER"/>
+            <result property="total_amount" column="total_amount" jdbcType="NUMERIC"/>
+            <result property="undeal_total_account" column="undeal_total_account" jdbcType="OTHER"/>
+            <result property="undeal_total_amount" column="undeal_total_amount" jdbcType="NUMERIC"/>
+            <result property="revert_total_account" column="revert_total_account" jdbcType="OTHER"/>
+            <result property="revert_total_amount" column="revert_total_amount" jdbcType="NUMERIC"/>
+            <result property="ledger_total_account" column="ledger_total_account" jdbcType="OTHER"/>
+            <result property="ledger_total_amount" column="ledger_total_amount" jdbcType="NUMERIC"/>
+            <result property="event_condition" column="event_condition" jdbcType="VARCHAR"/>
+            <result property="event_status" column="event_status" jdbcType="SMALLINT"/>
+            <result property="create_time" column="create_time" jdbcType="TIMESTAMP"/>
+            <result property="create_user" column="create_user" jdbcType="VARCHAR"/>
+            <result property="update_time" column="update_time" jdbcType="TIMESTAMP"/>
+            <result property="update_user" column="update_user" jdbcType="VARCHAR"/>
+            <result property="clean_total_account" column="clean_total_account" jdbcType="OTHER"/>
+            <result property="clean_total_amount" column="clean_total_amount" jdbcType="NUMERIC"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,account1,event_name,
+        calculate_time_start,calculate_time_end,total_account,
+        total_amount,undeal_total_account,undeal_total_amount,
+        revert_total_account,revert_total_amount,ledger_total_account,
+        ledger_total_amount,event_condition,event_status,
+        create_time,create_user,update_time,
+        update_user,clean_total_account,clean_total_amount
+    </sql>
+</mapper>

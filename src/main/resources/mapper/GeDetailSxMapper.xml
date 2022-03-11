@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.goldnet.duty.mapper.GeDetailSxMapper">
+
+    <resultMap id="BaseResultMap" type="com.goldnet.duty.entity.GeDetailSx">
+            <id property="detail_id" column="detail_id" jdbcType="OTHER"/>
+            <result property="desktop_id" column="desktop_id" jdbcType="OTHER"/>
+            <result property="project_max_money_xc" column="project_max_money_xc" jdbcType="OTHER"/>
+            <result property="single_max_money_xc" column="single_max_money_xc" jdbcType="OTHER"/>
+            <result property="min_money_xc" column="min_money_xc" jdbcType="OTHER"/>
+            <result property="project_max_money_xd" column="project_max_money_xd" jdbcType="OTHER"/>
+            <result property="single_max_money_xd" column="single_max_money_xd" jdbcType="OTHER"/>
+            <result property="min_money_xd" column="min_money_xd" jdbcType="OTHER"/>
+            <result property="project_max_money_xg" column="project_max_money_xg" jdbcType="OTHER"/>
+            <result property="single_max_money_xg" column="single_max_money_xg" jdbcType="OTHER"/>
+            <result property="min_money_xg" column="min_money_xg" jdbcType="OTHER"/>
+            <result property="project_max_money_zg" column="project_max_money_zg" jdbcType="OTHER"/>
+            <result property="single_max_money_zg" column="single_max_money_zg" jdbcType="OTHER"/>
+            <result property="min_money_zg" column="min_money_zg" jdbcType="OTHER"/>
+            <result property="project_max_money_zd" column="project_max_money_zd" jdbcType="OTHER"/>
+            <result property="single_max_money_zd" column="single_max_money_zd" jdbcType="OTHER"/>
+            <result property="min_money_zd" column="min_money_zd" jdbcType="OTHER"/>
+            <result property="project_max_money_zc" column="project_max_money_zc" jdbcType="OTHER"/>
+            <result property="single_max_money_zc" column="single_max_money_zc" jdbcType="OTHER"/>
+            <result property="min_money_zc" column="min_money_zc" jdbcType="OTHER"/>
+            <result property="project_max_money_b" column="project_max_money_b" jdbcType="OTHER"/>
+            <result property="single_max_money_b" column="single_max_money_b" jdbcType="OTHER"/>
+            <result property="min_money_b" column="min_money_b" jdbcType="OTHER"/>
+            <result property="project_max_money_h" column="project_max_money_h" jdbcType="OTHER"/>
+            <result property="single_max_money_h" column="single_max_money_h" jdbcType="OTHER"/>
+            <result property="min_money_h" column="min_money_h" jdbcType="OTHER"/>
+            <result property="project_max_money_a" column="project_max_money_a" jdbcType="OTHER"/>
+            <result property="single_max_money_a" column="single_max_money_a" jdbcType="OTHER"/>
+            <result property="min_money_a" column="min_money_a" jdbcType="OTHER"/>
+            <result property="project_max_money_x" column="project_max_money_x" jdbcType="OTHER"/>
+            <result property="single_max_money_x" column="single_max_money_x" jdbcType="OTHER"/>
+            <result property="min_money_x" column="min_money_x" jdbcType="OTHER"/>
+            <result property="project_max_money_z" column="project_max_money_z" jdbcType="OTHER"/>
+            <result property="single_max_money_z" column="single_max_money_z" jdbcType="OTHER"/>
+            <result property="min_money_z" column="min_money_z" jdbcType="OTHER"/>
+            <result property="lottery_id" column="lottery_id" jdbcType="OTHER"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        detail_id,desktop_id,project_max_money_xc,
+        single_max_money_xc,min_money_xc,project_max_money_xd,
+        single_max_money_xd,min_money_xd,project_max_money_xg,
+        single_max_money_xg,min_money_xg,project_max_money_zg,
+        single_max_money_zg,min_money_zg,project_max_money_zd,
+        single_max_money_zd,min_money_zd,project_max_money_zc,
+        single_max_money_zc,min_money_zc,project_max_money_b,
+        single_max_money_b,min_money_b,project_max_money_h,
+        single_max_money_h,min_money_h,project_max_money_a,
+        single_max_money_a,min_money_a,project_max_money_x,
+        single_max_money_x,min_money_x,project_max_money_z,
+        single_max_money_z,min_money_z,lottery_id
+    </sql>
+</mapper>

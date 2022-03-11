@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.goldnet.duty.mapper.AppDomainMapper">
+
+    <resultMap id="BaseResultMap" type="com.goldnet.duty.entity.AppDomain">
+            <id property="id" column="id" jdbcType="OTHER"/>
+            <result property="station_id" column="station_id" jdbcType="OTHER"/>
+            <result property="stockholder_id" column="stockholder_id" jdbcType="OTHER"/>
+            <result property="app_station_code" column="app_station_code" jdbcType="VARCHAR"/>
+            <result property="app_status" column="app_status" jdbcType="OTHER"/>
+            <result property="domain_protocol" column="domain_protocol" jdbcType="VARCHAR"/>
+            <result property="domian_id" column="domian_id" jdbcType="OTHER"/>
+            <result property="app_version_id" column="app_version_id" jdbcType="OTHER"/>
+            <result property="mark" column="mark" jdbcType="VARCHAR"/>
+            <result property="type" column="type" jdbcType="OTHER"/>
+            <result property="ios_version_id" column="ios_version_id" jdbcType="OTHER"/>
+            <result property="android_version_id" column="android_version_id" jdbcType="OTHER"/>
+            <result property="ios_status" column="ios_status" jdbcType="OTHER"/>
+            <result property="android_status" column="android_status" jdbcType="OTHER"/>
+            <result property="jpush_status" column="jpush_status" jdbcType="OTHER"/>
+            <result property="ios_appkey" column="ios_appkey" jdbcType="VARCHAR"/>
+            <result property="ios_mastersecret" column="ios_mastersecret" jdbcType="VARCHAR"/>
+            <result property="android_appkey" column="android_appkey" jdbcType="VARCHAR"/>
+            <result property="android_mastersecret" column="android_mastersecret" jdbcType="VARCHAR"/>
+            <result property="app_station_name" column="app_station_name" jdbcType="VARCHAR"/>
+            <result property="station_sub_id" column="station_sub_id" jdbcType="OTHER"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,station_id,stockholder_id,
+        app_station_code,app_status,domain_protocol,
+        domian_id,app_version_id,mark,
+        type,ios_version_id,android_version_id,
+        ios_status,android_status,jpush_status,
+        ios_appkey,ios_mastersecret,android_appkey,
+        android_mastersecret,app_station_name,station_sub_id
+    </sql>
+</mapper>

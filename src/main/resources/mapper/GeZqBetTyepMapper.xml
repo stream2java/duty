@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.goldnet.duty.mapper.GeZqBetTyepMapper">
+
+    <resultMap id="BaseResultMap" type="com.goldnet.duty.entity.GeZqBetTyep">
+            <id property="bet_type_id" column="bet_type_id" jdbcType="OTHER"/>
+            <result property="matches_detail_id" column="matches_detail_id" jdbcType="OTHER"/>
+            <result property="create_time" column="create_time" jdbcType="TIMESTAMP"/>
+            <result property="bet_type" column="bet_type" jdbcType="OTHER"/>
+            <result property="is_mix" column="is_mix" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        bet_type_id,matches_detail_id,create_time,
+        bet_type,is_mix
+    </sql>
+</mapper>

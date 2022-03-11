@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.goldnet.duty.mapper.SysMobileModelMapper">
+
+    <resultMap id="BaseResultMap" type="com.goldnet.duty.entity.SysMobileModel">
+            <id property="id" column="id" jdbcType="OTHER"/>
+            <result property="model_name" column="model_name" jdbcType="VARCHAR"/>
+            <result property="model_url" column="model_url" jdbcType="VARCHAR"/>
+            <result property="model_level" column="model_level" jdbcType="OTHER"/>
+            <result property="model_target" column="model_target" jdbcType="OTHER"/>
+            <result property="model_img_url" column="model_img_url" jdbcType="VARCHAR"/>
+            <result property="model_type" column="model_type" jdbcType="VARCHAR"/>
+            <result property="model_html" column="model_html" jdbcType="VARCHAR"/>
+            <result property="model_game_type" column="model_game_type" jdbcType="VARCHAR"/>
+            <result property="is_index_display" column="is_index_display" jdbcType="OTHER"/>
+            <result property="sort" column="sort" jdbcType="OTHER"/>
+            <result property="is_hot" column="is_hot" jdbcType="OTHER"/>
+            <result property="is_free" column="is_free" jdbcType="OTHER"/>
+            <result property="sub_menu_name" column="sub_menu_name" jdbcType="VARCHAR"/>
+            <result property="account_id" column="account_id" jdbcType="OTHER"/>
+            <result property="parent_id" column="parent_id" jdbcType="OTHER"/>
+            <result property="menu_name" column="menu_name" jdbcType="VARCHAR"/>
+            <result property="open_flag" column="open_flag" jdbcType="SMALLINT"/>
+            <result property="recommend_flag" column="recommend_flag" jdbcType="SMALLINT"/>
+            <result property="game_flag" column="game_flag" jdbcType="SMALLINT"/>
+            <result property="game_type_ids" column="game_type_ids" jdbcType="OTHER"/>
+            <result property="top_up" column="top_up" jdbcType="SMALLINT"/>
+            <result property="top_up_time" column="top_up_time" jdbcType="TIMESTAMP"/>
+            <result property="login_open" column="login_open" jdbcType="SMALLINT"/>
+            <result property="href_type" column="href_type" jdbcType="SMALLINT"/>
+            <result property="jump_type" column="jump_type" jdbcType="SMALLINT"/>
+            <result property="h5_url" column="h5_url" jdbcType="VARCHAR"/>
+            <result property="h5_params" column="h5_params" jdbcType="VARCHAR"/>
+            <result property="app_url" column="app_url" jdbcType="VARCHAR"/>
+            <result property="app_params" column="app_params" jdbcType="VARCHAR"/>
+            <result property="h5_href_menu" column="h5_href_menu" jdbcType="OTHER"/>
+            <result property="app_href_menu" column="app_href_menu" jdbcType="OTHER"/>
+            <result property="db_source" column="db_source" jdbcType="VARCHAR"/>
+            <result property="hbapp_open_flag" column="hbapp_open_flag" jdbcType="SMALLINT"/>
+            <result property="hbapp_is_hot" column="hbapp_is_hot" jdbcType="OTHER"/>
+            <result property="hbapp_recommend_flag" column="hbapp_recommend_flag" jdbcType="SMALLINT"/>
+            <result property="hbapp_sort" column="hbapp_sort" jdbcType="OTHER"/>
+            <result property="hbapp_support_recommend" column="hbapp_support_recommend" jdbcType="OTHER"/>
+            <result property="hbapp_vertical_img_url" column="hbapp_vertical_img_url" jdbcType="VARCHAR"/>
+            <result property="hbapp_horizontal_img_url" column="hbapp_horizontal_img_url" jdbcType="VARCHAR"/>
+            <result property="hbapp_top_up" column="hbapp_top_up" jdbcType="SMALLINT"/>
+            <result property="hbapp_top_up_time" column="hbapp_top_up_time" jdbcType="TIMESTAMP"/>
+            <result property="platform_flag" column="platform_flag" jdbcType="SMALLINT"/>
+            <result property="hbapp_model_img_url" column="hbapp_model_img_url" jdbcType="VARCHAR"/>
+            <result property="block_rotation" column="block_rotation" jdbcType="OTHER"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,model_name,model_url,
+        model_level,model_target,model_img_url,
+        model_type,model_html,model_game_type,
+        is_index_display,sort,is_hot,
+        is_free,sub_menu_name,account_id,
+        parent_id,menu_name,open_flag,
+        recommend_flag,game_flag,game_type_ids,
+        top_up,top_up_time,login_open,
+        href_type,jump_type,h5_url,
+        h5_params,app_url,app_params,
+        h5_href_menu,app_href_menu,db_source,
+        hbapp_open_flag,hbapp_is_hot,hbapp_recommend_flag,
+        hbapp_sort,hbapp_support_recommend,hbapp_vertical_img_url,
+        hbapp_horizontal_img_url,hbapp_top_up,hbapp_top_up_time,
+        platform_flag,hbapp_model_img_url,block_rotation
+    </sql>
+</mapper>

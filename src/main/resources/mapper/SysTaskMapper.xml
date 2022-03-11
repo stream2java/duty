@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.goldnet.duty.mapper.SysTaskMapper">
+
+    <resultMap id="BaseResultMap" type="com.goldnet.duty.entity.SysTask">
+            <id property="task_id" column="task_id" jdbcType="OTHER"/>
+            <result property="task_name" column="task_name" jdbcType="VARCHAR"/>
+            <result property="task_class" column="task_class" jdbcType="VARCHAR"/>
+            <result property="task_desc" column="task_desc" jdbcType="VARCHAR"/>
+            <result property="update_time" column="update_time" jdbcType="TIMESTAMP"/>
+            <result property="create_time" column="create_time" jdbcType="TIMESTAMP"/>
+            <result property="delete_flag" column="delete_flag" jdbcType="VARCHAR"/>
+            <result property="task_code" column="task_code" jdbcType="VARCHAR"/>
+            <result property="update_user" column="update_user" jdbcType="OTHER"/>
+            <result property="create_user" column="create_user" jdbcType="OTHER"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        task_id,task_name,task_class,
+        task_desc,update_time,create_time,
+        delete_flag,task_code,update_user,
+        create_user
+    </sql>
+</mapper>
